@@ -18,7 +18,6 @@ module.exports =  {
     },
   },
   rules:  {
-    "@typescript-eslint/explicit-function-return-type": "off",
     "prettier/prettier": ["warn", {
       semi:  true,
       trailingComma:  'all',
@@ -26,5 +25,7 @@ module.exports =  {
       printWidth:  80,
       tabWidth:  2,
     }],
+    "@typescript-eslint/explicit-function-return-type": "off",
+
   },
 };
