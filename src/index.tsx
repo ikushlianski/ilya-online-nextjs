@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 render(
   <BrowserRouter>
-    <div>hello world!</div>
+    <div>hello ilya!</div>
   </BrowserRouter>,
   document.getElementById('app'),
 );

@@ -6,6 +6,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const distFolder = 'dist';
+const devMode = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: { main: './src/index.tsx' },
@@ -51,6 +52,7 @@ module.exports = {
       'io-skills': path.resolve(__dirname, 'src/io-skills'),
       'ui-kit': path.resolve(__dirname, 'src/ui-kit'),
       types: path.resolve(__dirname, 'src/types.d.ts'),
+      styles: path.resolve(__dirname, 'src/styles'),
     },
     extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
