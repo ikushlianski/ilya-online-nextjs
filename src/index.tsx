@@ -1,20 +1,13 @@
 import React from 'react';
 import { combineReducers } from 'redux';
+import { Provider } from 'react-redux';
 import { render } from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { configureStore } from '@reduxjs/toolkit';
 
 import { skillsReducer } from 'io-skills';
-import { hi as hiword } from 'io-portfolio';
 
-render(
-  <BrowserRouter>
-    <div>hello ilya!</div>
-  </BrowserRouter>,
-  document.getElementById('app'),
-);
-
-console.log(hiword);
+import App from './App';
 
 const rootReducer = combineReducers({
   skills: skillsReducer,
@@ -23,3 +16,16 @@ const rootReducer = combineReducers({
 const store = configureStore({
   reducer: rootReducer,
 });
+
+render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('app'),
+);
+
+if (process.env.NODE_ENV === 'development' && module.hot) {
+  module.hot.accept();
+}
