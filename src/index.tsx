@@ -20,7 +20,7 @@ const store = configureStore({
 render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App postId={1} />
     </BrowserRouter>
   </Provider>,
   document.getElementById('app'),
