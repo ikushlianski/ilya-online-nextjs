@@ -8,6 +8,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { skillsReducer } from 'io-skills';
 
 import App from './App';
+import { defaultTheme, ThemeContext } from './styles/theme';
 
 const rootReducer = combineReducers({
   skills: skillsReducer,
@@ -20,7 +21,9 @@ const store = configureStore({
 render(
   <Provider store={store}>
     <BrowserRouter>
-      <App postId={1} />
+      <ThemeContext.Provider value={defaultTheme}>
+        <App />
+      </ThemeContext.Provider>
     </BrowserRouter>
   </Provider>,
   document.getElementById('app'),
