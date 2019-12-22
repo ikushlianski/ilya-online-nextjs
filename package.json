@@ -21,6 +21,10 @@
   "bugs": {
     "url": "https://github.com/ikushlianski/ilya-online-react/issues"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "homepage": "http://ilya.online",
   "dependencies": {
     "@reduxjs/toolkit": "1.1.0",

@@ -4,6 +4,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const autoprefixer = require('autoprefixer');
 
 const distFolder = 'dist';
 const devMode = process.env.NODE_ENV === 'development';
@@ -30,18 +31,16 @@ module.exports = {
         use: [
           devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
           {
             loader: "postcss-loader",
             options: {
               ident: 'postcss',
               plugins: [
-                require('autoprefixer')({
-                  'browsers': ['> 1%', 'last 2 versions']
-                }),
+                autoprefixer(),
               ]
             }
           },
+          'sass-loader',
         ],
       },
       {
