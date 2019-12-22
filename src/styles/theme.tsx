@@ -1,6 +1,14 @@
 import React from 'react';
 
-export const defaultTheme = {
+interface DefaultTheme {
+  primary: string;
+  primaryLight: string;
+  secondary: string;
+  secondaryLight: string;
+  white: string;
+}
+
+export const defaultTheme: DefaultTheme = {
   primary: '#0D1321',
   primaryLight: '#1D2D44',
   secondary: '#3E5C76',
@@ -9,4 +17,4 @@ export const defaultTheme = {
 };
 
 // TODO: add theme provider
-export const ThemeContext = React.createContext(null);
+export const ThemeContext = React.createContext(defaultTheme);
