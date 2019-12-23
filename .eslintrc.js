@@ -5,7 +5,7 @@ module.exports =  {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
   ],
-  plugins: ['react-hooks'],
+  plugins: ['react-hooks', 'compat'],
   parserOptions:  {
     ecmaVersion:  2020,
     sourceType:  'module',
@@ -30,6 +30,7 @@ module.exports =  {
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn"
+    "react-hooks/exhaustive-deps": "warn",
+    "compat/compat": "warn",
   },
 };
