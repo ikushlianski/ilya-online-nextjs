@@ -1,0 +1,13 @@
+.Button {
+  background: var(--secondary);
+  border: none;
+  height: 2rem;
+  padding: 0 1rem;
+  border-radius: 4px;
+  color: var(--textColor);
+}
+
+.Button--inverted {
+  background: none;
+  border: 1px solid var(--secondary)
+}
