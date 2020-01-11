@@ -1,1 +1,23 @@
 $transition-time: 0.25s;
+
+/*
+  Theme colors
+ */
+:root {
+  --primary: #0D1321;
+  --primaryLight: #1D2D44;
+  --secondary: #3E5C76;
+  --secondaryLight: #748CAB;
+  --textColor: #F0EBD8;
+  // TODO: add border variable
+}
+
+/*
+  Global styles
+ */
+.App {
+  background: var(--primary);
+  color: var(--textColor);
+}
+
+

@@ -12,7 +12,7 @@
     cursor: pointer;
 
     path {
-      fill: pink;
+      fill: var(--secondary);
       transition: fill $transition-time;
     }
   }
