@@ -8,6 +8,10 @@
   width: 32px;
   height: 32px;
 
+  path {
+    transition: fill $transition-time;
+  }
+
   :hover {
     cursor: pointer;
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {HamburgerIcon} from "./Hamburger";
+import { HamburgerIcon } from './Hamburger';
 
 import './Navbar.scss';
 
