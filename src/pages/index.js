@@ -1,8 +1,9 @@
 import React from 'react';
 
 import { Navbar, NavbarItem } from '../components/Navbar';
+import {Button} from "../ui-kit/Button";
 
-import './index.scss';
+import '../styles/styles.scss';
 
 function HomePage() {
   return (
@@ -12,7 +13,8 @@ function HomePage() {
         <NavbarItem>Portfolio</NavbarItem>
         <NavbarItem>About me</NavbarItem>
       </Navbar>
-      Welcome to Next.js!
+      <p>Welcome to Next.js!</p>
+      <Button>Download CV</Button>
     </div>
   );
 }

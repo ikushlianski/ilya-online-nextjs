@@ -9,7 +9,7 @@ export const Navbar = ({ children }) => {
 
   return (
     <div className="Navbar">
-      <HamburgerIcon onClick={() => setOpen(!open)} />
+      <HamburgerIcon onClick={() => setOpen(!open)} open={open} />
       {open && children}
     </div>
   );

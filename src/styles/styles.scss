@@ -1,0 +1,42 @@
+@import "normalize";
+
+/*
+  Fonts
+ */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+/*
+  Theme colors
+ */
+:root {
+  --primary: #0D1321;
+  --primaryLight: #1D2D44;
+  --secondary: #3E5C76;
+  --secondaryLight: #748CAB;
+  --textColor: #F0EBD8;
+  --borderStyle: 1px solid #F0EBD8;
+}
+
+/*
+  Global styles
+ */
+// TODO: should be App
+.HomePage {
+  background: var(--primary);
+  color: var(--textColor);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*
+  Theme constants
+ */
+$transition-time: 0.25s;
+
+/*
+  Font-sizes
+ */
+$font-tiny: 0.75rem;
+$font-small: 0.9rem;
+$font-normal: 1rem;
+$font-larger: 1.5rem;
+$font-large: 2rem;

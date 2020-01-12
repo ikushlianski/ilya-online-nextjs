@@ -1,13 +1,10 @@
-@import "../../pages/index";
+@import "../../styles/styles";
 
 .Navbar {
   user-select: none;
 }
 
 .Navbar__Hamburger {
-  width: 32px;
-  height: 32px;
-
   path {
     transition: fill $transition-time;
   }
@@ -16,9 +13,13 @@
     cursor: pointer;
 
     path {
-      fill: var(--secondary);
+      fill: var(--textColor);
       transition: fill $transition-time;
     }
   }
 
+  .svg-inline--fa {
+    width: 32px;
+    height: 32px;
+  }
 }
