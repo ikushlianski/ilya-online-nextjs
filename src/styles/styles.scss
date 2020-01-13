@@ -10,11 +10,15 @@
  */
 :root {
   --primary: #0D1321;
+  --primary-darker: #0C0E1B;
+  --primary-lighter: #0F1D2D;
+
   --primaryLight: #1D2D44;
   --secondary: #3E5C76;
   --secondaryLight: #748CAB;
   --textColor: #F0EBD8;
   --borderStyle: 1px solid #F0EBD8;
+  --accent: orange;
 }
 
 /*
@@ -40,3 +44,12 @@ $font-small: 0.9rem;
 $font-normal: 1rem;
 $font-larger: 1.5rem;
 $font-large: 2rem;
+
+/*
+  Paddings and margins
+ */
+$padding-margin-tiny: 0.1rem;
+$padding-margin-small: 0.5rem;
+$padding-margin-normal: 1rem;
+$padding-margin-big: 1.5rem;
+$padding-margin-huge: 2rem;

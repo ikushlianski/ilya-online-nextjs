@@ -1,5 +1,14 @@
 @import "../../styles/styles";
 
 .NavbarItem {
+  display: grid;
+  align-content: center;
+  height: 2em;
+  line-height: 2em;
+  padding: $padding-margin-small;
 
+  &:hover {
+    cursor: pointer;
+    background: var(--primary-lighter);
+  }
 }

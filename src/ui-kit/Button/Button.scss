@@ -1,16 +1,20 @@
 @import "./src/styles/styles";
 
 .Button {
-  background: var(--secondary);
+  background: var(--secondaryLight);
   border: none;
   height: 2rem;
   padding: 0 1rem;
-  border-radius: 4px;
   color: var(--textColor);
   font-size: $font-small;
+  cursor: pointer;
 }
 
 .Button--inverted {
   background: none;
   border: var(--borderStyle)
+}
+
+.Button--cta {
+  background: var(--accent);
 }

@@ -4,7 +4,21 @@
   user-select: none;
 }
 
+.Navbar--open {
+  background: var(--primary-darker);
+}
+
+.Navbar__ItemsContainer {
+  margin: 0;
+  padding: 0;
+}
+
 .Navbar__Hamburger {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 0.25em;
+
   path {
     transition: fill $transition-time;
   }
