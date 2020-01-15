@@ -5,10 +5,10 @@
   align-content: center;
   height: 2em;
   line-height: 2em;
-  padding: $padding-margin-small;
+  padding: $padding-margin-small $padding-margin-normal;
 
   &:hover {
     cursor: pointer;
-    background: var(--primary-lighter);
+    background: var(--accent);
   }
 }

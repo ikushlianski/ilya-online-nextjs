@@ -4,20 +4,21 @@
   user-select: none;
 }
 
-.Navbar--open {
-  background: var(--primary-darker);
-}
-
 .Navbar__ItemsContainer {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
   padding: 0;
+  background-color: transparentize(black, 0.05);
 }
 
-.Navbar__Hamburger {
+.Navbar__OpenMenuButton, .Navbar__CloseMenuButton {
   display: inline-block;
   width: 32px;
   height: 32px;
-  padding: 0.25em;
+  padding: $padding-margin-normal;
 
   path {
     transition: fill $transition-time;
@@ -36,4 +37,8 @@
     width: 32px;
     height: 32px;
   }
+}
+
+.Navbar__OpenMenuButton--open {
+  visibility: hidden;
 }
