@@ -3,29 +3,29 @@
 /*
   Fonts
  */
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
 /*
   Theme colors
  */
 :root {
   --primary: #0D1321;
-  --primary-darker: #0C0E1B;
   --primary-lighter: #0F1D2D;
+  --primary-darker: #0C0E1B;
 
   --primaryLight: #1D2D44;
   --secondary: #3E5C76;
   --secondaryLight: #748CAB;
   --textColor: #F0EBD8;
   --borderStyle: 1px solid #F0EBD8;
-  --accent: orange;
+  --accent: #e27e02;
 }
 
 /*
   Global styles
  */
 // TODO: should be App
-.HomePage {
+.Layout {
   background: var(--primary);
   color: var(--textColor);
   font-family: 'Ubuntu', sans-serif;

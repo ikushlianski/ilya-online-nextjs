@@ -1,0 +1,26 @@
+@import "../../styles/styles";
+
+.Intro {
+  display: grid;
+  justify-items: center;
+
+  &__Image {
+    width: 8em;
+    height: 8em;
+    background: #F0EBD8;
+    border-radius: 50%;
+    margin: $padding-margin-normal;
+  }
+
+  &__Primary {
+    font-size: $font-large;
+    margin: 0;
+  }
+
+  &__Secondary {
+    font-size: $font-normal;
+    color: var(--secondaryLight);
+    margin: $padding-margin-normal;
+  }
+}
+

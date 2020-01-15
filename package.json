@@ -2,7 +2,7 @@
   "name": "ilya-online-react",
   "version": "0.1.0",
   "description": "A rewrite of my Wordpress-based personal website using React",
-  "main": "src/pages/index.js",
+  "main": "src/pages/front-page/index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
