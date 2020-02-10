@@ -9,6 +9,11 @@
   font-size: $font-small;
   cursor: pointer;
   font-weight: 700;
+
+  &:focus {
+    box-shadow: none;
+    outline: 1px dashed var(--accent2);
+  }
 }
 
 .Button--inverted {

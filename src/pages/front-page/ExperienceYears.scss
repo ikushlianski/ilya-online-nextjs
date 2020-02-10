@@ -1,0 +1,28 @@
+@import "../../styles/styles";
+
+.Experience__Number {
+  &--big {
+    font-size: 6rem;
+  }
+}
+
+.Experience__Block {
+  padding: $padding-margin-big 0;
+}
+
+.Experience__Text {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.Experience__Years {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  color: var(--accent2)
+}
+
+.Experience__YearsWord {
+  font-size: $font-larger;
+  margin-left: $padding-margin-small;
+}

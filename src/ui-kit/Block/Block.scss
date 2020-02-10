@@ -1,5 +1,9 @@
 @import "./src/styles/styles";
 
 .Block {
-  padding: $padding-margin-big;
+  padding: 3rem $padding-margin-big;
+}
+
+.Block--darker {
+  background-color: var(--primary-darker);
 }

@@ -18,7 +18,8 @@
   --secondaryLight: #748CAB;
   --textColor: #F0EBD8;
   --borderStyle: 1px solid #F0EBD8;
-  --accent: #e27e02;
+  --accent: #e20202;
+  --accent2: #e27e02;
 }
 
 /*
@@ -34,7 +35,8 @@ body, #__next {
 
 // TODO: should be App
 .Layout {
-  display: flex;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   flex-direction: column;
   min-height: 100vh;
   background: var(--primary);
