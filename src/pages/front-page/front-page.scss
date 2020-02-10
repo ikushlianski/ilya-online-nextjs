@@ -13,12 +13,14 @@
   }
 
   &__Primary {
-    font-size: $font-large;
+    font-size: $font-giant;
     margin: 0;
+    text-align: center;
   }
 
   &__Secondary {
-    font-size: $font-normal;
+    font-size: $font-larger;
+    text-align: center;
     color: var(--secondaryLight);
     margin: $padding-margin-normal;
   }

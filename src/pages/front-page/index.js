@@ -9,17 +9,15 @@ import './front-page.scss';
 
 const FrontPage = () => {
   return (
-    <Layout>
-      <div className="HomePage">
-        <Block>
-          <div className="Intro">
-            <div className="Intro__Image"></div>
-            <p className="Intro__Primary">Ilya Kushlianski</p>
-            <p className="Intro__Secondary">Javascript developer</p>
-            <Button cta>See my CV</Button>
-          </div>
-        </Block>
-      </div>
+    <Layout className="HomePage">
+      <Block>
+        <div className="Intro">
+          <div className="Intro__Image"></div>
+          <p className="Intro__Primary">Ilya Kushlianski</p>
+          <p className="Intro__Secondary">Full-stack Javascript developer</p>
+          <Button cta>See my CV</Button>
+        </div>
+      </Block>
     </Layout>
   );
 };

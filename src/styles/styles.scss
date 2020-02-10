@@ -24,11 +24,26 @@
 /*
   Global styles
  */
+html {
+  height: 100%;
+}
+
+body, #__next {
+  min-height: 100%;
+}
+
 // TODO: should be App
 .Layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: var(--primary);
   color: var(--textColor);
   font-family: 'Ubuntu', sans-serif;
+}
+
+.Page {
+  flex-grow: 1;
 }
 
 /*
@@ -44,6 +59,7 @@ $font-small: 0.9rem;
 $font-normal: 1rem;
 $font-larger: 1.5rem;
 $font-large: 2rem;
+$font-giant: 3rem;
 
 /*
   Paddings and margins
