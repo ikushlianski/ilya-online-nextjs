@@ -7,16 +7,24 @@ export const Header = () => {
   return (
     <Navbar>
       <NavbarItem>
-        <Link href="/">Home</Link>
+        <Link href="/">
+          <a href="/">Home</a>
+        </Link>
       </NavbarItem>
       <NavbarItem>
-        <Link href="/works">Portfolio</Link>
+        <Link href="/works">
+          <a href="/works">Portfolio</a>
+        </Link>
       </NavbarItem>
       <NavbarItem>
-        <Link href="/skills">Skills</Link>
+        <Link href="/skills">
+          <a href="/skills">Skills</a>
+        </Link>
       </NavbarItem>
       <NavbarItem>
-        <Link href="/about">About me</Link>
+        <Link href="/about">
+          <a href="/about">About me</a>
+        </Link>
       </NavbarItem>
     </Navbar>
   );
