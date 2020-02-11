@@ -24,7 +24,7 @@ const FrontPage = () => {
       <Block>
         <Motivation />
       </Block>
-      <Block>
+      <Block className="Block--darker">
         <HireMe lookingForJob={lookingForJob} />
       </Block>
     </Layout>

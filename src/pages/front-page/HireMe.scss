@@ -1,0 +1,102 @@
+@import "../../styles/styles";
+
+.HireMe__CTA {
+  font-size: $font-larger;
+  text-align: center;
+}
+
+.HireMe__LiveIndicator {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, var(--accent), #A40000);
+  margin: $padding-margin-huge;
+}
+
+.HireMe__LiveIndicatorWaves {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, var(--accent), #A40000);
+  animation: waves;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+  animation-direction: normal;
+}
+
+@keyframes waves {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.HireMe__Status {
+  display: grid;
+  justify-items: center;
+}
+
+.HireMe__Unavailable {
+  display: flex;
+  justify-content: space-around;
+}
+
+.HireMe__SocialLink {
+  display: flex;
+  align-self: center;
+}
+
+.HireMe__LinkedIn {
+  width: 2.5rem;
+  background: var(--secondary);
+  padding: $padding-margin-small;
+  border-radius: 0.5rem;
+  margin: $padding-margin-normal;
+}
+
+.HireMe__LiveText {
+  font-size: $font-larger;
+  text-align: center;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.HireMe__Controls {
+  display: flex;
+  justify-content: center;
+  padding: $padding-margin-giant 0;
+}
+
+.HireMe__MainSkillsHeader {
+  text-align: center;
+}
+
+.HireMe__Box {
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.HireMe__MainSkills {
+  display: grid;
+  grid-gap: 2rem;
+}
+
+.HireMe__MainSkill {
+  width: 70%;
+  height: 70%;
+}

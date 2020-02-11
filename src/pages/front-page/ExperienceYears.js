@@ -19,7 +19,7 @@ export const ExperienceYears = () => {
           </span>{' '}
           <span className="Experience__YearsWord">years</span>
         </div>
-        <div className="Experience__Text">production experience</div>
+        <div className="Experience__Text">of production experience</div>
       </div>
       <div className="Experience__Block">
         <div className="Experience__Years">
@@ -29,7 +29,9 @@ export const ExperienceYears = () => {
           <span className="Experience__YearsWord">years</span>
         </div>
 
-        <div className="Experience__Text">exciting web development journey</div>
+        <div className="Experience__Text">
+          of exciting web development journey
+        </div>
       </div>
     </div>
   );
