@@ -9,6 +9,8 @@ export const Intro = () => (
     <div className="Intro__Image"></div>
     <p className="Intro__Primary">Ilya Kushlianski</p>
     <p className="Intro__Secondary">Full-stack Javascript developer</p>
-    <Button cta>See my CV</Button>
+    <div className="Intro__Controls">
+      <Button cta>See my CV</Button>
+    </div>
   </div>
 );

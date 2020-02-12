@@ -1,9 +1,5 @@
 @import "../../styles/styles";
 
-.HireMe__CTA {
-  font-size: $font-larger;
-  text-align: center;
-}
 
 .HireMe__LiveIndicator {
   position: relative;
@@ -75,7 +71,7 @@
 .HireMe__Controls {
   display: flex;
   justify-content: center;
-  padding: $padding-margin-giant 0;
+  padding: $padding-margin-big 0;
 }
 
 .HireMe__MainSkillsHeader {
@@ -83,16 +79,15 @@
 }
 
 .HireMe__Box {
-  background: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 300px;
 }
 
 .HireMe__MainSkills {
   display: grid;
   grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .HireMe__MainSkill {
@@ -104,6 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: $padding-margin-big 0;
 }
 
 .HireMe__SocialLinkImage {

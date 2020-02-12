@@ -24,5 +24,11 @@
     color: var(--secondaryLight);
     margin: $padding-margin-normal;
   }
+
+  &__Controls {
+    display: flex;
+    justify-content: center;
+    padding: $padding-margin-big 0;
+  }
 }
 

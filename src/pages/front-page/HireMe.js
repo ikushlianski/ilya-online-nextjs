@@ -52,10 +52,10 @@ export const HireMe = ({ lookingForJob }) => {
           />
         </div>
         <div className="HireMe__Box">
-          <img className="HireMe__MainSkill" src="/node.png" alt="Node.js" />
+          <img className="HireMe__MainSkill" src="/react.png" alt="React.js" />
         </div>
         <div className="HireMe__Box">
-          <img className="HireMe__MainSkill" src="/react.png" alt="React.js" />
+          <img className="HireMe__MainSkill" src="/node.png" alt="Node.js" />
         </div>
       </div>
       <div className="HireMe__Controls">
