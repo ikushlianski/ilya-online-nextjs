@@ -52,17 +52,17 @@
   justify-content: space-around;
 }
 
-.HireMe__SocialLink {
+.HireMe__LinkedIn {
   display: flex;
   align-self: center;
 }
 
-.HireMe__LinkedIn {
+.HireMe__LinkedInImage {
   width: 2.5rem;
   background: var(--secondary);
   padding: $padding-margin-small;
   border-radius: 0.5rem;
-  margin: $padding-margin-normal;
+  margin-left: $padding-margin-normal;
 }
 
 .HireMe__LiveText {
@@ -88,7 +88,6 @@
   justify-content: center;
   align-items: center;
   min-height: 300px;
-  min-width: 300px;
 }
 
 .HireMe__MainSkills {
@@ -99,4 +98,20 @@
 .HireMe__MainSkill {
   width: 70%;
   height: 70%;
+}
+
+.HireMe__SocialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.HireMe__SocialLinkImage {
+  width: $font-giant;
+}
+
+.HireMe__SocialLink {
+  display: flex;
+  align-self: center;
+  margin: 0 1rem;
 }

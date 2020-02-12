@@ -11,11 +11,41 @@ export const Motivation = () => {
     <div className="Motivation">
       <h2 className="Motivation__Header">Why I enjoy coding</h2>
       <ul className="Motivation__List">
-        <li className="Motivation__ListItem">reason 1</li>
-        <li className="Motivation__ListItem">reason 2</li>
-        <li className="Motivation__ListItem">reason 3</li>
+        <li className="Motivation__ListGroup">
+          <ul>
+            <li className="Motivation__ListItem">
+              I want to be behind awesome products that{' '}
+              <span className="Motivation__Accent">help people</span>
+            </li>
+            <li className="Motivation__ListItem">
+              Coding is my Lego with endless pieces. This is where I get{' '}
+              <span className="Motivation__Accent">
+                the freedom of creation
+              </span>
+              .
+            </li>
+          </ul>
+        </li>
+        <li className="Motivation__ListGroup">
+          <ul>
+            <li className="Motivation__ListItem">
+              I like{' '}
+              <span className="Motivation__Accent">
+                clearly organized systems
+              </span>{' '}
+              and maintainable code
+            </li>
+            <li className="Motivation__ListItem">
+              I am excited{' '}
+              <span className="Motivation__Accent">to assist businesses</span>{' '}
+              in solving challenges of modern day and staying competitive
+            </li>
+          </ul>
+        </li>
       </ul>
-      <Button>About me</Button>
+      <div className="Motivation__Controls">
+        <Button>About me</Button>
+      </div>
     </div>
   );
 };

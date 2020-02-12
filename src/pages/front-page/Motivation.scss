@@ -1,3 +1,40 @@
+@import "../../styles/styles";
+
 .Motivation__Header {
   text-align: center;
+}
+
+.Motivation__Controls {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+@mixin listgroup {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.Motivation__List {
+  @include listgroup;
+  display: grid;
+  grid-gap: $padding-margin-giant;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.Motivation__ListGroup {
+  & ul {
+    @include listgroup;
+    display: grid;
+    grid-row-gap: $padding-margin-giant;
+  }
+}
+
+.Motivation__ListItem {
+  font-size: 1.25rem;
+}
+
+.Motivation__Accent {
+  color: var(--secondaryLight);
 }

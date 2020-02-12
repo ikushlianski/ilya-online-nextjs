@@ -11,7 +11,7 @@
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: transparentize(black, 0.05);
+  background: linear-gradient(to bottom right, var(--primary-darker), rgba(0, 0, 0, 0.95));
 }
 
 .Navbar__OpenMenuButton, .Navbar__CloseMenuButton {

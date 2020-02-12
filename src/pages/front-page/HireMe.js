@@ -9,7 +9,7 @@ export const HireMe = ({ lookingForJob }) => {
     <div className="HireMe">
       {lookingForJob ? (
         <>
-          <h2 className="HireMe__CTA">If you are interested, let us talk!</h2>
+          {/*<h2 className="HireMe__CTA">If you are interested, let us talk!</h2>*/}
           <div className="HireMe__Status">
             <div className="HireMe__LiveIndicator">
               <div className="HireMe__LiveIndicatorWaves" />
@@ -29,11 +29,11 @@ export const HireMe = ({ lookingForJob }) => {
             <p>But let us stay in touch!</p>
           </div>
           <a
-            className="HireMe__SocialLink"
+            className="HireMe__LinkedIn"
             href="https://www.linkedin.com/in/ilya-kushlianski"
           >
             <img
-              className="HireMe__LinkedIn"
+              className="HireMe__LinkedInImage"
               src="/linkedin.svg"
               alt="Linkedin"
             />
@@ -61,12 +61,29 @@ export const HireMe = ({ lookingForJob }) => {
       <div className="HireMe__Controls">
         <Button inverted>Explore all my skills</Button>
       </div>
-      {!lookingForJob && (
-        <div className="HireMe__SocialLinks">
-          <div className="HireMe__SocialLink">LinkedIn</div>
-          <div className="HireMe__SocialLink">Github</div>
-        </div>
-      )}
+
+      <div className="HireMe__SocialLinks">
+        <a
+          className="HireMe__SocialLink"
+          href="https://github.com/ikushlianski"
+        >
+          <img
+            className="HireMe__SocialLinkImage"
+            src="/github.svg"
+            alt="github"
+          />
+        </a>
+        <a
+          className="HireMe__SocialLink"
+          href="https://www.linkedin.com/in/ilya-kushlianski"
+        >
+          <img
+            className="HireMe__SocialLinkImage"
+            src="/linkedin.svg"
+            alt="linkedin"
+          />
+        </a>
+      </div>
     </div>
   );
 };
