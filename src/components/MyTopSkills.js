@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Button } from '../../ui-kit/Button';
+import { Button } from '../ui-kit/Button';
 
-import './MySkills.scss';
+import './MyTopSkills.scss';
 
-export const MySkills = () => {
+export const MyTopSkills = () => {
   return (
     <div className="MySkills">
       {/* TODO: make them clickable with info about each skill */}

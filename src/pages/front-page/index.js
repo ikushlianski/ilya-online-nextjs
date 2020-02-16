@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Intro } from './Intro';
-import { ExperienceYears } from './ExperienceYears';
-import { Motivation } from './Motivation';
-import { HireMe } from './HireMe';
-import { MySkills } from './MySkills';
+import { Intro } from '../../components/Intro';
+import { ExperienceYears } from '../../components/ExperienceYears';
+import { Motivation } from '../../components/Motivation';
+import { HireMe } from '../../components/HireMe';
+import { MyTopSkills } from '../../components/MyTopSkills';
 
 import { Block } from '../../ui-kit';
 import { Layout } from '../../components/Layout';
@@ -27,7 +27,7 @@ const FrontPage = () => {
         <Motivation />
       </Block>
       <Block className="Block--darker">
-        <MySkills />
+        <MyTopSkills />
       </Block>
       <Block>
         <HireMe lookingForJob={lookingForJob} />

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../../ui-kit/Button';
+import { Button } from '../ui-kit/Button';
 
 import './HireMe.scss';
 
@@ -19,7 +19,7 @@ export const HireMe = ({ lookingForJob }) => {
             </div>
           </div>
           <div className="HireMe__Controls">
-            <Button href="/cv" inverted>
+            <Button href="/cv" cta>
               Get my CV
             </Button>
           </div>
