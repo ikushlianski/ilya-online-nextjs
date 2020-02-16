@@ -2,6 +2,9 @@
 
 .Navbar {
   user-select: none;
+  background: var(--primary-darker);
+  position: sticky;
+  top: 0;
 }
 
 .Navbar__ItemsContainer {
