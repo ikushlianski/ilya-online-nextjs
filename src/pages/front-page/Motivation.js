@@ -14,11 +14,13 @@ export const Motivation = () => {
         <li className="Motivation__ListGroup">
           <ul>
             <li className="Motivation__ListItem">
-              I want to be behind awesome products that{' '}
-              <span className="Motivation__Accent">help people</span>
+              I want to be behind{' '}
+              <span className="Motivation__Accent">
+                awesome and useful products
+              </span>
             </li>
             <li className="Motivation__ListItem">
-              Coding is my Lego with endless pieces. This is where I get{' '}
+              Coding is a Lego with endless pieces. This is where I get{' '}
               <span className="Motivation__Accent">
                 the freedom of creation
               </span>
@@ -36,9 +38,10 @@ export const Motivation = () => {
               and maintainable code
             </li>
             <li className="Motivation__ListItem">
-              I am excited{' '}
-              <span className="Motivation__Accent">to assist businesses</span>{' '}
-              in solving challenges of modern day and staying competitive
+              I am excited to help businesses{' '}
+              <span className="Motivation__Accent">
+                solve challenges of modern day and stay competitive
+              </span>
             </li>
           </ul>
         </li>

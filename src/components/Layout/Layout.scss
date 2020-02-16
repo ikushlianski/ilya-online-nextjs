@@ -1,0 +1,16 @@
+@import "../../styles/styles";
+
+.Layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--primary);
+  color: var(--textColor);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.Layout--MenuOpen {
+  overflow: hidden;
+  height: 100vh;
+}

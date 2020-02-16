@@ -1,10 +1,12 @@
 import React from 'react';
 import cx from 'classnames';
 
+import { MenuContext } from '../Layout';
+
 import './Navbar.scss';
 
 export const Navbar = ({ children }) => {
-  const [open, setOpen] = React.useState(false);
+  const { open, setOpen } = React.useContext(MenuContext);
 
   const navbarClasses = cx('Navbar', {
     'Navbar--open': open,
