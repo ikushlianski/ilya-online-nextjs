@@ -10,7 +10,9 @@ export const Intro = () => (
     <p className="Intro__Primary">Ilya Kushlianski</p>
     <p className="Intro__Secondary">Full-stack Javascript developer</p>
     <div className="Intro__Controls">
-      <Button cta>See my CV</Button>
+      <Button cta href="/cv">
+        See my CV
+      </Button>
     </div>
   </div>
 );

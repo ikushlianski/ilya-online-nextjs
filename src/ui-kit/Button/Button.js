@@ -1,6 +1,10 @@
 import React from 'react';
 import cx from 'classnames';
 
+// would be nice if UI kit knew nothing about framework
+// but this is a small project, so let it be :)
+import Link from 'next/link';
+
 import './Button.scss';
 
 export const Button = ({
@@ -10,6 +14,7 @@ export const Button = ({
   cta,
   disabled,
   children,
+  href,
 }) => {
   const classes = cx('Button', {
     'Button--inverted': inverted,
@@ -20,8 +25,10 @@ export const Button = ({
   });
 
   return (
-    <button disabled={disabled} className={classes}>
-      {children}
-    </button>
+    <Link href={href}>
+      <button disabled={disabled} className={classes}>
+        {children}
+      </button>
+    </Link>
   );
 };

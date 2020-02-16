@@ -47,7 +47,9 @@ export const Motivation = () => {
         </li>
       </ul>
       <div className="Motivation__Controls">
-        <Button inverted>More about me</Button>
+        <Button inverted href="/about">
+          More about me
+        </Button>
       </div>
     </div>
   );

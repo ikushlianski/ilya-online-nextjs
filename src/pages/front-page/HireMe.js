@@ -19,7 +19,9 @@ export const HireMe = ({ lookingForJob }) => {
             </div>
           </div>
           <div className="HireMe__Controls">
-            <Button inverted>Get my CV</Button>
+            <Button href="/cv" inverted>
+              Get my CV
+            </Button>
           </div>
         </>
       ) : (

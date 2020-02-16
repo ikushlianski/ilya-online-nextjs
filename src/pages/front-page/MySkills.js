@@ -32,7 +32,9 @@ export const MySkills = () => {
         </div>
       </div>
       <div className="MySkills__Controls">
-        <Button inverted>Explore all my skills</Button>
+        <Button href="/skills" inverted>
+          Explore all my skills
+        </Button>
       </div>
     </div>
   );
