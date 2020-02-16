@@ -44,8 +44,7 @@
 }
 
 .HireMe__Unavailable {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 }
 
 .HireMe__LinkedIn {
@@ -62,7 +61,7 @@
 }
 
 .HireMe__LiveText {
-  font-size: $font-larger;
+  font-size: 1.25rem;
   text-align: center;
   color: var(--accent);
   font-weight: bold;
@@ -72,27 +71,6 @@
   display: flex;
   justify-content: center;
   padding: $padding-margin-big 0;
-}
-
-.HireMe__MainSkillsHeader {
-  text-align: center;
-}
-
-.HireMe__Box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.HireMe__MainSkills {
-  display: grid;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-}
-
-.HireMe__MainSkill {
-  width: 70%;
-  height: 70%;
 }
 
 .HireMe__SocialLinks {

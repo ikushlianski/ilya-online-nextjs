@@ -1,0 +1,30 @@
+@import "../../styles/styles";
+
+.MySkills__SkillsList {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: $padding-margin-giant;
+}
+
+.MySkills__Header {
+  text-align: center;
+}
+
+.MySkills__Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MySkills__Skill {
+  width: 70%;
+  height: 70%;
+}
+
+.MySkills__Controls {
+  display: flex;
+  justify-content: center;
+  padding: $padding-margin-big 0;
+}
+

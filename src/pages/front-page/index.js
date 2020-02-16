@@ -8,6 +8,7 @@ import { HireMe } from './HireMe';
 import { Layout } from '../../components/Layout';
 
 import '../../styles/styles.scss';
+import { MySkills } from './MySkills';
 
 const FrontPage = () => {
   // TODO: fetch "looking for job" status
@@ -25,7 +26,10 @@ const FrontPage = () => {
         <Motivation />
       </Block>
       <Block className="Block--darker">
-        <HireMe lookingForJob={lookingForJob} />
+        <MySkills />
+      </Block>
+      <Block>
+        <HireMe lookingForJob={true} />
       </Block>
     </Layout>
   );

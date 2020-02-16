@@ -24,43 +24,10 @@ export const HireMe = ({ lookingForJob }) => {
         </>
       ) : (
         <div className="HireMe__Unavailable">
-          <div>
-            <p>I am not currently looking for new opportunities</p>
-            <p>But let us stay in touch!</p>
-          </div>
-          <a
-            className="HireMe__LinkedIn"
-            href="https://www.linkedin.com/in/ilya-kushlianski"
-          >
-            <img
-              className="HireMe__LinkedInImage"
-              src="/linkedin.svg"
-              alt="Linkedin"
-            />
-          </a>
+          <p>I am not currently looking for new opportunities</p>
+          <p>But let us stay in touch!</p>
         </div>
       )}
-
-      {/* TODO: make them clickable with info about each skill */}
-      <h2 className="HireMe__MainSkillsHeader">My main skills</h2>
-      <div className="HireMe__MainSkills">
-        <div className="HireMe__Box">
-          <img
-            className="HireMe__MainSkill"
-            src="/typescript.png"
-            alt="Typescript"
-          />
-        </div>
-        <div className="HireMe__Box">
-          <img className="HireMe__MainSkill" src="/react.png" alt="React.js" />
-        </div>
-        <div className="HireMe__Box">
-          <img className="HireMe__MainSkill" src="/node.png" alt="Node.js" />
-        </div>
-      </div>
-      <div className="HireMe__Controls">
-        <Button inverted>Explore all my skills</Button>
-      </div>
 
       <div className="HireMe__SocialLinks">
         <a

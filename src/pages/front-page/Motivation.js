@@ -29,7 +29,7 @@ export const Motivation = () => {
         <li className="Motivation__ListGroup">
           <ul>
             <li className="Motivation__ListItem">
-              I like{' '}
+              I prefer{' '}
               <span className="Motivation__Accent">
                 clearly organized systems
               </span>{' '}
@@ -44,7 +44,7 @@ export const Motivation = () => {
         </li>
       </ul>
       <div className="Motivation__Controls">
-        <Button>About me</Button>
+        <Button inverted>More about me</Button>
       </div>
     </div>
   );
