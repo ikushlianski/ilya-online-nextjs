@@ -7,6 +7,12 @@
   padding: $padding-margin-giant;
 }
 
+.MySkills__Loading, .MySkills__Error, .MySkills__NotFound {
+  text-align: center;
+  color: var(--secondaryLight);
+  font-size: $font-larger;
+}
+
 .MySkills__Header {
   text-align: center;
 }
