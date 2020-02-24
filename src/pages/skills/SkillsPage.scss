@@ -1,5 +1,21 @@
 @import "./src/styles/styles";
 
+.SkillsPage__SkillsBlocks {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.SkillsPage__ToggleSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $padding-margin-giant;
+}
+
+.SkillsPage__Mode {
+  margin: 0.5rem;
+}
+
 .SkillsPage__Animation {
   width: 1430px;
   height: 1430px;
