@@ -13,55 +13,13 @@ const SkillsPage = ({ skills }) => {
   const [techMode, setTechMode] = React.useState(false);
   // TODO: preserve chosen mode
 
-  let { frontend, backend, devTools, misc, future } = skills;
-  frontend = [
-    {
-      id: '123422',
-      name: 'Javascript',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur commodi cum cupiditate doloremque earum fugiat impedit itaque laudantium, molestias natus quis saepe. A aliquam, culpa error illum ipsum iste iusto labore laboriosam nulla odio optio placeat, possimus praesentium tempore voluptas. Amet, aut corporis excepturi harum illo optio tempore! Numquam?',
-      frequency: 'every day',
-      familiarity: 'I think I know it well',
-      wannaWorkWith: '\ud83d\udd25',
-      topSkill: true,
-      workedWith: ['aspect 1', 'aspect 2', 'aspect 3'],
-      didNotWorkWith: ['aspect 4', 'aspect 5', 'aspect 6'],
-    },
-    {
-      id: '12348',
-      name: 'CSS',
-      description:
-        'Consectetur adipisicing elit. Adipisci aspernatur commodi cum cupiditate doloremque earum fugiat impedit itaque laudantium, molestias natus quis saepe. Amet, aut corporis excepturi harum illo optio tempore! Numquam?',
-      frequency: 'from time to time',
-      familiarity: 'Know major stuff but do not work with it daily',
-    },
-    {
-      id: '12347',
-      name: 'Typescript',
-      description:
-        'Consectetur adipisicing elit. Adipisci aspernatur commodi cum cupiditate doloremque earum fugiat impedit itaque laudantium, molestias natus quis saepe. Amet, aut corporis excepturi harum illo optio tempore! Numquam?',
-      frequency: 'Quite often',
-      familiarity: 'Sufficient for production use',
-      wannaWorkWith: '\ud83d\udd25',
-      workedWith: [
-        'Set it up with React',
-        'Used it with Angular 2',
-        'Set it up from scratch with Webpack',
-      ],
-      didNotWorkWith: [
-        'Did not use much TS with OOP',
-        'Did not author libraries in TS',
-      ],
-    },
-    {
-      id: '12345',
-      name: 'SASS',
-      description:
-        'Consectetur adipisicing elit. Adipisci aspernatur commodi cum cupiditate doloremque earum fugiat impedit itaque laudantium, molestias natus quis saepe. Amet, aut corporis excepturi harum illo optio tempore! Numquam?',
-      frequency: 'sometimes',
-      familiarity: 'Intermediate',
-    },
-  ];
+  const {
+    frontend = [],
+    backend = [],
+    devTools = [],
+    misc = [],
+    future = [],
+  } = skills;
 
   return (
     <Layout
@@ -94,10 +52,10 @@ const SkillsPage = ({ skills }) => {
 SkillsPage.getInitialProps = async _ => {
   try {
     // I wouldn't hardcode this on a real project
-    const res = await fetch('https://ilya.online/api/skills');
+    const res = await fetch(`${process.env.API_URL}/skills`);
     const json = await res.json();
 
-    return { skills: json.skills };
+    return { skills: keyBy(json, 'group') };
   } catch (error) {
     console.error(error);
 
@@ -106,3 +64,19 @@ SkillsPage.getInitialProps = async _ => {
 };
 
 export default SkillsPage;
+
+const keyBy = (data, field) => {
+  return data.reduce((acc, curr) => {
+    const currentField = curr[field];
+
+    if (acc[currentField]) {
+      acc[currentField].push(curr);
+
+      return acc;
+    }
+
+    acc[currentField] = [curr];
+
+    return acc;
+  }, {});
+};

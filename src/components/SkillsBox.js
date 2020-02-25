@@ -10,17 +10,16 @@ export const SkillsBox = ({ title, items = [] }) => {
     <div className="SkillsBox">
       <h3 className="SkillsBox__Title">{title}</h3>
       <ul className="SkillsBox__List">
-        {items.map(skill => (
-          <li key={skill.id} className="SkillsBox__Item">
-            <div className="SkillsBox__ItemName">{skill.name}</div>
-            <span className="SkillsBox__Mark">{skill.wannaWorkWith}</span>
-            <div className="SkillsBox__ItemFamiliarity">
-              {skill.familiarity}
-            </div>
+        {items.map(({ _id, name, hot, frequency, description }) => (
+          <li key={_id} className="SkillsBox__Item">
+            <div className="SkillsBox__ItemName">{name}</div>
+
+            {hot && <span className="SkillsBox__Mark">{'\u{1F525}'}</span>}
+
+            <div className="SkillsBox__ItemFamiliarity">{frequency}</div>
+
             {techMode && (
-              <div className="SkillsBox__ItemDescription">
-                {skill.description}
-              </div>
+              <div className="SkillsBox__ItemDescription">{description}</div>
             )}
           </li>
         ))}
