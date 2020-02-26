@@ -12,7 +12,7 @@ import { Layout } from '../../components/Layout';
 import '../../styles/styles.scss';
 
 const FrontPage = () => {
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(false);
   const [lookingForJob, setLookingForJob] = React.useState(null);
 
@@ -42,9 +42,9 @@ const FrontPage = () => {
       <Block>
         <Motivation />
       </Block>
-      {/*<Block className="Block--darker">*/}
-      {/*  <MyTopSkills />*/}
-      {/*</Block>*/}
+      <Block className="Block--darker">
+        <MyTopSkills />
+      </Block>
       <Block>
         <HireMe lookingForJob={lookingForJob} loading={loading} error={error} />
       </Block>

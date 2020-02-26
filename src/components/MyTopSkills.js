@@ -5,7 +5,7 @@ import { Button } from '../ui-kit/Button';
 import './MyTopSkills.scss';
 
 export const MyTopSkills = () => {
-  const [loading, setLoading] = React.useState(false);
+  const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(null);
   const [topSkills, setTopSkills] = React.useState([]);
 
@@ -14,7 +14,7 @@ export const MyTopSkills = () => {
   React.useEffect(() => {
     setLoading(true);
 
-    fetch('/skills/top')
+    fetch(`${process.env.API_URL}/skills/top`)
       .then(res => res.json())
       .then(skills => {
         setTopSkills(skills);
@@ -56,7 +56,7 @@ export const MyTopSkills = () => {
               <div className="MySkills__Box" key={skill.id}>
                 <img
                   className="MySkills__Skill"
-                  src={`/${skill.name}.png`}
+                  src={`/${skill.image}`}
                   alt={skill.name}
                 />
               </div>
