@@ -12,8 +12,24 @@ import { Layout } from '../../components/Layout';
 import '../../styles/styles.scss';
 
 const FrontPage = () => {
-  // TODO: fetch "looking for job" status
-  const lookingForJob = true;
+  const [loading, setLoading] = React.useState(false);
+  const [error, setError] = React.useState(false);
+  const [lookingForJob, setLookingForJob] = React.useState(null);
+
+  React.useEffect(() => {
+    setLoading(true);
+
+    fetch(`${process.env.API_URL}/job/status`)
+      .then(res => res.json())
+      .then(({ open }) => {
+        setLookingForJob(open);
+      })
+      .catch(error => {
+        console.error(error);
+        setError(true);
+      })
+      .finally(() => setLoading(false));
+  }, []);
 
   return (
     <Layout className="HomePage">
@@ -26,11 +42,11 @@ const FrontPage = () => {
       <Block>
         <Motivation />
       </Block>
-      <Block className="Block--darker">
-        <MyTopSkills />
-      </Block>
+      {/*<Block className="Block--darker">*/}
+      {/*  <MyTopSkills />*/}
+      {/*</Block>*/}
       <Block>
-        <HireMe lookingForJob={lookingForJob} />
+        <HireMe lookingForJob={lookingForJob} loading={loading} error={error} />
       </Block>
     </Layout>
   );

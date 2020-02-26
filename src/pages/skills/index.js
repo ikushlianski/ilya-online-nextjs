@@ -51,7 +51,6 @@ const SkillsPage = ({ skills }) => {
 
 SkillsPage.getInitialProps = async _ => {
   try {
-    // I wouldn't hardcode this on a real project
     const res = await fetch(`${process.env.API_URL}/skills`);
     const json = await res.json();
 

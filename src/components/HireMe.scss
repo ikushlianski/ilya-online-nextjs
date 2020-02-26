@@ -38,6 +38,12 @@
   }
 }
 
+.HireMe__Controls {
+  display: flex;
+  justify-content: center;
+  padding: $padding-margin-big 0;
+}
+
 .HireMe__Status {
   display: grid;
   justify-items: center;
@@ -67,10 +73,8 @@
   font-weight: bold;
 }
 
-.HireMe__Controls {
-  display: flex;
-  justify-content: center;
-  padding: $padding-margin-big 0;
+.HireMe__Loading {
+  text-align: center;
 }
 
 .HireMe__SocialLinks {
@@ -89,3 +93,5 @@
   align-self: center;
   margin: 0 1rem;
 }
+
+

@@ -4,10 +4,14 @@ import { Button } from '../ui-kit/Button';
 
 import './HireMe.scss';
 
-export const HireMe = ({ lookingForJob }) => {
+export const HireMe = ({ loading, error, lookingForJob }) => {
+  if (loading) {
+    return <div className="HireMe__Loading">Loading...</div>;
+  }
+
   return (
     <div className="HireMe">
-      {lookingForJob ? (
+      {lookingForJob && !error ? (
         <>
           {/*<h2 className="HireMe__CTA">If you are interested, let us talk!</h2>*/}
           <div className="HireMe__Status">
