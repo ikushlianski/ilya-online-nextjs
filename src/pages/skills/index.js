@@ -11,7 +11,14 @@ export const SkillsDisplayModeContext = React.createContext();
 
 const SkillsPage = ({ skills }) => {
   const [techMode, setTechMode] = React.useState(false);
-  // TODO: preserve chosen mode
+
+  React.useEffect(() => {
+    const techMode = Boolean(localStorage.getItem('techMode'));
+
+    if (techMode) {
+      setTechMode(techMode);
+    }
+  }, []);
 
   const {
     frontend = [],
@@ -20,6 +27,14 @@ const SkillsPage = ({ skills }) => {
     misc = [],
     future = [],
   } = skills;
+
+  const handleToggleMode = techMode => {
+    setTechMode(techMode);
+
+    techMode
+      ? localStorage.setItem('techMode', true)
+      : localStorage.removeItem('techMode');
+  };
 
   return (
     <Layout
@@ -31,14 +46,17 @@ const SkillsPage = ({ skills }) => {
           <div className="SkillsPage__Animation" />
           <div className="SkillsPage__ToggleSection">
             <span className="SkillsPage__Mode">HR mode</span>
-            <Toggle onChange={() => setTechMode(!techMode)} value={techMode} />
+            <Toggle
+              onChange={() => handleToggleMode(!techMode)}
+              value={techMode}
+            />
             <span className="SkillsPage__Mode">Techie mode</span>
           </div>
           <Block>
             <div className="SkillsPage__SkillsBlocks">
               <SkillsBox title="Frontend" items={frontend} />
               <SkillsBox title="Backend" items={backend} />
-              <SkillsBox title="Dev Tools" items={future} />
+              <SkillsBox title="Dev Tools" items={devTools} />
               <SkillsBox title="Miscellaneous" items={misc} />
               <SkillsBox title="Learning plans" items={future} />
             </div>

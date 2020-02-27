@@ -13,7 +13,6 @@ export const HireMe = ({ loading, error, lookingForJob }) => {
     <div className="HireMe">
       {lookingForJob && !error ? (
         <>
-          {/*<h2 className="HireMe__CTA">If you are interested, let us talk!</h2>*/}
           <div className="HireMe__Status">
             <div className="HireMe__LiveIndicator">
               <div className="HireMe__LiveIndicatorWaves" />
