@@ -34,7 +34,7 @@ body, #__next {
 }
 
 .Page {
-  flex-grow: 1;
+  display: grid;
 }
 
 /*
@@ -61,3 +61,10 @@ $padding-margin-normal: 1rem;
 $padding-margin-big: 1.5rem;
 $padding-margin-huge: 2rem;
 $padding-margin-giant: 3rem;
+
+/*
+  Breakpoints
+ */
+$screen-tiny: 480px;
+$screen-medium: 768px;
+$screen-large: 1024px;

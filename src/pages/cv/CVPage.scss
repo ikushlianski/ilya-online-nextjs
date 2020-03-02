@@ -1,0 +1,20 @@
+@import "../../styles/styles";
+
+.CVPage {
+  display: grid;
+}
+
+.CVPage__Shrug {
+  margin-top: $padding-margin-big;
+}
+
+.CVPage__SmallScreensWarning {
+  grid-row: 1/-1;
+  margin: auto;
+  font-size: $font-large;
+  text-align: center;
+  color: var(--secondaryLight);
+  @media (min-width: $screen-medium) {
+    display: none;
+  }
+}

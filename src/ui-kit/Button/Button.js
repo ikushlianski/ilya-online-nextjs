@@ -26,9 +26,11 @@ export const Button = ({
 
   return (
     <Link href={href}>
-      <button disabled={disabled} className={classes}>
-        {children}
-      </button>
+      <a href={href}>
+        <button disabled={disabled} className={classes}>
+          {children}
+        </button>
+      </a>
     </Link>
   );
 };

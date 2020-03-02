@@ -26,6 +26,11 @@ export const Header = () => {
           <a href="/about">About me</a>
         </Link>
       </NavbarItem>
+      <NavbarItem>
+        <Link href="/cv">
+          <a href="/cv">CV</a>
+        </Link>
+      </NavbarItem>
     </Navbar>
   );
 };
