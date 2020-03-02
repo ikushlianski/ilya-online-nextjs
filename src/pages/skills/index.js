@@ -72,7 +72,16 @@ SkillsPage.getInitialProps = async _ => {
     const res = await fetch(`${process.env.API_URL}/skills`);
     const json = await res.json();
 
-    return { skills: keyBy(json, 'group') };
+    const skills = Object.entries(keyBy(json, 'group')).reduce(
+      (acc, [groupName, skillGroup]) => {
+        acc[groupName] = skillGroup.sort((a, b) => a.order - b.order);
+
+        return acc;
+      },
+      {},
+    );
+
+    return { skills };
   } catch (error) {
     console.error(error);
 

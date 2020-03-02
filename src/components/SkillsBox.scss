@@ -12,13 +12,20 @@
 
 .SkillsBox__List {
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: $padding-margin-huge;
   padding: 0;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .SkillsBox__Item {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.1);
   list-style-type: none;
+}
+
+.SkillsBox__ItemDescription {
+  margin-top: $padding-margin-small;
+  color: whitesmoke;
 }
 
 .SkillsBox__ItemName {
@@ -31,7 +38,10 @@
   margin-left: calc(#{$padding-margin-tiny} * 2)
 }
 
-.SkillsBox__ItemFamiliarity {
-  color: #b3b3b3;
-  margin-top: calc(#{$padding-margin-tiny} * 2);
+.SkillsBox__ItemUsage {
+  margin-top: $padding-margin-small;
+}
+
+.SkillsBox__Learned, .SkillsBox__YetToLearn {
+  margin-top: $padding-margin-small;
 }
