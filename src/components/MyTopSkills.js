@@ -53,7 +53,7 @@ export const MyTopSkills = () => {
           <h2 className="MySkills__Header">Major skills</h2>
           <div className="MySkills__SkillsList">
             {topSkills.map(skill => (
-              <div className="MySkills__Box" key={skill.id}>
+              <div className="MySkills__Box" key={skill._id}>
                 <img
                   className="MySkills__Skill"
                   src={`/${skill.image}`}
