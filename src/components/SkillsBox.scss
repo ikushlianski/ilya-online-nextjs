@@ -19,13 +19,13 @@
 
 .SkillsBox__Item {
   padding: 1rem;
-  background: rgba(0, 0, 0, 0.1);
   list-style-type: none;
 }
 
 .SkillsBox__ItemDescription {
-  margin-top: $padding-margin-small;
-  color: whitesmoke;
+  margin-top: $padding-margin-normal;
+  color: var(--accent2);
+  font-weight: normal;
 }
 
 .SkillsBox__ItemName {
@@ -38,12 +38,20 @@
   margin-left: calc(#{$padding-margin-tiny} * 2)
 }
 
+.SkillsBox__Gear {
+  margin-right: $padding-margin-tiny
+}
+
 .SkillsBox__ItemUsage {
-  margin-top: $padding-margin-small;
+  margin-top: $padding-margin-normal;
+}
+
+.SkillsBox__ProsCons {
+  margin-top: $padding-margin-normal;
 }
 
 .SkillsBox__Learned, .SkillsBox__YetToLearn {
-  margin-top: $padding-margin-small;
+  margin-top: $padding-margin-normal;
 }
 
 .SkillsBox__YetToLearn {

@@ -9,7 +9,7 @@ export const SkillsBox = ({ title, items = [] }) => {
 
   return (
     <div className="SkillsBox">
-      <h3 className="SkillsBox__Title">{title}</h3>
+      <h2 className="SkillsBox__Title">{title}</h2>
       <ul className="SkillsBox__List">
         {items.map(
           ({
@@ -30,10 +30,11 @@ export const SkillsBox = ({ title, items = [] }) => {
                 </span>
               )}
 
-              <div className="SkillsBox__ItemDescription">{description}</div>
+              <h3 className="SkillsBox__ItemDescription">{description}</h3>
 
               {techMode && frequency && (
                 <div className="SkillsBox__ItemUsage">
+                  <span className="SkillsBox__Gear">{'\u{2699}'}</span>
                   <b>Use:</b> {frequency}
                 </div>
               )}
