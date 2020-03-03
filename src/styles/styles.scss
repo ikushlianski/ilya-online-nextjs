@@ -68,3 +68,9 @@ $padding-margin-giant: 3rem;
 $screen-tiny: 480px;
 $screen-medium: 768px;
 $screen-large: 1024px;
+
+@mixin noPrint {
+  @media print {
+    display: none;
+  }
+}

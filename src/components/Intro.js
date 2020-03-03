@@ -6,7 +6,7 @@ import './Intro.scss';
 
 export const Intro = () => (
   <div className="Intro">
-    <div className="Intro__Image"></div>
+    <img src="/ilya.jpeg" alt="Ilya Kushlianski" className="Intro__Image" />
     <p className="Intro__Primary">Ilya Kushlianski</p>
     <p className="Intro__Secondary">Full-stack Javascript developer</p>
     <div className="Intro__Controls">
