@@ -22,12 +22,9 @@
 }
 
 .CVPage__Sheet {
-  @media (max-width: $screen-medium) {
-    display: none;
-  }
-
   @media all {
     display: grid;
+    grid-gap: $padding-margin-normal;
     background: white;
     width: 21cm;
     //height: 29.7cm;
@@ -37,10 +34,19 @@
     box-shadow: 0 0 1rem 2rem #00000026;
   }
 
+  @media (max-width: $screen-medium) {
+    display: none;
+  }
+
   @media print {
+    display: grid;
     margin: 0;
-    padding: 0;
+    padding: 2rem 0 2rem 2rem;
     box-shadow: none;
+    a {
+      text-decoration: none;
+      color: initial;
+    }
   }
 }
 
@@ -48,6 +54,7 @@
   &__MainInfo {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    grid-gap: $padding-margin-small;
   }
 
   &__Photo {
@@ -65,12 +72,27 @@
   &__Contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: $padding-margin-tiny;
+    grid-row-gap: 0.25rem;
   }
 
   &__TechStackInfo {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-column-gap: $padding-margin-normal;
+  }
+
+  &__Gutter {
+    color: gray;
+    border-right: 1px dashed gray;
+  }
+
+  &__Body {
+    display: grid;
+    grid-template-columns: 0 1fr;
+
+    &--withGutter {
+      grid-template-columns: 1fr 3fr;
+      grid-gap: $padding-margin-small;
+    }
   }
 }

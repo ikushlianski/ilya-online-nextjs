@@ -66,8 +66,8 @@ $padding-margin-giant: 3rem;
   Breakpoints
  */
 $screen-tiny: 480px;
-$screen-medium: 768px;
-$screen-large: 1024px;
+$screen-medium: 991px;
+$screen-large: 1200px;
 
 @mixin noPrint {
   @media print {
