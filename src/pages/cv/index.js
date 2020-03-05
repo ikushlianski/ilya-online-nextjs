@@ -1,11 +1,15 @@
 import React from 'react';
+import dayjs from 'dayjs';
 
 import { Block } from '../../ui-kit/Block';
 import { Layout } from '../../components/Layout';
 
 import './CVPage.scss';
+import fetch from 'isomorphic-unfetch';
 
-const CVPage = () => {
+import SkillsPage from '../skills';
+
+const CVPage = ({ jobs }) => {
   const hasGutter = true;
 
   return (
@@ -29,7 +33,7 @@ const CVPage = () => {
             </div>
             <div className="CVPage__MainInfoRight">
               <h1 className="CVPage__Name">Ilya Kushlianski</h1>
-              <h3 className="CVPage__Title">Full-stack Javascript Developer</h3>
+              <h2 className="CVPage__Title">Full-stack Javascript Developer</h2>
               <div className="CVPage__Contacts">
                 <div className="CVPage__Email">
                   <b>Email:</b>{' '}
@@ -65,23 +69,28 @@ const CVPage = () => {
               <h3>Notes</h3>
             </div>
             <div className="CVPage__BodyContent">
-              <div className="CVPage__TechStackInfo">
-                <div className="CVPage__SkillsList">
+              <div className="TechStackInfo">
+                <div className="TechStackInfo__SkillsList">
                   <h3>Skills</h3>
                   <p>
                     <b>Frontend:</b> Javascript, Typescript, React, CSS
-                    (Flexbox, Grid), HTML, Next.js;
+                    (Flexbox, Grid), HTML, Next.js; unit testing basics;
                   </p>
                   <p>
-                    <b>Backend:</b> Node.js, Express, Nest.js, MySQL/Sequelize,
-                    MongoDB/Mongoose;
+                    <b>Backend:</b> Node.js, Express, basic Nest.js,
+                    MySQL/Sequelize, MongoDB/Mongoose;
                   </p>
                   <p>
                     <b>Tools:</b> Git, Webpack, ESLint, basic CI/CD with Linux,
                     Bash scripting, Docker, Jenkins and Nginx, some AWS services
                   </p>
+                  <p>
+                    <b>Plans:</b> Advanced Node.js, React SSR, PWA, React
+                    Native, GraphQL, React Testing Library, web security and
+                    performance and more
+                  </p>
                 </div>
-                <div className="CVPage__Languages">
+                <div className="TechStackInfo__Languages">
                   <h3>Languages</h3>
                   <p>
                     <b>English:</b> advanced
@@ -89,13 +98,44 @@ const CVPage = () => {
                   <p>
                     <b>Swedish:</b> intermediate
                   </p>
+                  <p>
+                    <b>Russian/Belarusian:</b> native
+                  </p>
                 </div>
               </div>
 
-              <div className="CVPage__Experience">
-                <p>some experience 1</p>
-                <p>some experience 2</p>
-                <p>some experience 3</p>
+              <div className="Experience">
+                <h3>Experience ({getTotalExperience(jobs)})</h3>
+                <div className="Experience__Jobs">
+                  {jobs.map(job => {
+                    const startDate = dayjs(job.start).format('MMMM YYYY');
+                    const endDate = job.end
+                      ? dayjs(job.end).format('MMMM YYYY')
+                      : 'present';
+
+                    return (
+                      <>
+                        <div key={job.name} className="Experience__Years">
+                          {`${startDate} - ${endDate}`}
+                        </div>
+                        <div className="Experience__Details">
+                          <div className="Experience__Company">
+                            <b>{job.name}</b>
+                          </div>
+                          <div className="Experience__Title">{job.title}</div>
+                          <p className="Experience__Description">
+                            {job.description}
+                          </p>
+                          {job.techStack && (
+                            <p className="Experience__Stack">
+                              Tech stack: {job.techStack.join(', ')}
+                            </p>
+                          )}
+                        </div>
+                      </>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
@@ -105,4 +145,34 @@ const CVPage = () => {
   );
 };
 
+CVPage.getInitialProps = async _ => {
+  try {
+    const res = await fetch(`${process.env.API_URL}/cv`);
+    const [data] = await res.json();
+
+    return { jobs: data.jobs };
+  } catch (error) {
+    console.error(error);
+
+    return [];
+  }
+};
+
 export default CVPage;
+
+const MONTH = 2.628e9;
+
+const getTotalExperience = (jobs = []) => {
+  const totalMonths = jobs.reduce((acc, cur) => {
+    const end = Date.parse(cur.end) || Date.now();
+    const start = Date.parse(cur.start);
+    acc += Math.ceil((end - start) / MONTH);
+
+    return acc;
+  }, 0);
+
+  const wholeYears = Math.floor(totalMonths / 12);
+  const months = totalMonths % 12;
+
+  return `${wholeYears} years ${months} months`;
+};

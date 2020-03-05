@@ -25,9 +25,10 @@
   @media all {
     display: grid;
     grid-gap: $padding-margin-normal;
+    align-content: start;
     background: white;
     width: 21cm;
-    //height: 29.7cm;
+    min-height: 29.7cm;
     margin: $padding-margin-giant auto;
     color: black;
     padding: $padding-margin-giant;
@@ -51,6 +52,10 @@
 }
 
 .CVPage {
+  &__Name {
+    font-size: $font-giant;
+  }
+
   &__MainInfo {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -72,18 +77,14 @@
   &__Contacts {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 0.25rem;
-  }
-
-  &__TechStackInfo {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-column-gap: $padding-margin-normal;
+    grid-row-gap: $padding-margin-small;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: $padding-margin-normal 0;
   }
 
   &__Gutter {
     color: gray;
-    border-right: 1px dashed gray;
   }
 
   &__Body {
@@ -95,4 +96,28 @@
       grid-gap: $padding-margin-small;
     }
   }
+}
+
+.TechStackInfo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: $padding-margin-normal;
+}
+
+
+.Experience {
+
+}
+
+.Experience__Jobs {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.Experience__Years {
+  grid-column: 1/2;
+}
+
+.Experience__Details {
+  grid-column: 2/3;
 }
