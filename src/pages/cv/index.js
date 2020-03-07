@@ -1,16 +1,21 @@
 import React from 'react';
 import dayjs from 'dayjs';
+import fetch from 'isomorphic-unfetch';
 
 import { Block } from '../../ui-kit/Block';
 import { Layout } from '../../components/Layout';
 
-import './CVPage.scss';
-import fetch from 'isomorphic-unfetch';
+import { CVOptions } from './CVOptions';
 
-import SkillsPage from '../skills';
+import './CVPage.scss';
 
 const CVPage = ({ jobs }) => {
-  const hasGutter = true;
+  // TODO: extract into smaller components
+  // TODO: add less important points
+  const [value, setValue] = React.useState({
+    extended: false,
+    notes: false,
+  });
 
   return (
     <Layout
@@ -18,6 +23,7 @@ const CVPage = ({ jobs }) => {
       description="Printable CV of Ilya Kushlianski, full-stack Javascript developer."
     >
       <div className="CVPage">
+        <CVOptions value={value} setValue={setValue} />
         <Block className="CVPage__SmallScreensWarning">
           Please open this CV on a larger device
           <div className="CVPage__Shrug">¯\_(ツ)_/¯</div>
@@ -32,6 +38,7 @@ const CVPage = ({ jobs }) => {
               />
             </div>
             <div className="CVPage__MainInfoRight">
+              {value.extended && <div>Im extended!</div>}
               <h1 className="CVPage__Name">Ilya Kushlianski</h1>
               <h2 className="CVPage__Title">Full-stack Javascript Developer</h2>
               <div className="CVPage__Contacts">
@@ -59,12 +66,12 @@ const CVPage = ({ jobs }) => {
           </div>
           <div
             className={`CVPage__Body ${
-              hasGutter ? 'CVPage__Body--withGutter' : ''
+              value.notes ? 'CVPage__Body--withGutter' : ''
             }`}
           >
             <div
               className="CVPage__Gutter"
-              style={{ visibility: hasGutter ? 'visible' : 'hidden' }}
+              style={{ visibility: value.notes ? 'visible' : 'hidden' }}
             >
               <h3>Notes</h3>
             </div>
@@ -114,9 +121,12 @@ const CVPage = ({ jobs }) => {
                       : 'present';
 
                     return (
-                      <>
-                        <div key={job.name} className="Experience__Years">
+                      <React.Fragment key={job.name}>
+                        <div className="Experience__Years">
                           {`${startDate} - ${endDate}`}
+                          <p className="Experience__MonthsTotal">
+                            {getTotalExperience([job])}
+                          </p>
                         </div>
                         <div className="Experience__Details">
                           <div className="Experience__Company">
@@ -132,7 +142,7 @@ const CVPage = ({ jobs }) => {
                             </p>
                           )}
                         </div>
-                      </>
+                      </React.Fragment>
                     );
                   })}
                 </div>

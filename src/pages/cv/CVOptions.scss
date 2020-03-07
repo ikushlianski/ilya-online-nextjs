@@ -1,0 +1,53 @@
+@import "../../styles/styles";
+
+.CVOptions {
+  top: 64px;
+  padding: $padding-margin-normal;
+  background: var(--primary-lighter);
+}
+
+.CVOptions__Container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  grid-column-gap: 4rem;
+}
+
+.CVOptions__Option {
+  display: grid;
+  grid-template-rows: 2fr 2fr;
+}
+
+.CVOptions__Header {
+  text-align: center;
+}
+
+.CVOptions__FormatOptions {
+  display: grid;
+  grid-auto-flow: column;
+  align-content: center;
+  grid-gap: 1rem;
+}
+
+.CVOptions__FormatOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > input {
+    margin-left: 0.25rem;
+  }
+}
+
+.CVOptions__FormatLabel {
+  &:first-of-type {
+    margin-right: $padding-margin-small;
+  }
+
+  &:last-of-type {
+    margin-left: $padding-margin-small;
+  }
+
+}
+
+

@@ -49,6 +49,7 @@ const SkillsPage = ({ skills }) => {
             <Toggle
               onChange={() => handleToggleMode(!techMode)}
               value={techMode}
+              checked={techMode}
             />
             <span className="SkillsPage__Mode">Techie mode</span>
           </div>
