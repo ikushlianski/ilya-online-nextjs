@@ -15,6 +15,7 @@ export const Button = ({
   disabled,
   children,
   href,
+  onClick,
 }) => {
   const classes = cx('Button', {
     'Button--inverted': inverted,
@@ -24,7 +25,11 @@ export const Button = ({
     'Button--disabled': disabled,
   });
 
-  return (
+  return onClick ? (
+    <button onClick={onClick} disabled={disabled} className={classes}>
+      {children}
+    </button>
+  ) : (
     <Link href={href}>
       <a href={href}>
         <button disabled={disabled} className={classes}>
