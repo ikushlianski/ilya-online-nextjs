@@ -10,12 +10,14 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
+  align-items: center;
   grid-column-gap: 4rem;
 }
 
 .CVOptions__Option {
   display: grid;
   grid-template-rows: 2fr 2fr;
+  align-items: center;
 }
 
 .CVOptions__Header {

@@ -113,30 +113,38 @@
 
 
 .Experience {
+  &__MonthsTotal {
+    font-style: italic;
+    margin: 0.25rem 0;
+  }
 
+  &__Title {
+    font-size: 12px;
+    margin: 0.5rem 0;
+  }
 }
 
-.Experience__Title {
-  font-size: 12px;
-  margin: 0.5rem 0;
+.Education {
+  &__Specialty {
+    font-size: 12px;
+    margin: 0.5rem 0;
+  }
 }
 
-.Experience__Jobs {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr 3fr;
-}
 
-.Experience__Years {
-  grid-column: 1/2;
-  color: grey;
-}
+.Experience, .Education {
+  &__Places {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+  }
 
-.Experience__Details {
-  grid-column: 2/3;
-}
+  &__Years {
+    grid-column: 1/2;
+    color: grey;
+  }
 
-.Experience__MonthsTotal {
-  font-style: italic;
-  margin: 0.25rem 0;
+  &__Details {
+    grid-column: 2/3;
+  }
 }

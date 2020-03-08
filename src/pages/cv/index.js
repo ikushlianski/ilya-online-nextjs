@@ -9,7 +9,7 @@ import { CVOptions } from './CVOptions';
 
 import './CVPage.scss';
 
-const CVPage = ({ jobs }) => {
+const CVPage = ({ jobs, education }) => {
   // TODO: extract into smaller components
   // TODO: add less important points
   const [value, setValue] = React.useState({
@@ -38,7 +38,6 @@ const CVPage = ({ jobs }) => {
               />
             </div>
             <div className="CVPage__MainInfoRight">
-              {value.extended && <div>Im extended!</div>}
               <h1 className="CVPage__Name">Ilya Kushlianski</h1>
               <h2 className="CVPage__Title">Full-stack Javascript Developer</h2>
               <div className="CVPage__Contacts">
@@ -61,6 +60,14 @@ const CVPage = ({ jobs }) => {
                   <b>Website:</b>{' '}
                   <a href="https://ilya.online">https://ilya.online</a>
                 </div>
+                {value.extended && (
+                  <div className="CVPage__Linkedin">
+                    <b>LinkedIn:</b>{' '}
+                    <a href="https://www.linkedin.com/in/ilya-kushlianski/">
+                      https://www.linkedin.com/in/ilya-kushlianski
+                    </a>
+                  </div>
+                )}
               </div>
             </div>
           </div>
@@ -92,10 +99,16 @@ const CVPage = ({ jobs }) => {
                     Bash scripting, Docker, Jenkins and Nginx, some AWS services
                   </p>
                   <p>
-                    <b>Plans:</b> Advanced Node.js, React SSR, PWA, React
-                    Native, GraphQL, React Testing Library, web security and
-                    performance and more
+                    <b>Soft skills:</b> Team work, fluent English, leadership,
+                    mentoring
                   </p>
+                  {value.extended && (
+                    <p>
+                      <b>Plans:</b> Advanced Node.js, React SSR, PWA, React
+                      Native, GraphQL, React Testing Library, web security and
+                      performance and more
+                    </p>
+                  )}
                 </div>
                 <div className="TechStackInfo__Languages">
                   <h3>Languages</h3>
@@ -113,7 +126,7 @@ const CVPage = ({ jobs }) => {
 
               <div className="Experience">
                 <h3>Experience ({getTotalExperience(jobs)})</h3>
-                <div className="Experience__Jobs">
+                <div className="Experience__Places">
                   {jobs.map(job => {
                     const startDate = dayjs(job.start).format('MMMM YYYY');
                     const endDate = job.end
@@ -147,6 +160,39 @@ const CVPage = ({ jobs }) => {
                   })}
                 </div>
               </div>
+
+              <div className="Education">
+                <h3>Education</h3>
+                <div className="Education__Places">
+                  {education.map(edu => {
+                    const startDate = dayjs(edu.start).format('MMMM YYYY');
+                    const endDate = edu.end
+                      ? dayjs(edu.end).format('MMMM YYYY')
+                      : 'present';
+
+                    return (
+                      <React.Fragment
+                        key={`${edu.establishment} ${edu.specialty}`}
+                      >
+                        <div className="Education__Years">
+                          {`${startDate} - ${endDate}`}
+                        </div>
+                        <div className="Education__Details">
+                          <div className="Education__Establishment">
+                            <b>{edu.establishment}</b>
+                          </div>
+                          <div className="Education__Specialty">
+                            {edu.specialty}
+                          </div>
+                          <p className="Education__Description">
+                            {edu.description}
+                          </p>
+                        </div>
+                      </React.Fragment>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -160,7 +206,7 @@ CVPage.getInitialProps = async _ => {
     const res = await fetch(`${process.env.API_URL}/cv`);
     const [data] = await res.json();
 
-    return { jobs: data.jobs };
+    return { jobs: data.jobs, education: data.education };
   } catch (error) {
     console.error(error);
 

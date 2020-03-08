@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Toggle } from '../../ui-kit';
+import { Button, Toggle } from '../../ui-kit';
 
 import './CVOptions.scss';
 
@@ -9,7 +9,7 @@ export const CVOptions = ({ value, setValue }) => {
   React.useEffect(() => {
     const styles = getComputedStyle(document.documentElement);
     accent2Color = styles.getPropertyValue('--accent2');
-  });
+  }, []);
 
   return (
     <div className="CVOptions">
@@ -46,6 +46,7 @@ export const CVOptions = ({ value, setValue }) => {
             </label>
           </div>
         </div>
+        <Button onClick={print ? print : () => 0}>Preview & print</Button>
       </div>
     </div>
   );
