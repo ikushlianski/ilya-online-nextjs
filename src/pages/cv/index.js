@@ -61,6 +61,12 @@ const CVPage = ({ jobs, education }) => {
                   <a href="https://ilya.online">https://ilya.online</a>
                 </div>
                 {value.extended && (
+                  <div className="CVPage__Github">
+                    <b>Github:</b>{' '}
+                    <a href="https://github.com/ikushlianski">ikushlianski</a>
+                  </div>
+                )}
+                {value.extended && (
                   <div className="CVPage__Linkedin">
                     <b>LinkedIn:</b>{' '}
                     <a href="https://www.linkedin.com/in/ilya-kushlianski/">
@@ -138,7 +144,9 @@ const CVPage = ({ jobs, education }) => {
 
               <div
                 className={`ExperienceEducationWrapper ${
-                  value.notes ? 'ExperienceEducationWrapper--oneColumn' : ''
+                  value.notes || value.extended
+                    ? 'ExperienceEducationWrapper--oneColumn'
+                    : ''
                 }`}
               >
                 <div className="Experience">
