@@ -5,11 +5,16 @@ import { Button, Toggle } from '../../ui-kit';
 import './CVOptions.scss';
 
 export const CVOptions = ({ value, setValue }) => {
-  let accent2Color;
+  const accent2Color = React.useRef();
+
   React.useEffect(() => {
     const styles = getComputedStyle(document.documentElement);
-    accent2Color = styles.getPropertyValue('--accent2');
+    accent2Color.current = styles.getPropertyValue('--accent2');
   }, []);
+
+  const handleClick = () => {
+    window.print();
+  };
 
   return (
     <div className="CVOptions">
@@ -22,7 +27,7 @@ export const CVOptions = ({ value, setValue }) => {
               value={value.notes}
               checked={value.notes}
               onChange={() => setValue({ ...value, notes: !value.notes })}
-              checkedColor={accent2Color}
+              checkedColor={accent2Color.current}
               uncheckedColor="gray"
             />
           </label>
@@ -46,7 +51,7 @@ export const CVOptions = ({ value, setValue }) => {
             </label>
           </div>
         </div>
-        <Button onClick={print ? print : () => 0}>Preview & print</Button>
+        <Button onClick={handleClick}>Preview & print</Button>
       </div>
     </div>
   );

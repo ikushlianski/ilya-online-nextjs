@@ -25,7 +25,7 @@ export const Button = ({
     'Button--disabled': disabled,
   });
 
-  return onClick ? (
+  return onClick || !href ? (
     <button onClick={onClick} disabled={disabled} className={classes}>
       {children}
     </button>
