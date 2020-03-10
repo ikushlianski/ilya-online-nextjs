@@ -24,7 +24,6 @@
 .CVPage__Sheet {
   @media all {
     display: grid;
-    grid-gap: $padding-margin-normal;
     align-content: start;
     background: white;
     width: 21cm;
@@ -109,8 +108,20 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-column-gap: $padding-margin-normal;
+
+  &--oneColumn {
+    display: block;
+  }
 }
 
+.ExperienceEducationWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &--oneColumn {
+    display: block;
+  }
+}
 
 .Experience {
   &__MonthsTotal {
@@ -135,7 +146,7 @@
 .Experience, .Education {
   &__Places {
     display: grid;
-    grid-gap: 1rem;
+    grid-gap: $padding-margin-small;
     grid-template-columns: 1fr 3fr;
   }
 
