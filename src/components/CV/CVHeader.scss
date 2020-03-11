@@ -1,0 +1,32 @@
+@import "../../styles/styles";
+
+.MainInfo {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: $padding-margin-small;
+
+  &__Photo {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+    margin-top: $padding-margin-big;
+  }
+
+  &__Name {
+    font-size: $font-giant;
+  }
+
+  &__Left {
+    justify-content: center;
+    display: grid;
+  }
+
+  &__Contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: $padding-margin-small;
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    padding: $padding-margin-normal 0;
+  }
+}

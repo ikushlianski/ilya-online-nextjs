@@ -1,0 +1,57 @@
+@import "../../styles/styles";
+
+.TechStackInfo {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-column-gap: $padding-margin-normal;
+
+  &--oneColumn {
+    display: block;
+  }
+}
+
+.ExperienceEducationWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &--oneColumn {
+    display: block;
+  }
+}
+
+.CVExperience {
+  &__MonthsTotal {
+    font-style: italic;
+    margin: 0.25rem 0;
+  }
+
+  &__Title {
+    font-size: 12px;
+    margin: 0.5rem 0;
+  }
+}
+
+.CVEducation {
+  &__Specialty {
+    font-size: 12px;
+    margin: 0.5rem 0;
+  }
+}
+
+
+.CVExperience, .CVEducation {
+  &__Places {
+    display: grid;
+    grid-gap: $padding-margin-small;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  &__Years {
+    grid-column: 1/2;
+    color: grey;
+  }
+
+  &__Details {
+    grid-column: 2/3;
+  }
+}

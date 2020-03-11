@@ -1,10 +1,12 @@
 import React from 'react';
 
 import { Button, Toggle } from '../../ui-kit';
+import { CVContext } from '../../pages/cv';
 
 import './CVOptions.scss';
 
-export const CVOptions = ({ value, setValue }) => {
+export const CVOptions = ({ setValue }) => {
+  const value = React.useContext(CVContext);
   const accent2Color = React.useRef();
 
   React.useEffect(() => {
