@@ -8,7 +8,7 @@ export const getTotalExperience = (jobs = []) => {
   const totalMonths = jobs.reduce((acc, cur) => {
     const end = Date.parse(cur.end) || Date.now();
     const start = Date.parse(cur.start);
-    acc += Math.round((end - start) / MONTH);
+    acc += Math.ceil((end - start) / MONTH);
 
     return acc;
   }, 0);
@@ -16,7 +16,13 @@ export const getTotalExperience = (jobs = []) => {
   const wholeYears = Math.floor(totalMonths / 12);
   const months = totalMonths % 12;
 
-  return `${wholeYears ? wholeYears + ' years' : ''}${
-    wholeYears && months ? ' ' : ''
-  }${months ? months + ' month' + (months === 1 ? '' : 's') : ''}`;
+  return `${
+    wholeYears ? wholeYears + ' year' + getTimeWordEnding(wholeYears) : ''
+  }${wholeYears && months ? ' ' : ''}${
+    months ? months + ' month' + getTimeWordEnding(months) : ''
+  }`;
+};
+
+const getTimeWordEnding = unit => {
+  return unit === 1 ? '' : 's';
 };

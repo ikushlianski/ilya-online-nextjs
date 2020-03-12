@@ -11,7 +11,11 @@ test("prints month if there's 1 month", () => {
     getTotalExperience([
       {
         start: minskTime(dayjs().startOf('month')),
-        end: minskTime(dayjs().endOf('month')),
+        end: minskTime(
+          dayjs()
+            .endOf('month')
+            .subtract(1, 'day'),
+        ),
       },
     ]),
   ).toBe('1 month');
@@ -28,12 +32,23 @@ test('prints only months if less than 1 year', () => {
   ).toBe('2 months');
 });
 
+test('if 1 year, do not print years', () => {
+  expect(
+    getTotalExperience([
+      {
+        start: minskTime(dayjs('4 June 2018')),
+        end: minskTime(dayjs('4 April 2020')),
+      },
+    ]),
+  ).toBe('1 year 11 months');
+});
+
 test('counts Klika Experience', () => {
   expect(
     getTotalExperience([
       {
         start: minskTime(dayjs('4 June 2018')),
-        end: minskTime(dayjs('4 June 2020')),
+        end: minskTime(dayjs('3 June 2020')),
       },
     ]),
   ).toBe('2 years');
