@@ -1,10 +1,10 @@
 import React from 'react';
 
-import { Intro } from '../../components/Intro';
-import { ExperienceYears } from '../../components/ExperienceYears';
-import { Motivation } from '../../components/Motivation';
-import { HireMe } from '../../components/HireMe';
-import { MyTopSkills } from '../../components/MyTopSkills';
+import { Intro } from '../../components/FrontPage/Intro';
+import { ExperienceYears } from '../../components/FrontPage/ExperienceYears';
+import { Motivation } from '../../components/FrontPage/Motivation';
+import { HireMe } from '../../components/FrontPage/HireMe';
+import { MyTopSkills } from '../../components/FrontPage/MyTopSkills';
 
 import { Block } from '../../ui-kit';
 import { Layout } from '../../components/Layout';

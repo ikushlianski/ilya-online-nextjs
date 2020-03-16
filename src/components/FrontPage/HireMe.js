@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../ui-kit/Button';
+import { Button } from '../../ui-kit/Button';
 
 import './HireMe.scss';
 

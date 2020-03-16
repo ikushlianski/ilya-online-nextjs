@@ -3,7 +3,7 @@ import fetch from 'isomorphic-unfetch';
 
 import { Block, Toggle } from '../../ui-kit';
 import { Layout } from '../../components/Layout';
-import { SkillsBox } from '../../components/SkillsBox';
+import { SkillsBox } from '../../components/Skills';
 import { keyBy } from '../../utils';
 
 import './SkillsPage.scss';

@@ -1,0 +1,34 @@
+@import "../../styles/styles";
+
+.WorksBox {
+  padding: $padding-margin-huge;
+  background: rgba(0, 0, 0, 0.3);
+  display: grid;
+}
+
+.WorksBox__Item {
+  display: grid;
+  list-style-type: none;
+}
+
+.WorksBox__Title {
+  color: var(--accent);
+}
+
+.WorksBox__List {
+  display: grid;
+  grid-gap: $padding-margin-huge;
+  padding: 0;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.WorksBox__ItemDescription {
+  margin-top: $padding-margin-normal;
+  color: var(--accent2);
+  font-weight: normal;
+}
+
+.WorksBox__ItemName {
+  font-size: $font-large;
+  display: inline-block;
+}

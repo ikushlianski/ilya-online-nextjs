@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { SkillsDisplayModeContext } from '../pages/skills';
-import { Card } from '../ui-kit';
+import { SkillsDisplayModeContext } from '../../pages/skills';
+import { Card } from '../../ui-kit';
 
 import './SkillsBox.scss';
 
