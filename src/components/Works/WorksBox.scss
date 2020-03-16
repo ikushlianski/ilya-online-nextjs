@@ -19,7 +19,7 @@
   display: grid;
   grid-gap: $padding-margin-huge;
   padding: 0;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 .WorksBox__ItemDescription {
@@ -32,3 +32,4 @@
   font-size: $font-large;
   display: inline-block;
 }
+

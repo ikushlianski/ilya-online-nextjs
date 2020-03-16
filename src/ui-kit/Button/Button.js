@@ -25,10 +25,20 @@ export const Button = ({
     'Button--disabled': disabled,
   });
 
-  return onClick || !href ? (
-    <button onClick={onClick} disabled={disabled} className={classes}>
-      {children}
-    </button>
+  if (onClick || !href) {
+    return (
+      <button onClick={onClick} disabled={disabled} className={classes}>
+        {children}
+      </button>
+    );
+  }
+
+  return isAbsolute(href) ? (
+    <a href={href}>
+      <button disabled={disabled} className={classes}>
+        {children}
+      </button>
+    </a>
   ) : (
     <Link href={href}>
       <a href={href}>
@@ -39,3 +49,6 @@ export const Button = ({
     </Link>
   );
 };
+
+// just a quick dirty check for absolute urls
+const isAbsolute = url => /^(http(s?)|www)/.test(url);

@@ -9,7 +9,7 @@ import { WorksBox } from '../../components/Works';
 import './WorksPage.scss';
 
 const WorksPage = ({ works }) => {
-  const { small, intermediate } = works;
+  const { beginner, intermediate, advanced } = works;
 
   return (
     <Layout
@@ -29,8 +29,8 @@ const WorksPage = ({ works }) => {
         </div>
         <Block>
           <div className="SkillsPage__SkillsBlocks">
-            <WorksBox title="Latest" items={intermediate} />
-            <WorksBox title="Small/early works" items={small} />
+            <WorksBox title="Bigger/latest works" items={intermediate} />
+            <WorksBox title="Smaller/early examples" items={beginner} />
           </div>
         </Block>
       </div>
