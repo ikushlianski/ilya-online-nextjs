@@ -1,9 +1,18 @@
 @import "./src/styles/styles";
 
 .SkillsBox {
-  padding: 1rem;
+  padding: $padding-margin-huge;
   background: rgba(0, 0, 0, 0.3);
   display: grid;
+}
+
+.SkillsBox__LearnedList {
+  list-style-type: square;
+}
+
+.SkillsBox__Item {
+  display: grid;
+  list-style-type: none;
 }
 
 .SkillsBox__Title {
@@ -15,11 +24,6 @@
   grid-gap: $padding-margin-huge;
   padding: 0;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-}
-
-.SkillsBox__Item {
-  padding: 1rem;
-  list-style-type: none;
 }
 
 .SkillsBox__ItemDescription {

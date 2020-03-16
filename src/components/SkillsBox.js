@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { SkillsDisplayModeContext } from '../pages/skills';
+import { Card } from '../ui-kit';
 
 import './SkillsBox.scss';
 
@@ -22,47 +23,49 @@ export const SkillsBox = ({ title, items = [] }) => {
             yetToLearn,
           }) => (
             <li key={_id} className="SkillsBox__Item">
-              <div className="SkillsBox__ItemName">{name}</div>
+              <Card>
+                <div className="SkillsBox__ItemName">{name}</div>
 
-              {hot && (
-                <span className="SkillsBox__Mark" title="Top skill">
-                  {'\u{1F525}'}
-                </span>
-              )}
+                {hot && (
+                  <span className="SkillsBox__Mark" title="Top skill">
+                    {'\u{1F525}'}
+                  </span>
+                )}
 
-              <h3 className="SkillsBox__ItemDescription">{description}</h3>
+                <h3 className="SkillsBox__ItemDescription">{description}</h3>
 
-              {techMode && frequency && (
-                <div className="SkillsBox__ItemUsage">
-                  <span className="SkillsBox__Gear">{'\u{2699}'}</span>
-                  <b>Use:</b> {frequency}
-                </div>
-              )}
+                {techMode && frequency && (
+                  <div className="SkillsBox__ItemUsage">
+                    <span className="SkillsBox__Gear">{'\u{2699}'}</span>
+                    <b>Use:</b> {frequency}
+                  </div>
+                )}
 
-              {techMode && (
-                <div className="SkillsBox__ProsCons">
-                  {workedWith.length > 0 && (
-                    <div className="SkillsBox__Learned">
-                      <b>Learned:</b>
-                      <ul>
-                        {workedWith.map(aspect => (
-                          <li key={aspect}>{aspect}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                  {yetToLearn.length > 0 && (
-                    <div className="SkillsBox__YetToLearn">
-                      <b>Yet to learn:</b>
-                      <ul>
-                        {yetToLearn.map(aspect => (
-                          <li key={aspect}>{aspect}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              )}
+                {techMode && (
+                  <div className="SkillsBox__ProsCons">
+                    {workedWith.length > 0 && (
+                      <div className="SkillsBox__Learned">
+                        <b>Learned:</b>
+                        <ul className="SkillsBox__LearnedList">
+                          {workedWith.map(aspect => (
+                            <li key={aspect}>{aspect}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {yetToLearn.length > 0 && (
+                      <div className="SkillsBox__YetToLearn">
+                        <b>Yet to learn:</b>
+                        <ul>
+                          {yetToLearn.map(aspect => (
+                            <li key={aspect}>{aspect}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </Card>
             </li>
           ),
         )}
