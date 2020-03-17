@@ -26,44 +26,57 @@ export const WorksBox = ({ title, items = [] }) => {
             }) => (
               <li key={_id} className="WorksBox__Item">
                 <Card>
+                  <div className="WorksBox__ItemName">{name}</div>
+
                   <div className="WorksBox__Meta">
-                    <div className="WorksBox__ItemName">{name}</div>
                     <div className="WorksBox__Date">
-                      Date:{' '}
+                      <b>Date:</b>{' '}
                       {date ? (
                         dayjs(date).format('MMMM YYYY')
                       ) : (
                         <span className="WorksBox__OngoingLabel">Ongoing</span>
                       )}
                     </div>
-                    <div className="WorksBox__Level">Difficulty: {level}</div>
+                    <div className="WorksBox__Level">
+                      <b>Difficulty:</b> {level}
+                    </div>
                     <div className="WorksBox__TechStack">
-                      Tech stack: {techStack}
+                      <b>Tech stack:</b> {techStack}
                     </div>
                   </div>
 
                   <div className="WorksBox__ItemDescription">{description}</div>
 
-                  <div className="WorksBox__Repos">
-                    {repos.length > 0 &&
-                      repos.map((repo, i, arr) => (
-                        <Button inverted href={repo} key={repo}>
-                          {arr.length > 1 ? `Repo ${i + 1}` : 'Repository'}
+                  <div className="WorksBox__Links">
+                    {repos.length > 0 && (
+                      <div className="WorksBox__Repos">
+                        {repos.map((repo, i, arr) => (
+                          <div className="WorksBox__RepoLink" key={repo}>
+                            <Button inverted href={repo}>
+                              {arr.length > 1 ? `Repo ${i + 1}` : 'Repository'}
+                            </Button>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {liveLink && (
+                      <div className="WorksBox__LiveLink">
+                        <Button cta href={liveLink} key={liveLink}>
+                          See live
                         </Button>
-                      ))}
+                      </div>
+                    )}
                   </div>
-                  {liveLink && (
-                    <div className="WorksBox__LiveLink">
-                      <Button cta href={liveLink} key={liveLink}>
-                        See live
-                      </Button>
+
+                  {goals && (
+                    <div className="WorksBox__Goals">
+                      <List title="Why I created this one" items={goals} />
                     </div>
                   )}
-                  {goals && (
-                    <List title="Why I created this one" items={goals} />
-                  )}
                   {toImprove && (
-                    <List title="What could be improved" items={toImprove} />
+                    <div className="WorksBox__ToImprove">
+                      <List title="What could be improved" items={toImprove} />
+                    </div>
                   )}
                 </Card>
               </li>

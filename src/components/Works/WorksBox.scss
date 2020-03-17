@@ -19,11 +19,12 @@
   display: grid;
   grid-gap: $padding-margin-huge;
   padding: 0;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  // TODO: increase 250px on larger devices
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 .WorksBox__ItemDescription {
-  margin-top: $padding-margin-normal;
+  margin: $padding-margin-normal 0;
   color: var(--accent2);
   font-weight: normal;
 }
@@ -33,3 +34,29 @@
   display: inline-block;
 }
 
+.WorksBox__Meta {
+  display: grid;
+  margin: 1rem 0;
+  row-gap: $padding-margin-small;
+}
+
+.WorksBox__Links {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.WorksBox__Repos {
+  grid-gap: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.WorksBox__LiveLink {
+  justify-self: end;
+}
+
+.WorksBox__Goals, .WorksBox__ToImprove {
+  margin: $padding-margin-normal 0;
+}

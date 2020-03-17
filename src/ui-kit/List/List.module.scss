@@ -1,8 +1,10 @@
 @import "../../styles/styles";
 
 .List__Title {
+  margin: $padding-margin-small 0;
 }
 
 .List__Items {
   list-style-type: square;
+  line-height: 1.4rem;
 }
