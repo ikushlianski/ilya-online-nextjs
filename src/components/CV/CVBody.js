@@ -26,8 +26,9 @@ export const CVBody = ({ jobs, education }) => {
           <div className="TechStackInfo__SkillsList">
             <h3>Skills</h3>
             <p>
-              <b>Frontend:</b> Javascript, Typescript, React, CSS (Flexbox,
-              Grid), HTML, some Next.js; unit testing basics;
+              <b>Frontend:</b> Javascript, Typescript, React (Hooks, Redux,
+              Redux Saga), CSS (Flexbox, Grid), HTML, some Next.js; unit testing
+              basics;
             </p>
             <p>
               <b>Backend:</b> Node.js, Express, basic Nest.js, MySQL/Sequelize,
@@ -36,21 +37,21 @@ export const CVBody = ({ jobs, education }) => {
             <p>
               <b>Tools & misc:</b> Git, Webpack, ESLint, npm; basic CI/CD with
               Linux, Docker, Jenkins and Nginx; worked with some AWS services.
-              Familiar with clean code principles and best practices. Always
-              think about architectural implications of the features I
-              implement.
+              Know clean code principles and best practices. Always think about
+              architectural implications of the features I implement.
             </p>
             <p>
-              <b>Soft skills:</b> Transparency in team work, fluent English,
-              leadership, mentoring. Comfortable working in a Scrum team. Would
-              love to take part in interviews, meetings with customers and
-              continue developing leadership/managerial skills.
+              <b>Soft skills:</b> Transparency in team work (Jira, Pivotal
+              Tracker), fluent English, leadership, mentoring. Comfortable
+              working in a Scrum team. Would love to take part in interviews,
+              meetings with customers and continue developing
+              leadership/managerial skills.
             </p>
             {extended && (
               <p>
-                <b>Plans:</b> Advanced Node.js, React SSR, PWA, React Native,
-                GraphQL, React Testing Library, web security and performance and
-                more
+                <b>Plans:</b> Advanced Node.js, React SSR, PWAs, React Native,
+                GraphQL, React Testing Library, broaden web security and
+                performance knowledge and more...
               </p>
             )}
           </div>
@@ -142,6 +143,55 @@ export const CVBody = ({ jobs, education }) => {
               })}
             </div>
           </div>
+
+          {extended && (
+            <div className="CVAbout">
+              <div className="CVAbout__DescriptionCode">
+                <h3>Coding</h3>
+                <p>
+                  I tend to focus on what value my code brings to the end user
+                  or business. The beauty of code I write is in user
+                  satisfaction - with this in mind I started programming willing
+                  to build a website for what I thought would become my future
+                  business.
+                </p>
+                <p>
+                  Cleanliness of code is important to me though. I&apos;m also
+                  learning to estimate how certain programming decisions will
+                  impact product&apos;s architecture.
+                </p>
+                <p>
+                  I am not religious about any technology and think each one is
+                  just a tool that is to be used for its purposes.
+                </p>
+                <p>
+                  Having decided to stay in Javascript ecosystem, I&apos;m
+                  always open to learning new things as soon as they let me
+                  solve users&apos; problems more effectively.
+                </p>
+              </div>
+              <div className="CVAbout__DescriptionCommon">
+                <h3>About</h3>
+                <p>
+                  I am a self-demanding person striving for constant
+                  self-perfection. Working in teams of smart people gives me the
+                  enjoyable feeling of togetherness and allows sharing knowledge
+                  and gaining experience quicker.
+                </p>
+                <p>
+                  I have always felt my leadership potential, hence I would like
+                  to take respective responsibilities in the coming years, like
+                  managing small teams or mentoring beginner developers.
+                </p>
+                <p>
+                  A polite and empathic person, I prefer compromise to conflict
+                  and value open and friendly people. I feel comfortable working
+                  according to Scrum, in a team with reasonable rules and
+                  balanced processes.
+                </p>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
