@@ -27,12 +27,12 @@ export const CVBody = ({ jobs, education }) => {
             <h3>Skills</h3>
             <p>
               <b>Frontend:</b> Javascript, Typescript, React (Hooks, Redux,
-              Redux Saga), CSS (Flexbox, Grid), HTML, some Next.js; unit testing
-              basics;
+              Redux Saga), CSS (Flexbox, Grid, Styled Components), HTML, some
+              Next.js; unit testing basics;
             </p>
             <p>
               <b>Backend:</b> Node.js, Express, basic Nest.js, MySQL/Sequelize,
-              MongoDB/Mongoose;
+              MongoDB/Mongoose fundamentals;
             </p>
             <p>
               <b>Tools & misc:</b> Git, Webpack, ESLint, npm; basic CI/CD with
@@ -156,22 +156,27 @@ export const CVBody = ({ jobs, education }) => {
                   business.
                 </p>
                 <p>
-                  Cleanliness of code is important to me though. I&apos;m also
-                  learning to estimate how certain programming decisions will
-                  impact product&apos;s architecture.
+                  Cleanliness and maintainability of code are important to me. I
+                  always keep in mind what effect my programming decisions will
+                  have on the product&apos;s architecture although it is not
+                  always easy to do. This is something seniors should care about
+                  and I&apos;m already preparing myself to it.
                 </p>
                 <p>
                   I am not religious about any technology and think each one is
-                  just a tool that is to be used for its purposes.
+                  just a tool that is to be used for its purposes. I curiously
+                  watch the evolution of the web, but focus on specific, most
+                  popular and well-tested, libraries and frameworks, thereby
+                  making my work smooth and enjoyable.
                 </p>
                 <p>
                   Having decided to stay in Javascript ecosystem, I&apos;m
                   always open to learning new things as soon as they let me
-                  solve users&apos; problems more effectively.
+                  solve users&apos; and businesses&apos; problems effectively.
                 </p>
               </div>
               <div className="CVAbout__DescriptionCommon">
-                <h3>About</h3>
+                <h3>About me, actually</h3>
                 <p>
                   I am a self-demanding person striving for constant
                   self-perfection. Working in teams of smart people gives me the
@@ -186,8 +191,9 @@ export const CVBody = ({ jobs, education }) => {
                 <p>
                   A polite and empathic person, I prefer compromise to conflict
                   and value open and friendly people. I feel comfortable working
-                  according to Scrum, in a team with reasonable rules and
-                  balanced processes.
+                  according to Scrum practices, in a team with reasonable rules
+                  and balanced processes. If there are no such things in your
+                  team, let us build them together!
                 </p>
               </div>
             </div>
