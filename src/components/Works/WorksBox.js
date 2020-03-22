@@ -47,26 +47,17 @@ export const WorksBox = ({ title, items = [] }) => {
 
                   <div className="WorksBox__ItemDescription">{description}</div>
 
-                  <div className="WorksBox__Links">
-                    {repos.length > 0 && (
-                      <div className="WorksBox__Repos">
-                        {repos.map((repo, i, arr) => (
-                          <div className="WorksBox__RepoLink" key={repo}>
-                            <Button inverted href={repo}>
-                              {arr.length > 1 ? `Repo ${i + 1}` : 'Repository'}
-                            </Button>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                    {liveLink && (
-                      <div className="WorksBox__LiveLink">
-                        <Button cta href={liveLink} key={liveLink}>
-                          See live
-                        </Button>
-                      </div>
-                    )}
-                  </div>
+                  {repos.length > 0 && (
+                    <div className="WorksBox__Repos">
+                      {repos.map((repo, i, arr) => (
+                        <div className="WorksBox__RepoLink" key={repo}>
+                          <Button inverted href={repo}>
+                            {arr.length > 1 ? `Repo ${i + 1}` : 'Repository'}
+                          </Button>
+                        </div>
+                      ))}
+                    </div>
+                  )}
 
                   {goals && (
                     <div className="WorksBox__Goals">
@@ -76,6 +67,13 @@ export const WorksBox = ({ title, items = [] }) => {
                   {toImprove && (
                     <div className="WorksBox__ToImprove">
                       <List title="What could be improved" items={toImprove} />
+                    </div>
+                  )}
+                  {liveLink && (
+                    <div className="WorksBox__LiveLink">
+                      <Button cta href={liveLink} key={liveLink}>
+                        See live
+                      </Button>
                     </div>
                   )}
                 </Card>
