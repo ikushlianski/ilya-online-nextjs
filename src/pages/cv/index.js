@@ -2,17 +2,13 @@ import React from 'react';
 import fetch from 'isomorphic-unfetch';
 
 import { Block } from '../../ui-kit/Block';
-import { Layout } from '../../components/Layout';
-
-import { CVOptions, CVHeader, CVBody } from '../../components/CV';
+import { Layout, CVOptions, CVHeader, CVBody } from '../../components';
 
 import './CVPage.scss';
 
 export const CVContext = React.createContext(null);
 
 const CVPage = ({ jobs, education }) => {
-  // TODO: extract into smaller components
-  // TODO: add less important points
   const [value, setValue] = React.useState({
     extended: false,
     notes: false,
@@ -45,7 +41,7 @@ CVPage.getInitialProps = async _ => {
     const res = await fetch(`${process.env.API_URL}/cv`);
     const [data] = await res.json();
 
-    return { jobs: data.jobs, education: data.education };
+    return { jobs: data.jobs, education: data.education.reverse() };
   } catch (error) {
     console.error(error);
 
