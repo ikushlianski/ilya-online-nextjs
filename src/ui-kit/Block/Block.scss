@@ -2,7 +2,11 @@
 
 .Block {
   position: relative;
-  padding: 3rem $padding-margin-big;
+  padding: 3rem 0;
+
+  @media (min-width: $screen-medium) {
+    padding: 3rem $padding-margin-big;
+  }
 }
 
 .Block--darker {

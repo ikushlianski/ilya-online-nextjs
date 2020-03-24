@@ -6,6 +6,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 
 import './Layout.scss';
+import { LinkedInCta } from '../common/LinkedInCta';
 
 export const Layout = ({
   children,
@@ -14,17 +15,40 @@ export const Layout = ({
   description = 'Full-stack Javascript developer from Minsk. My top skills are Javascript, React,Typescript and Node.js',
 }) => {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const [ctaOpen, setCtaOpen] = React.useState(false);
 
   const pageClasses = cx('Page', className);
   const layoutClasses = cx('Layout', {
     'Layout--MenuOpen': menuOpen,
   });
 
+  React.useEffect(() => {
+    const viewCount = Number(localStorage.getItem('viewCount'));
+
+    if (!viewCount) {
+      localStorage.setItem('viewCount', 1);
+    } else {
+      localStorage.setItem('viewCount', viewCount + 1);
+    }
+
+    if (viewCount % 10 === 0) {
+      setCtaOpen(true);
+    }
+  }, []);
+
   return (
     <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
+        {ctaOpen && (
+          <script
+            type="text/javascript"
+            src="https://platform.linkedin.com/badges/js/profile.js"
+            async
+            defer
+          />
+        )}
       </Head>
       <MenuContext.Provider value={{ open: menuOpen, setOpen: setMenuOpen }}>
         <div className={layoutClasses}>
@@ -32,6 +56,7 @@ export const Layout = ({
           <div className={pageClasses}>{children}</div>
           <Footer />
         </div>
+        <LinkedInCta open={ctaOpen} setOpen={setCtaOpen} />
       </MenuContext.Provider>
     </>
   );
