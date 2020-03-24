@@ -51,7 +51,7 @@ export const WorksBox = ({ title, items = [] }) => {
                     <div className="WorksBox__Repos">
                       {repos.map((repo, i, arr) => (
                         <div className="WorksBox__RepoLink" key={repo}>
-                          <Button inverted href={repo}>
+                          <Button target="_blank" inverted href={repo}>
                             {arr.length > 1 ? `Repo ${i + 1}` : 'Repository'}
                           </Button>
                         </div>
@@ -71,7 +71,12 @@ export const WorksBox = ({ title, items = [] }) => {
                   )}
                   {liveLink && (
                     <div className="WorksBox__LiveLink">
-                      <Button cta href={liveLink} key={liveLink}>
+                      <Button
+                        target="_blank"
+                        cta
+                        href={liveLink}
+                        key={liveLink}
+                      >
                         See live
                       </Button>
                     </div>

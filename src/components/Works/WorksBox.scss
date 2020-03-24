@@ -24,7 +24,7 @@
 }
 
 .WorksBox__ItemDescription {
-  margin: $padding-margin-normal 0;
+  margin: $padding-margin-huge 0;
   color: var(--accent2);
   font-weight: normal;
 }
@@ -32,6 +32,7 @@
 .WorksBox__ItemName {
   font-size: $font-large;
   display: inline-block;
+  margin-bottom: $padding-margin-normal;
 }
 
 .WorksBox__Meta {
@@ -50,10 +51,12 @@
 .WorksBox__Repos {
   grid-gap: $padding-margin-small;
   display: grid;
+  margin: $padding-margin-huge 0;
 }
 
 .WorksBox__LiveLink {
   justify-self: end;
+  margin-top: $padding-margin-huge;
 }
 
 .WorksBox__Goals, .WorksBox__ToImprove {
