@@ -16,6 +16,7 @@ export const Button = ({
   children,
   href,
   onClick,
+  target,
 }) => {
   const classes = cx('Button', {
     'Button--inverted': inverted,
@@ -33,20 +34,18 @@ export const Button = ({
     );
   }
 
-  return isAbsolute(href) ? (
-    <a href={href}>
+  const buttonWithAnchor = (
+    <a href={href} target={target}>
       <button disabled={disabled} className={classes}>
         {children}
       </button>
     </a>
+  );
+
+  return isAbsolute(href) ? (
+    buttonWithAnchor
   ) : (
-    <Link href={href}>
-      <a href={href}>
-        <button disabled={disabled} className={classes}>
-          {children}
-        </button>
-      </a>
-    </Link>
+    <Link href={href}>{buttonWithAnchor}</Link>
   );
 };
 
