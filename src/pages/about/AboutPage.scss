@@ -1,0 +1,14 @@
+@import '../../styles/styles';
+
+.AboutMePage__Heading {
+  text-align: center;
+}
+
+.AboutMePage__QA {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.AboutMePage__Q {
+  color: var(--accent2);
+}
