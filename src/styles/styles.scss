@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
 /*
-  Theme colors
+  Theme settings
  */
 :root {
   --primary: #0D1321;
@@ -20,6 +20,8 @@
   --borderStyle: 1px solid #F0EBD8;
   --accent: #e20202;
   --accent2: #e27e02;
+
+  --blockWidth: 250px;
 }
 
 /*
@@ -72,5 +74,11 @@ $screen-large: 1200px;
 @mixin noPrint {
   @media print {
     display: none;
+  }
+}
+
+@media (min-width: $screen-medium) {
+  :root {
+    --blockWidth: 400px;
   }
 }

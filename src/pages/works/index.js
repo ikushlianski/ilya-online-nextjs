@@ -22,9 +22,11 @@ const WorksPage = ({ works }) => {
           <p className="WorksPage__PageDescription">
             It is hard sometimes to carve out time for coding apart from your
             regular job. But that is how you grow as a developer - working on
-            your pet projects. Here they are: from the newest, tiny and bigger
-            ones, to the first, naive projects that mark the beginning of my web
-            dev journey.
+            your pet projects.
+          </p>
+          <p>
+            Here they are: from the newest, tiny and bigger ones, to the first,
+            naive projects that mark the beginning of my web dev journey.
           </p>
         </div>
         <Block>

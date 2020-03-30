@@ -166,8 +166,8 @@ export const CVBody = ({ jobs, education }) => {
                   I am not religious about any technology and think each one is
                   just a tool that is to be used for its purposes. I curiously
                   watch the evolution of the web, but focus on specific, most
-                  popular and well-tested, libraries and frameworks, thereby
-                  making my work smooth and enjoyable.
+                  popular and well-tested libraries and frameworks that make my
+                  work smooth and enjoyable.
                 </p>
                 <p>
                   Having decided to stay in Javascript ecosystem, I&apos;m

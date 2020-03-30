@@ -6,7 +6,7 @@
 
 .AboutMePage__QA {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--blockWidth), 1fr));
 }
 
 .AboutMePage__Q {

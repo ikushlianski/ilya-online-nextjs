@@ -2,7 +2,7 @@
 
 .Experience {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(var(--blockWidth), 1fr));
   grid-gap: $padding-margin-big;
   padding: 0 $padding-margin-huge;
 }
