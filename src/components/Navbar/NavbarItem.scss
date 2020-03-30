@@ -3,18 +3,42 @@
 .NavbarItem {
   display: grid;
   align-content: center;
-  height: 2em;
-  line-height: 2em;
+  height: 2rem;
+  line-height: 2rem;
   padding: $padding-margin-small $padding-margin-normal;
   font-size: $font-larger;
+
+  @media (min-width: $screen-medium) {
+    font-size: $font-normal;
+    height: $padding-margin-big * 2;
+    text-align: center;
+  }
 
   &:hover {
     cursor: pointer;
     background: var(--accent);
+    @media (min-width: $screen-medium) {
+      background: transparent;
+    }
   }
 
   a {
     color: white;
     text-decoration: none;
+  }
+
+  &--active {
+    background: var(--accent2);
+
+    & > a {
+      cursor: default;
+    }
+
+    &:hover {
+      cursor: default;
+      @media (min-width: $screen-medium) {
+        background: var(--accent2);
+      }
+    }
   }
 }

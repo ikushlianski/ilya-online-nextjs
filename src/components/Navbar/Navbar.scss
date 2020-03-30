@@ -13,13 +13,24 @@
 }
 
 .Navbar__ItemsContainer {
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to bottom right, var(--primary-darker), rgba(0, 0, 0, 0.95));
+  display: none;
+  @media (min-width: $screen-medium) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 $padding-margin-big;
+  }
+
+  &--open {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, var(--primary-darker), rgba(0, 0, 0, 0.95));
+  }
 }
 
 .Navbar__OpenMenuButton, .Navbar__CloseMenuButton {
@@ -44,6 +55,10 @@
   .svg-inline--fa {
     width: 24px;
     height: 32px;
+  }
+
+  @media (min-width: $screen-medium) {
+    display: none;
   }
 }
 

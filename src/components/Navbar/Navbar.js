@@ -16,23 +16,22 @@ export const Navbar = ({ children }) => {
     'Navbar__OpenMenuButton--open': open,
   });
 
+  const itemsContainerCx = cx('Navbar__ItemsContainer', {
+    'Navbar__ItemsContainer--open': open,
+  });
+
   return (
     <div className={navbarClasses}>
       <div className={openMenuButtonClasses} onClick={() => setOpen(!open)}>
         {Bars}
       </div>
 
-      {open && (
-        <ul className="Navbar__ItemsContainer">
-          <div
-            className="Navbar__CloseMenuButton"
-            onClick={() => setOpen(!open)}
-          >
-            {Times}
-          </div>
-          {children}
-        </ul>
-      )}
+      <ul className={itemsContainerCx}>
+        <div className="Navbar__CloseMenuButton" onClick={() => setOpen(!open)}>
+          {Times}
+        </div>
+        {children}
+      </ul>
     </div>
   );
 };

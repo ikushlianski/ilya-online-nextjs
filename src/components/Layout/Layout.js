@@ -31,7 +31,7 @@ export const Layout = ({
       localStorage.setItem('viewCount', viewCount + 1);
     }
 
-    if (viewCount % 10 === 0) {
+    if (viewCount % 7 === 0) {
       setCtaOpen(true);
     }
   }, []);
