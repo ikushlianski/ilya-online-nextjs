@@ -3,8 +3,12 @@ import cx from 'classnames';
 
 import './Block.scss';
 
-export const Block = ({ children, className }) => {
+export const Block = ({ children, className, ...props }) => {
   const classes = cx('Block', className);
 
-  return <div className={classes}>{children}</div>;
+  return (
+    <div className={classes} {...props}>
+      {children}
+    </div>
+  );
 };
