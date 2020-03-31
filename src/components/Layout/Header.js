@@ -28,7 +28,7 @@ export const Header = () => {
       </NavbarItem>
       <NavbarItem href="/cv">
         <Link href="/cv">
-          <a href="/cv">CV</a>
+          <a href="/cv">CV {'\u{1F4CE}'}</a>
         </Link>
       </NavbarItem>
     </Navbar>

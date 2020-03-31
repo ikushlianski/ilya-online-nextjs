@@ -53,7 +53,7 @@ export const CVOptions = ({ setValue }) => {
             </label>
           </div>
         </div>
-        <Button onClick={handleClick}>Preview & print</Button>
+        <Button onClick={handleClick}>Preview & print {'\u{1F389}'}</Button>
       </div>
     </div>
   );

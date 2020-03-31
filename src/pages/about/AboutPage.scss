@@ -12,3 +12,15 @@
 .AboutMePage__Q {
   color: var(--accent2);
 }
+
+#Coding {
+  background: linear-gradient(to bottom, var(--primaryLight), var(--primary));
+}
+
+#Personal {
+  background: var(--primary);
+}
+
+#WorkCareer {
+  background: linear-gradient(to bottom, var(--primary), var(--primary-darker));
+}

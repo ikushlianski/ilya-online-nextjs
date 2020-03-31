@@ -9,7 +9,7 @@ import './AboutPage.scss';
 const AboutPage = () => (
   <Layout title="Ilya Kushlianski - About me">
     <div className="AboutMePage">
-      <Block className="Block--lighter">
+      <Block id="Coding">
         <h1 className="AboutMePage__Heading">Coding</h1>
         <div className="AboutMePage__QA">
           <Card flat>
@@ -97,7 +97,7 @@ const AboutPage = () => (
         </div>
       </Block>
 
-      <Block>
+      <Block id="Personal">
         <h1 className="AboutMePage__Heading">Personal</h1>
         <div className="AboutMePage__QA">
           <Card flat>
@@ -130,7 +130,7 @@ const AboutPage = () => (
         </div>
       </Block>
 
-      <Block className="Block--darker">
+      <Block id="WorkCareer">
         <h1 className="AboutMePage__Heading">Work & Career</h1>
         <div className="AboutMePage__QA">
           {Date.now() < dayjs('2020-06-30') && (
