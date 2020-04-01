@@ -1,5 +1,11 @@
 @import '../../styles/styles';
 
+.AboutMePage {
+  @media (min-width: $screen-medium) {
+    padding: 4% 10%;
+  }
+}
+
 .AboutMePage__Heading {
   text-align: center;
 }

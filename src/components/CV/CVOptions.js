@@ -53,7 +53,9 @@ export const CVOptions = ({ setValue }) => {
             </label>
           </div>
         </div>
-        <Button onClick={handleClick}>Preview & print {'\u{1F389}'}</Button>
+        <Button inverted onClick={handleClick}>
+          Preview & print {'\u{1F389}'}
+        </Button>
       </div>
     </div>
   );
