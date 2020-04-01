@@ -13,15 +13,13 @@ const AboutPage = () => (
         <h1 className="AboutMePage__Heading">Coding</h1>
         <div className="AboutMePage__QA">
           <Card flat>
-            <h3 className="AboutMePage__Q">
-              What sources do you use to learn?
-            </h3>
+            <h3 className="AboutMePage__Q">Sources I use to learn</h3>
             <p>
               I did almost all learning on my own, without any courses or
-              bootcamps. I just told myself not to be afraid and try. I found
-              online courses offering both theory and practice. And there it
-              goes! Then I delved deeper into a couple of Javascript and PHP
-              books. For CSS, it was more practice and Stack Overflow Q&A.
+              bootcamps. I just told myself not to be afraid and try. At first I
+              used online courses offering both theory and practice. Then I
+              delved deeper into a couple of Javascript and PHP books. For CSS,
+              it was more practice and Stack Overflow Q&A.
             </p>
             <p>
               After gaining some experience I switched to reading various
@@ -30,21 +28,21 @@ const AboutPage = () => (
             </p>
             <p>
               Currently I&apos;m subscribed to lots of newsletters which I read
-              a couple of times a week or per-problem basis. I also understood
-              the value of documentation, which I now study for each new
-              technology I pick. In addition, I have a separate YouTube account,
-              only for tech videos, and I watch it regularly.
+              a couple of times a week. I also understood the value of
+              documentation, which I now study for each new technology I pick.
+              In addition, I have a separate YouTube account, only for tech
+              videos, and I watch it regularly.
             </p>
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">How do you learn code?</h3>
+            <h3 className="AboutMePage__Q">How I learn code</h3>
             <p>
               Can&apos;t tell you anything new here, since it&apos;s all about
               practice in the end. I do my personal projects and in every new
               project I try to learn and practise some new technologies.
             </p>
-            <Button secondary href="/works">
+            <Button inverted href="/works">
               See my projects
             </Button>
             <p>
@@ -55,13 +53,14 @@ const AboutPage = () => (
               working with.
             </p>
             <p>
-              Courses, articles, docs, newsletters and thematic videos are also
-              part of my learning strategy.
+              Courses, articles, docs, newsletters, thematic videos and
+              exploring other people&apos;s code are also part of my learning
+              strategy.
             </p>
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">Do you focus only on JS?</h3>
+            <h3 className="AboutMePage__Q">Why I focus only on JS</h3>
             <p>
               I believe a good engineer can switch between languages without
               much difficulty, but since it&apos;s impossible to focus on many
@@ -82,16 +81,46 @@ const AboutPage = () => (
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">
-              How do you handle errors and difficulties when coding?
-            </h3>
+            <h3 className="AboutMePage__Q">Dealing with difficulties</h3>
             <p>
               Sometimes it gets frustrating when you keep banging your head
-              against a problem and still cannot get things working properly.
-              But I treat this normally and think this is good to keep learning
-              while making mistakes. Moreover, it&apos;s totally ok for me to
-              ask for help, but only after I&apos;ve tried all the known options
-              myself.
+              against a problem and still cannot get things to work properly.
+              But I treat this normally and think the best way to learn is to
+              relax and keep making mistakes. The main thing is to not repeat
+              them. I have learned to ask right questions and not hesitate to
+              ask for help.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Quality of code</h3>
+            <p>
+              Developers know there is no ideal code. But let us try to describe
+              it. This is code that covers all or majority of use cases, code
+              that is understandable to any developer. It is testable and
+              desirably with well-written types. It takes into account app
+              architecture and does contains minimum kludges.
+            </p>
+            <p>
+              And of course it is stylistically the same, thanks to linters and
+              things like Prettier. This is the code I aim for, and hopefully
+              already write.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Coding vs. business</h3>
+            <p>
+              I saw developers diving into coding so much that they forgot for
+              whom their product is. They forgot about users! Thinking about
+              code quality is great but if we trade UX for &lsquo;more
+              readable&rsquo; code just because we want, this is bad.
+            </p>
+            <p>
+              I am among those developers who constantly think about the
+              business value of the code we write. Tech debt management is
+              important but refactoring for the sake of refactoring is a waste
+              of your client&apos;s money.
             </p>
           </Card>
         </div>
@@ -101,9 +130,40 @@ const AboutPage = () => (
         <h1 className="AboutMePage__Heading">Personal</h1>
         <div className="AboutMePage__QA">
           <Card flat>
-            <h3 className="AboutMePage__Q">
-              What is your workplace, what work conditions do you prefer?
-            </h3>
+            <h3 className="AboutMePage__Q">How I got into coding</h3>
+            <p>
+              It all started with a tourism website for Minsk that I wanted to
+              make, but did not have either money or knowledge about how to do
+              that. I just wanted Belarus to be more famous in the world.
+            </p>
+            <p>
+              I started googling and stumbled into Joomla and Wordpress, but
+              without coding skills that was not customizable enough for my
+              idea.
+            </p>
+            <p>
+              Coding seemed something from another planet but I made myself try
+              HTML/CSS and Javascript. After getting the gist of frontend I
+              dived into PHP and databases, because I was using Wordpress, after
+              all!
+            </p>
+            <p>
+              This is how I started doing mini-projects trying the technologies
+              I learned. It was so exciting to create things on your own that
+              soon I understood that my knowledge could be enough to start
+              coding profesionally.
+            </p>
+            <p>
+              I did an English version of a website for the news company I
+              worked for, the first time I was paid for coding. Then I wrote a
+              script that optimizes image size, did a personal website on
+              Wordpress with custom theme and there it goes... In half a year I
+              found my first programming job.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Preferred work conditions</h3>
             <p>
               In the office, the most important is to have a separate room for
               my team. I don&apos;t like open spaces (who does?)
@@ -125,7 +185,72 @@ const AboutPage = () => (
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">QQQ?</h3>
+            <h3 className="AboutMePage__Q">My weaknesses</h3>
+            <p>
+              I need to learn to separate time at work and out of work.
+              Sometimes when I couldn&apos;t make something work all day, this
+              carries into my evening and I finish the day in bad mood.
+            </p>
+            <p>
+              I am also too cautious and instead of failure I prefer to spend
+              more time to ensure I will not fail.
+            </p>
+            <p>
+              Sometimes I am too serious and too focused on work not allowing
+              myself to relax and do some tea talk with teammates.
+            </p>
+            <p>
+              Finally, I am not firm enough in some communications and if I face
+              aggression I cannot respond adequately, which hurts my morale. I
+              need to learn to handle this better.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Team buildings</h3>
+            <p>
+              Honestly, I do not like them. Being a team player during working
+              hours I value my personal time and privacy. Spending time with the
+              family is one of the greatest values I have in my life.
+            </p>
+            <p>
+              I appreciate it when companies understand that their employees are
+              all different people and not everyone is interested in public
+              gatherings. Hope you are among these companies, too!
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Me and the team</h3>
+            <p>
+              I have always had good relations with every team member. My
+              manager always noted the friendliness and good atmosphere that I
+              create in the team.
+            </p>
+            <p>
+              I never forget what I promised and always deliver. I also
+              willingly help my teammates if they are stuck.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">My hobbies</h3>
+            <p>
+              I love reading about the history of the 20th century, because I
+              want to understand why things happened as they did, why Belarus is
+              where it is now, why the quality of life is on the present level
+              and what happened to other countries over the same time.
+            </p>
+            <p>
+              Space and universe is another topic I am attracted. We know so
+              little about the world we live in! Here also go fiction books,
+              especially about time travelling.
+            </p>
+            <p>
+              Recently, I dived a bit into urbanism. It is fascinating how
+              people make their cities a much better place! Minsk can borrow a
+              lot of ideas from around the globe.
+            </p>
           </Card>
         </div>
       </Block>
@@ -133,10 +258,10 @@ const AboutPage = () => (
       <Block id="WorkCareer">
         <h1 className="AboutMePage__Heading">Work & Career</h1>
         <div className="AboutMePage__QA">
-          {Date.now() < dayjs('2020-06-30') && (
+          {Date.now() < dayjs('2020-07-15') && (
             <Card flat>
               <h3 className="AboutMePage__Q">
-                Why are you leaving your current company?
+                Why I am leaving my current company
               </h3>
               <p>
                 Because of lack of pure web projects. When taking this job 2
@@ -155,21 +280,18 @@ const AboutPage = () => (
           )}
 
           <Card flat>
-            <h3 className="AboutMePage__Q">
-              What domains are you interested in?
-            </h3>
+            <h3 className="AboutMePage__Q">Domains I am interested in</h3>
             <p>
               I would like to develop web applications in such areas as real
               estate, tourism, booking services, lifestyle, sport, fintech,
               education or entertainment, but these are just a few areas of
-              interest.
+              interest. My choice also depends a lot on many other project
+              details.
             </p>
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">
-              Describe the project of your dream
-            </h3>
+            <h3 className="AboutMePage__Q">The project of my dream</h3>
             <p>
               Team: not very large, 3-10 people. A skilled and friendly team
               lead and talented devs who write quality code and with whom you
@@ -188,15 +310,20 @@ const AboutPage = () => (
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">
-              What are your overall career plans?
-            </h3>
+            <h3 className="AboutMePage__Q">Overall career plans</h3>
             <p>
               In the coming years I&apos;m planning to keep coding and improve
-              my skills a lot (both frontend and backend). At the same time I am
-              willing to assume more responsibilities like interviewing and
-              mentoring of junior devs. Further, I see myself in a management
-              position (PM or team lead).
+              my skills a lot (both frontend and backend). Among plans are
+              certifications for AWS and Node.js. As my dev skills grow I would
+              like to build more complex apps, master best practices of
+              deployment and web security and try different architectural
+              approaches.
+            </p>
+            <p>
+              At the same time I am willing to assume more business-related
+              responsibilities like interviewing and mentoring of junior devs,
+              take part in pre-sales activities. Further, I see myself in a
+              management position (team lead).
             </p>
           </Card>
         </div>
