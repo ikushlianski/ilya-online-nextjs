@@ -1,0 +1,7 @@
+@import "../../styles/styles";
+
+.Section {
+  &--darker {
+    background: var(--primary-darker);
+  }
+}
