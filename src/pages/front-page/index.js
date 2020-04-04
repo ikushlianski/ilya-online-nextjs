@@ -1,12 +1,15 @@
 import React from 'react';
 
-import { Intro } from '../../components/FrontPage/Intro';
-import { ExperienceYears } from '../../components/FrontPage/ExperienceYears';
-import { Motivation } from '../../components/FrontPage/Motivation';
-import { HireMe } from '../../components/FrontPage/HireMe';
+import {
+  Intro,
+  Advantages,
+  ExperienceYears,
+  Motivation,
+  HireMe,
+} from '../../components/FrontPage';
 import { MyTopSkills } from '../../components/FrontPage/MyTopSkills';
 
-import { Block } from '../../ui-kit';
+import { Block, Section } from '../../ui-kit';
 import { Layout } from '../../components/Layout';
 
 import '../../styles/styles.scss';
@@ -33,19 +36,33 @@ const FrontPage = () => {
 
   return (
     <Layout className="HomePage">
-      <Block>
+      <Block className="p0-md">
         <Intro />
       </Block>
-      <Block className="Block--darker">
-        <ExperienceYears />
-      </Block>
-      <Block>
-        <Motivation />
-      </Block>
+      <Section darker className="col-2-md">
+        <Block>
+          <Motivation />
+        </Block>
+        <Block>
+          <ExperienceYears />
+        </Block>
+      </Section>
+      <Section id="motivation-advantages" className="col-2-md">
+        <Block className="shown-md">
+          <HireMe
+            lookingForJob={lookingForJob}
+            loading={loading}
+            error={error}
+          />
+        </Block>
+        <Block>
+          <Advantages />
+        </Block>
+      </Section>
       <Block className="Block--darker">
         <MyTopSkills />
       </Block>
-      <Block>
+      <Block className="hidden-md">
         <HireMe lookingForJob={lookingForJob} loading={loading} error={error} />
       </Block>
     </Layout>
