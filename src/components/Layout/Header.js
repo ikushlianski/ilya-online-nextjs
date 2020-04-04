@@ -26,7 +26,7 @@ export const Header = () => {
           <a href="/about">About me</a>
         </Link>
       </NavbarItem>
-      <NavbarItem href="/cv">
+      <NavbarItem className="shown-md" href="/cv">
         <Link href="/cv">
           <a href="/cv">CV {'\u{1F4CE}'}</a>
         </Link>

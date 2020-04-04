@@ -4,15 +4,16 @@
   position: relative;
   padding: 3rem 0;
 
-  @media (min-width: $screen-medium) {
-    padding: 3rem $padding-margin-big;
+  &--darker {
+    background-color: var(--primary-darker);
+  }
+
+  &--lighter {
+    background-color: var(--primary-lighter);
+  }
+
+  &--amazingBg {
+    background: var(--skillsBg);
   }
 }
 
-.Block--darker {
-  background-color: var(--primary-darker);
-}
-
-.Block--lighter {
-  background-color: var(--primary-lighter);
-}

@@ -22,6 +22,7 @@
   --accent2: #e27e02;
 
   --blockWidth: 250px;
+  --skillsBg: linear-gradient(180deg, rgba(12, 14, 27, 0.2), rgba(226, 2, 2, 0.2));
 }
 
 /*
@@ -80,5 +81,46 @@ $screen-large: 1200px;
 @media (min-width: $screen-medium) {
   :root {
     --blockWidth: 400px;
+  }
+}
+
+// super-micro-mini bootstrap
+.col-2-md {
+  @media (min-width: $screen-medium) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(var(--blockWidth), 1fr));
+    justify-items: center;
+    align-items: center;
+    padding: 0 5rem;
+  }
+}
+
+.hidden-md {
+  @media (min-width: $screen-medium) {
+    display: none;
+  }
+}
+
+.shown-md {
+  @media (max-width: $screen-medium - 1) {
+    display: none;
+  }
+}
+
+.transparent-md {
+  @media (min-width: $screen-medium) {
+    background: transparent;
+  }
+}
+
+.darker-md {
+  @media (min-width: $screen-medium) {
+    background: var(--primary-darker);
+  }
+}
+
+.p0-md {
+  @media (min-width: $screen-medium) {
+    padding: 0 !important;
   }
 }

@@ -34,7 +34,7 @@
     box-shadow: 0 0 1rem 2rem #00000026;
   }
 
-  @media (max-width: $screen-medium) {
+  @media (max-width: $screen-medium - 1) {
     display: none;
   }
 
@@ -68,7 +68,7 @@
 
 .CVOptions {
   @include noPrint;
-  @media (max-width: $screen-medium) {
+  @media (max-width: $screen-medium - 1) {
     display: none;
   }
 }

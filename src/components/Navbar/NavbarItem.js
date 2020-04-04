@@ -4,11 +4,15 @@ import cx from 'classnames';
 
 import './NavbarItem.scss';
 
-export const NavbarItem = ({ children, href }) => {
+export const NavbarItem = ({ children, href, className, ...props }) => {
   const { pathname } = useRouter();
-  const navbarCx = cx('NavbarItem', {
+  const navbarCx = cx('NavbarItem', className, {
     'NavbarItem--active': href === pathname,
   });
 
-  return <li className={navbarCx}>{children}</li>;
+  return (
+    <li className={navbarCx} {...props}>
+      {children}
+    </li>
+  );
 };

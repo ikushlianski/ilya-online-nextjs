@@ -1,0 +1,19 @@
+@import "../../styles/styles";
+
+.Advantages {
+  padding: 0 $padding-margin-huge;
+}
+
+
+.Advantages__Text {
+  font-size: 1.25rem;
+}
+
+.Advantages__Content {
+  margin-top: $padding-margin-giant;
+}
+
+.Advantages__Accent {
+  color: var(--accent2);
+  font-weight: 600;
+}

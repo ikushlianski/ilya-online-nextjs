@@ -30,7 +30,7 @@ const WorksPage = ({ works }) => {
           </p>
         </div>
         <Block>
-          <div className="SkillsPage__SkillsBlocks">
+          <div className="WorksPage__Blocks">
             <WorksBox title="Bigger/latest works" items={intermediate} />
             <WorksBox title="Smaller/early examples" items={beginner} />
           </div>

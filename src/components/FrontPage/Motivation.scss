@@ -4,20 +4,19 @@
   padding: 0 $padding-margin-huge;
 }
 
-.Motivation__Header {
-  text-align: center;
-}
-
 .Motivation__Controls {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+
+  @media (min-width: $screen-medium) {
+    justify-content: flex-start;
+  }
 }
 
 @mixin listgroup {
   list-style-type: none;
   padding: 0;
-  text-align: center;
 }
 
 .Motivation__List {

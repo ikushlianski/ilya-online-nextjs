@@ -1,8 +1,12 @@
 @import "../../styles/styles";
 
 .Intro {
-  display: grid;
-  justify-items: center;
+
+  &__Mobile {
+    display: grid;
+    justify-items: center;
+  }
+
 
   &__Image {
     width: 8em;
@@ -12,10 +16,54 @@
     margin: $padding-margin-normal;
   }
 
+  &__Desktop {
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-image: url('/cover-photo-main3-optimized.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -75% 0%;
+    // adjust the photo so it does not hide on any resolution
+    @media (min-width: 1100px) {
+      background-position: -101% 0%;
+    }
+    @media (min-width: $screen-large) {
+      background-position: -500% 0%;
+      background-size: 105%;
+    }
+  }
+
+  &__DesktopOverlay {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 700px;;
+    background: linear-gradient(270deg, transparent -100%, #0D1321 60%);
+  }
+
+  &__DesktopInfoContainer {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    padding: 0 5rem;
+  }
+
   &__Primary {
     font-size: $font-giant;
     margin: 0;
     text-align: center;
+
+    &Desktop {
+      font-size: 4rem;
+      margin: 0;
+    }
   }
 
   &__Secondary {
@@ -23,6 +71,12 @@
     text-align: center;
     color: var(--secondaryLight);
     margin: $padding-margin-normal;
+
+    &Desktop {
+      font-size: 2rem;
+      color: var(--secondary);
+      margin: 2rem 0;
+    }
   }
 
   &__Controls {
