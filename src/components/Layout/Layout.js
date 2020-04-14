@@ -31,7 +31,7 @@ export const Layout = ({
       localStorage.setItem('viewCount', viewCount + 1);
     }
 
-    if (viewCount % 7 === 0) {
+    if (viewCount % 10 === 0) {
       setCtaOpen(true);
     }
   }, []);
@@ -49,6 +49,19 @@ export const Layout = ({
             defer
           />
         )}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=UA-109173848-1"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-109173848-1');`,
+          }}
+        />
       </Head>
       <MenuContext.Provider value={{ open: menuOpen, setOpen: setMenuOpen }}>
         <div className={layoutClasses}>
