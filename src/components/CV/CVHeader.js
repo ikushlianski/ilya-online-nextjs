@@ -44,6 +44,11 @@ export const CVHeader = () => {
             </div>
           )}
           {extended && (
+            <div className="CVPage__Skype">
+              <b>Skype:</b> <span>kushliansky</span>
+            </div>
+          )}
+          {extended && (
             <div className="CVPage__Linkedin">
               <b>LinkedIn:</b>{' '}
               <a href="https://www.linkedin.com/in/ilya-kushlianski/">

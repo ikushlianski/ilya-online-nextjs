@@ -53,9 +53,16 @@ export const CVOptions = ({ setValue }) => {
             </label>
           </div>
         </div>
-        <Button inverted onClick={handleClick}>
-          Preview & print {'\u{1F389}'}
-        </Button>
+        <div className="CVOptions__Option">
+          <label>
+            Tip: to save CV, choose &lsquo;Save as PDF&rsquo; in print dialog
+          </label>
+          <div className="CVOptions__PrintButton">
+            <Button inverted onClick={handleClick}>
+              Save or print {'\u{1F389}'}
+            </Button>
+          </div>
+        </div>
       </div>
     </div>
   );

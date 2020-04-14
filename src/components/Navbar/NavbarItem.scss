@@ -3,14 +3,12 @@
 .NavbarItem {
   display: grid;
   align-content: center;
-  height: 2rem;
   line-height: 2rem;
-  padding: $padding-margin-small $padding-margin-normal;
   font-size: $font-larger;
 
   @media (min-width: $screen-medium) {
     font-size: $font-normal;
-    height: $padding-margin-big * 2;
+    height: auto;
     text-align: center;
   }
 
@@ -41,4 +39,8 @@
       }
     }
   }
+}
+
+.NavbarItem__Link {
+  padding: 1rem;
 }

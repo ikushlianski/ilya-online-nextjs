@@ -10,14 +10,14 @@ export const CVContext = React.createContext(null);
 
 const CVPage = ({ jobs, education }) => {
   const [value, setValue] = React.useState({
-    extended: false,
+    extended: true,
     notes: false,
   });
 
   return (
     <Layout
       title="Ilya Kushlianski - CV"
-      description="Printable CV of Ilya Kushlianski, full-stack Javascript developer."
+      description="CV of Ilya Kushlianski, full-stack Javascript developer."
     >
       <div className="CVPage">
         <Block className="CVPage__SmallScreensWarning">

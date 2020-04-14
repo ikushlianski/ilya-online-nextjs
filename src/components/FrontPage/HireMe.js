@@ -23,7 +23,7 @@ export const HireMe = ({ loading, error, lookingForJob }) => {
           </div>
           <div className="HireMe__Controls">
             <Button href="/cv" cta>
-              Get & print my CV...
+              Print or save CV
             </Button>
           </div>
         </>

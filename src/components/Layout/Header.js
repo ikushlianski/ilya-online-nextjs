@@ -8,27 +8,37 @@ export const Header = () => {
     <Navbar>
       <NavbarItem href="/">
         <Link href="/">
-          <a href="/">Home</a>
+          <a className="NavbarItem__Link" href="/">
+            Home
+          </a>
         </Link>
       </NavbarItem>
       <NavbarItem href="/works">
         <Link href="/works">
-          <a href="/works">Portfolio</a>
+          <a className="NavbarItem__Link" href="/works">
+            Portfolio
+          </a>
         </Link>
       </NavbarItem>
       <NavbarItem href="/skills">
         <Link href="/skills">
-          <a href="/skills">Skills</a>
+          <a className="NavbarItem__Link" href="/skills">
+            Skills
+          </a>
         </Link>
       </NavbarItem>
       <NavbarItem href="/about">
         <Link href="/about">
-          <a href="/about">About me</a>
+          <a className="NavbarItem__Link" href="/about">
+            About me
+          </a>
         </Link>
       </NavbarItem>
       <NavbarItem className="shown-md" href="/cv">
         <Link href="/cv">
-          <a href="/cv">CV {'\u{1F4CE}'}</a>
+          <a className="NavbarItem__Link" href="/cv">
+            CV {'\u{1F4CE}'}
+          </a>
         </Link>
       </NavbarItem>
     </Navbar>

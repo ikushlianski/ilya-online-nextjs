@@ -20,15 +20,15 @@ export const Advantages = () => {
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Tech stack:</div>
-          Preferably a full-stack React and Node project
-        </p>
-        <p className="Advantages__Text">
-          <div className="Advantages__Accent">Outlook:</div>I want to grow as a
-          developer and, later, take managerial responsibilities
+          Preferably a full-stack React and Node project, or a frontend project
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Communication:</div>
           Would be nice to communicate with a foreign customer on a daily basis
+        </p>
+        <p className="Advantages__Text">
+          <div className="Advantages__Accent">Outlook:</div>I want to grow as a
+          developer and, later, take managerial responsibilities
         </p>
       </div>
     </div>
