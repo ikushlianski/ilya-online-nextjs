@@ -31,7 +31,7 @@ const AboutPage = () => (
               a couple of times a week. I also understood the value of
               documentation, which I now study for each new technology I pick.
               In addition, I have a separate YouTube account, only for tech
-              videos, and I watch it regularly.
+              videos, which I watch regularly.
             </p>
           </Card>
 
@@ -70,9 +70,9 @@ const AboutPage = () => (
             <p>
               Besides JS and React, I also learned PHP and databases, how to
               configure servers and work with Linux, how to use some AWS
-              services and many other smaller things and concepts. But I am not
-              ready to say I know them well, because I did not spend enough time
-              working with those technologies.
+              services and many other smaller things and concepts. I am not
+              ready to say I am confident with them but if needed, I can quickly
+              pick them up and bring to the desired level.
             </p>
             <p>
               So my focus is on Javascript, React and Node, but other
@@ -93,18 +93,18 @@ const AboutPage = () => (
           </Card>
 
           <Card flat>
-            <h3 className="AboutMePage__Q">Quality of code</h3>
+            <h3 className="AboutMePage__Q">What is quality code for me</h3>
             <p>
               Developers know there is no ideal code. But let us try to describe
               it. This is code that covers all or majority of use cases, code
               that is understandable to any developer. It is testable and
               desirably with well-written types. It takes into account app
-              architecture and does contains minimum kludges.
+              architecture.
             </p>
             <p>
               And of course it is stylistically the same, thanks to linters and
-              things like Prettier. This is the code I aim for, and hopefully
-              already write.
+              things like Prettier. This is the code I aim for and, in many
+              aspects, already write.
             </p>
           </Card>
 
@@ -120,7 +120,7 @@ const AboutPage = () => (
               I am among those developers who constantly think about the
               business value of the code we write. Tech debt management is
               important but refactoring for the sake of refactoring is a waste
-              of your client&apos;s money.
+              of client&apos;s money.
             </p>
           </Card>
         </div>
@@ -145,37 +145,39 @@ const AboutPage = () => (
               Coding seemed something from another planet but I made myself try
               HTML/CSS and Javascript. After getting the gist of frontend I
               dived into PHP and databases, because I was using Wordpress, after
-              all!
+              all! I needed to understand the whole process: from frontend to
+              backend and even some deployment.
             </p>
             <p>
               This is how I started doing mini-projects trying the technologies
               I learned. It was so exciting to create things on your own that
               soon I understood that my knowledge could be enough to start
-              coding profesionally.
+              coding professionally.
             </p>
             <p>
               I did an English version of a website for the news company I
               worked for, the first time I was paid for coding. Then I wrote a
-              script that optimizes image size, did a personal website on
-              Wordpress with custom theme and there it goes... In half a year I
-              found my first programming job.
+              script that optimizes image sizes for our editors, then made a
+              personal website on Wordpress with a custom theme and there it
+              goes... I soon found my first programming job.
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">Preferred work conditions</h3>
             <p>
-              In the office, the most important is to have a separate room for
-              my team. I don&apos;t like open spaces (who does?)
+              In the office, it is vary important for me to have a separate room
+              or space for my team. I don&apos;t like classic open spaces (who
+              does?)
             </p>
             <p>
               I can tolerate some noise, especially when guys are discussing
               some engineering stuff.
             </p>
             <p>
-              From the tech side, it would be cool to have 2 big monitors
-              instead of one. A comfortable chair and a powerful dev Linux
-              machine are all I need.
+              On the tech side, it would be cool to have 2 big monitors instead
+              of one. A comfortable chair and a powerful dev Linux machine is
+              actually all I need.
             </p>
             <p>
               Otherwise, I do not really have any special requirements to a
@@ -189,7 +191,7 @@ const AboutPage = () => (
             <p>
               I need to learn to separate time at work and out of work.
               Sometimes when I couldn&apos;t make something work all day, this
-              carries into my evening and I finish the day in bad mood.
+              carries into my evening and I finish that day in bad mood.
             </p>
             <p>
               I am also too cautious and instead of failure I prefer to spend
@@ -283,10 +285,9 @@ const AboutPage = () => (
             <h3 className="AboutMePage__Q">Domains I am interested in</h3>
             <p>
               I would like to develop web applications in such areas as real
-              estate, tourism, booking services, lifestyle, sport, fintech,
-              education or entertainment, but these are just a few areas of
-              interest. My choice also depends a lot on many other project
-              details.
+              estate, tourism, media, lifestyle, sport, fintech, education or
+              entertainment, but these are just a few areas of interest. My
+              choice depends on many other project details as well.
             </p>
           </Card>
 
