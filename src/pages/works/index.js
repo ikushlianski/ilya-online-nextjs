@@ -40,7 +40,7 @@ const WorksPage = ({ works }) => {
   );
 };
 
-WorksPage.getInitialProps = async _ => {
+export const getStaticProps = async _ => {
   try {
     const res = await fetch(`${process.env.API_URL}/works`);
     const json = await res.json();
@@ -54,7 +54,7 @@ WorksPage.getInitialProps = async _ => {
       {},
     );
 
-    return { works };
+    return { props: { works } };
   } catch (error) {
     console.error(error);
 

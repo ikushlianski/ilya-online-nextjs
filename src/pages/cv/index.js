@@ -36,12 +36,12 @@ const CVPage = ({ jobs, education }) => {
   );
 };
 
-CVPage.getInitialProps = async _ => {
+export const getStaticProps = async _ => {
   try {
     const res = await fetch(`${process.env.API_URL}/cv`);
     const [data] = await res.json();
 
-    return { jobs: data.jobs, education: data.education.reverse() };
+    return { props: { jobs: data.jobs, education: data.education.reverse() } };
   } catch (error) {
     console.error(error);
 

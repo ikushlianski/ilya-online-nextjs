@@ -1,4 +1,5 @@
 import React from 'react';
+import fetch from 'isomorphic-unfetch';
 
 import {
   Intro,
@@ -14,25 +15,8 @@ import { Layout } from '../../components/Layout';
 
 import '../../styles/styles.scss';
 
-const FrontPage = () => {
-  const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState(false);
-  const [lookingForJob, setLookingForJob] = React.useState(null);
-
-  React.useEffect(() => {
-    setLoading(true);
-
-    fetch(`${process.env.API_URL}/job/status`)
-      .then(res => res.json())
-      .then(({ open }) => {
-        setLookingForJob(open);
-      })
-      .catch(error => {
-        console.error(error);
-        setError(true);
-      })
-      .finally(() => setLoading(false));
-  }, []);
+const FrontPage = ({ lookingForJob, topSkills }) => {
+  console.log('topSkills ======', topSkills);
 
   return (
     <Layout className="HomePage">
@@ -49,24 +33,35 @@ const FrontPage = () => {
       </Section>
       <Section id="motivation-advantages" className="col-2-md">
         <Block className="shown-md">
-          <HireMe
-            lookingForJob={lookingForJob}
-            loading={loading}
-            error={error}
-          />
+          <HireMe lookingForJob={lookingForJob} />
         </Block>
         <Block>
           <Advantages />
         </Block>
       </Section>
       <Block className="Block--darker">
-        <MyTopSkills />
+        {topSkills && <MyTopSkills topSkills={topSkills} />}
       </Block>
       <Block className="hidden-md">
-        <HireMe lookingForJob={lookingForJob} loading={loading} error={error} />
+        <HireMe lookingForJob={lookingForJob} />
       </Block>
     </Layout>
   );
+};
+
+export const getStaticProps = async _ => {
+  try {
+    const skills = await fetch(`${process.env.API_URL}/skills/top`);
+    const topSkills = await skills.json();
+
+    return {
+      props: { lookingForJob: false, topSkills },
+    };
+  } catch (error) {
+    console.error(error);
+
+    return [];
+  }
 };
 
 export default FrontPage;

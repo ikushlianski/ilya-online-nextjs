@@ -4,51 +4,10 @@ import { Button } from '../../ui-kit/Button';
 
 import './MyTopSkills.scss';
 
-export const MyTopSkills = () => {
-  const [loading, setLoading] = React.useState(true);
-  const [error, setError] = React.useState(null);
-  const [topSkills, setTopSkills] = React.useState([]);
-
-  // in a bigger app we would use some kind of `client` for api requests
-  // but in this one, let's do with simple `fetch`es
-  React.useEffect(() => {
-    setLoading(true);
-
-    fetch(`${process.env.API_URL}/skills/top`)
-      .then(res => res.json())
-      .then(skills => {
-        setTopSkills(skills);
-        setLoading(false);
-      })
-      .catch(error => {
-        console.error('Error loading top skills', error);
-        setError('Could not load top skills');
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="MySkills">
-        <div className="MySkills__Loading">Loading skills...</div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="MySkills">
-        <div className="MySkills__Error">
-          <p>An error occurred</p>
-          <p>{error}</p>
-        </div>
-      </div>
-    );
-  }
-
+export const MyTopSkills = ({ topSkills }) => {
   return (
     <div className="MySkills">
-      {topSkills.length > 0 ? (
+      {topSkills && topSkills.length > 0 ? (
         <>
           <h2 className="MySkills__Header">Major skills</h2>
           <div className="MySkills__SkillsList">

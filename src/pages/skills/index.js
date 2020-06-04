@@ -69,7 +69,7 @@ const SkillsPage = ({ skills }) => {
   );
 };
 
-SkillsPage.getInitialProps = async _ => {
+export const getStaticProps = async _ => {
   try {
     const res = await fetch(`${process.env.API_URL}/skills`);
     const json = await res.json();
@@ -83,7 +83,7 @@ SkillsPage.getInitialProps = async _ => {
       {},
     );
 
-    return { skills };
+    return { props: { skills } };
   } catch (error) {
     console.error(error);
 
