@@ -13,4 +13,16 @@ module.exports = withSass({
   env: {
     API_URL: process.env.API_URL,
   },
+  exportPathMap: async function(
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId },
+  ) {
+    return {
+      '/front-page': { page: '/front-page' },
+      '/about': { page: '/about' },
+      '/works': { page: '/works' },
+      '/skills': { page: '/skills' },
+      '/cv': { page: '/cv' },
+    };
+  },
 });
