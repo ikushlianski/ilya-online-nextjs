@@ -16,7 +16,7 @@ export const Header = () => {
       <NavbarItem href="/works">
         <Link href="/works">
           <a className="NavbarItem__Link" href="/works">
-            Portfolio
+            Code examples
           </a>
         </Link>
       </NavbarItem>
