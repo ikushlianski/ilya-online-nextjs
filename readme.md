@@ -7,4 +7,6 @@ Launch `ilya-online-react-api` backend, should be running on `http:localhost:300
 
 > `.env.production` is vital for the production build, otherwise Next will likely give errors 
 
+Make the deployment file executable if it isn't yet: `sudo chmod +x deploy.sh`
+
 Run `npm run deploy`
