@@ -1,8 +1,9 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 
-import { Block } from '../../ui-kit/Block';
+import { Block } from '../../ui-kit';
 import { Layout, CVOptions, CVHeader, CVBody } from '../../components';
+import { sortChronologically } from '../../utils/sorting';
 
 import './CVPage.scss';
 
@@ -40,6 +41,8 @@ export const getStaticProps = async _ => {
   try {
     const res = await fetch(`${process.env.API_URL}/cv`);
     const [data] = await res.json();
+
+    data.jobs.sort(sortChronologically);
 
     return { props: { jobs: data.jobs, education: data.education.reverse() } };
   } catch (error) {
