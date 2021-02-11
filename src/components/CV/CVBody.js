@@ -77,7 +77,7 @@ export const CVBody = ({ jobs, education }) => {
           }`}
         >
           <div className="CVExperience">
-            <h3>Experience ({getTotalExperience(jobs)})</h3>
+            <h3>Overall experience ({getTotalExperience(jobs)})</h3>
             <div className="CVExperience__Places">
               {jobs.map(job => {
                 const startDate = dayjs(job.start).format('MMMM YYYY');
@@ -146,35 +146,6 @@ export const CVBody = ({ jobs, education }) => {
 
           {extended && (
             <div className="CVAbout">
-              <div className="CVAbout__DescriptionCode">
-                <h3>Coding</h3>
-                <p>
-                  I tend to focus on what value my code brings to the end user
-                  or business. The beauty of code I write is in user
-                  satisfaction - with this in mind I started programming willing
-                  to build a website for what I thought would become my future
-                  business.
-                </p>
-                <p>
-                  Cleanliness and maintainability of code are important to me. I
-                  always keep in mind what effect my programming decisions will
-                  have on the product&apos;s architecture although it is not
-                  always easy to do. This is something seniors should care about
-                  and I&apos;m already preparing myself to it.
-                </p>
-                <p>
-                  I am not religious about any technology and think each one is
-                  just a tool that is to be used for its purposes. I curiously
-                  watch the evolution of the web, but focus on specific, most
-                  popular and well-tested libraries and frameworks that make my
-                  work smooth and enjoyable.
-                </p>
-                <p>
-                  Having decided to stay in Javascript ecosystem, I&apos;m
-                  always open to learning new things as soon as they let me
-                  solve users&apos; and businesses&apos; problems effectively.
-                </p>
-              </div>
               <div className="CVAbout__DescriptionCommon">
                 <h3>About me, actually</h3>
                 <p>
@@ -184,9 +155,8 @@ export const CVBody = ({ jobs, education }) => {
                   and gaining experience quicker.
                 </p>
                 <p>
-                  I have always felt my leadership potential, hence I would like
-                  to take respective responsibilities in the coming years, like
-                  managing small teams or mentoring beginner developers.
+                  I have always felt my leadership potential, hence I am working
+                  towards becoming Lead Developer in the coming years.
                 </p>
                 <p>
                   A polite and empathic person, I prefer compromise to conflict
