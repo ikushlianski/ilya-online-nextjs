@@ -27,31 +27,34 @@ export const CVBody = ({ jobs, education }) => {
             <h3>Skills</h3>
             <p>
               <b>Frontend:</b> Javascript, Typescript, React (Hooks, Redux,
-              Redux Saga), CSS (Flexbox, Grid, Styled Components), HTML, some
-              Next.js; unit testing basics;
+              Redux Saga), CSS (Flexbox, some Grid, Styled Components), HTML,
+              some Next.js;
             </p>
             <p>
-              <b>Backend:</b> Node.js, Express, basic Nest.js, MySQL/Sequelize,
-              MongoDB/Mongoose fundamentals;
+              <b>Backend:</b> Node.js, Express, Postgres, Redis, TypeORM,
+              Sequelize, basic Nest.js. Learned some AWS services (incl. Lambda,
+              S3, CloudFront, DynamoDB, ECS, CloudFormation) and Serverless
+              Framework. Prefer working on Linux; knowledge of web security and
+              web performance best practices;
             </p>
             <p>
-              <b>Tools & misc:</b> Git, Webpack, ESLint, npm; basic CI/CD with
-              Linux, Docker, Jenkins and Nginx; worked with some AWS services.
-              Know clean code principles and best practices. Always think about
+              <b>Tools & misc:</b> Jest unit testing, Git, Webpack, ESLint, npm;
+              Docker and docker-compose; basic CI/CD skills, Jenkins and Nginx;
+              worked with some AWS services. Know clean code and clean
+              architecture principles and best practices. Always think about
               architectural implications of the features I implement.
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work (Jira, Pivotal
-              Tracker), fluent English, leadership, mentoring. Comfortable
-              working in a Scrum team. Would love to take part in interviews,
-              meetings with customers and continue developing
-              leadership/managerial skills.
+              Tracker), written and spoken English (C1+), leadership, mentoring.
+              Comfortable with Scrum processes. Would love to take part in
+              interviews, meetings with customers and continue developing
+              leadership skills.
             </p>
             {extended && (
               <p>
-                <b>Plans:</b> Advanced Node.js, React SSR, PWAs, React Native,
-                GraphQL, React Testing Library, broaden web security and
-                performance knowledge and more...
+                <b>Plans:</b> React SSR, PWAs, GraphQL, React Testing Library
+                and more...
               </p>
             )}
           </div>
@@ -77,7 +80,7 @@ export const CVBody = ({ jobs, education }) => {
           }`}
         >
           <div className="CVExperience">
-            <h3>Overall experience ({getTotalExperience(jobs)})</h3>
+            <h3>Overall engineering experience ({getTotalExperience(jobs)})</h3>
             <div className="CVExperience__Places">
               {jobs.map(job => {
                 const startDate = dayjs(job.start).format('MMMM YYYY');
