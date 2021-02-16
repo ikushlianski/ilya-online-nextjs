@@ -80,7 +80,7 @@ export const CVBody = ({ jobs, education }) => {
           }`}
         >
           <div className="CVExperience">
-            <h3>Overall engineering experience ({getTotalExperience(jobs)})</h3>
+            <h3>Engineering experience ({getTotalExperience(jobs)})</h3>
             <div className="CVExperience__Places">
               {jobs.map(job => {
                 const startDate = dayjs(job.start).format('MMMM YYYY');

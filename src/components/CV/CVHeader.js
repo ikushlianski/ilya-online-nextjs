@@ -25,7 +25,7 @@ export const CVHeader = () => {
             <a href="mailto:kushliansky@gmail.com">kushliansky@gmail.com</a>
           </div>
           <div className="CVPage__Phone">
-            <b>Phone:</b> +375 (29) 608 8900
+            <b>Telegram:</b> +375 (29) 608 8900
           </div>
           <div className="CVPage__Age">
             <b>Age:</b> {new Date().getFullYear() - 1991}
