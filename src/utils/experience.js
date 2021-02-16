@@ -12,14 +12,18 @@ export const getTotalExperience = (jobs = []) => {
 
     return acc;
   }, 0);
+  const realMonths = totalMonths - 1;
 
   const wholeYears = Math.floor(totalMonths / 12);
-  const months = totalMonths % 12;
+  const months = wholeYears > 0 ? realMonths % 12 : totalMonths % 12;
+  console.log('months', months);
 
   return `${
     wholeYears ? wholeYears + ' year' + getTimeWordEnding(wholeYears) : ''
-  }${wholeYears && months ? ' ' : ''}${
-    months ? months + ' month' + getTimeWordEnding(months) : ''
+  }${wholeYears && months && realMonths !== 11 ? ' ' : ''}${
+    months && realMonths !== 11
+      ? months + ' month' + getTimeWordEnding(months)
+      : ''
   }`;
 };
 

@@ -40,7 +40,7 @@ test('if 1 year, do not print years', () => {
         end: minskTime(dayjs('4 April 2020')),
       },
     ]),
-  ).toBe('1 year 11 months');
+  ).toBe('1 year 10 months');
 });
 
 test('counts Klika Experience', () => {
@@ -51,7 +51,7 @@ test('counts Klika Experience', () => {
         end: minskTime(dayjs('3 June 2020')),
       },
     ]),
-  ).toBe('2 years');
+  ).toBe('2 years 11 months');
 });
 
 test('counts usual experience with both months and years', () => {
@@ -62,7 +62,18 @@ test('counts usual experience with both months and years', () => {
         end: minskTime(dayjs('21 June 2020')),
       },
     ]),
-  ).toBe('2 years 1 month');
+  ).toBe('2 years');
+});
+
+test('counts experience when exactly one year passed', () => {
+  expect(
+    getTotalExperience([
+      {
+        start: minskTime(dayjs('8 June 2020')),
+        end: minskTime(dayjs('7 June 2021')),
+      },
+    ]),
+  ).toBe('1 year');
 });
 
 const minskTime = time =>
