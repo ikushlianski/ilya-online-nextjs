@@ -7,17 +7,15 @@ import {
   ExperienceYears,
   Motivation,
   HireMe,
-} from '../../components/FrontPage';
-import { MyTopSkills } from '../../components/FrontPage/MyTopSkills';
+} from '../../components';
+import { MyTopSkills } from '../../components';
 
 import { Block, Section } from '../../ui-kit';
-import { Layout } from '../../components/Layout';
+import { Layout } from '../../components';
 
 import '../../styles/styles.scss';
 
 const FrontPage = ({ lookingForJob, topSkills }) => {
-  console.log('topSkills ======', topSkills);
-
   return (
     <Layout className="HomePage">
       <Block className="p0-md">

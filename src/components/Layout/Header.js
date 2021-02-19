@@ -13,30 +13,30 @@ export const Header = () => {
           </a>
         </Link>
       </NavbarItem>
-      <NavbarItem href="/works">
-        <Link href="/works">
-          <a className="NavbarItem__Link" href="/works">
+      <NavbarItem href="/works/index.html">
+        <Link href="/works/index.html">
+          <a className="NavbarItem__Link" href="/works/index.html">
             Code examples
           </a>
         </Link>
       </NavbarItem>
-      <NavbarItem href="/skills">
-        <Link href="/skills">
-          <a className="NavbarItem__Link" href="/skills">
+      <NavbarItem href="/skills/index.html">
+        <Link href="/skills/index.html">
+          <a className="NavbarItem__Link" href="/skills/index.html">
             Skills
           </a>
         </Link>
       </NavbarItem>
-      <NavbarItem href="/about">
-        <Link href="/about">
-          <a className="NavbarItem__Link" href="/about">
+      <NavbarItem href="/about/index.html">
+        <Link href="/about/index.html">
+          <a className="NavbarItem__Link" href="/about/index.html">
             About me
           </a>
         </Link>
       </NavbarItem>
-      <NavbarItem className="shown-md" href="/cv">
-        <Link href="/cv">
-          <a className="NavbarItem__Link" href="/cv">
+      <NavbarItem className="shown-md" href="/cv/index.html">
+        <Link href="/cv/index.html">
+          <a className="NavbarItem__Link" href="/cv/index.html">
             CV {'\u{1F4CE}'}
           </a>
         </Link>

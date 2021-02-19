@@ -16,7 +16,6 @@ export const getTotalExperience = (jobs = []) => {
 
   const wholeYears = Math.floor(totalMonths / 12);
   const months = wholeYears > 0 ? realMonths % 12 : totalMonths % 12;
-  console.log('months', months);
 
   return `${
     wholeYears ? wholeYears + ' year' + getTimeWordEnding(wholeYears) : ''

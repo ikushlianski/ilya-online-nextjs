@@ -31,9 +31,9 @@ export const Layout = ({
       localStorage.setItem('viewCount', viewCount + 1);
     }
 
-    if (viewCount % 10 === 0) {
-      setCtaOpen(true);
-    }
+    // if (viewCount % 10 === 0) {
+    //   setCtaOpen(true);
+    // }
   }, []);
 
   return (
