@@ -45,7 +45,7 @@ export const Motivation = () => {
         </li>
       </ul>
       <div className="Motivation__Controls">
-        <Button inverted href="/about">
+        <Button inverted href="/about/index.html">
           More about me
         </Button>
       </div>

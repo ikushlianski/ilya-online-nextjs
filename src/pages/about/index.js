@@ -42,7 +42,7 @@ const AboutPage = () => (
               practice in the end. I do my personal projects and in every new
               project I try to learn and practise some new technologies.
             </p>
-            <Button inverted href="/works">
+            <Button inverted href="/works/index.html">
               See my projects
             </Button>
             <p>

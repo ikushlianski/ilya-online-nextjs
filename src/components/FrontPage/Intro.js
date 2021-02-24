@@ -20,7 +20,7 @@ export const Intro = () => (
           Full-stack Javascript developer
         </p>
         <div className="Intro__Controls shown-md">
-          <Button inverted href="/cv">
+          <Button inverted href="/cv/index.html">
             See my CV
           </Button>
         </div>

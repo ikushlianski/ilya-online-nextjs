@@ -52,8 +52,11 @@ export const getStaticProps = async _ => {
     const skills = await fetch(`${process.env.API_URL}/skills/top`);
     const topSkills = await skills.json();
 
+    const jobStatus = await fetch(`${process.env.API_URL}/job/status`);
+    const { open: lookingForJob } = await jobStatus.json();
+
     return {
-      props: { lookingForJob: false, topSkills },
+      props: { lookingForJob: lookingForJob, topSkills },
     };
   } catch (error) {
     console.error(error);

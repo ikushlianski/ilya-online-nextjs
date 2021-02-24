@@ -23,7 +23,7 @@ export const MyTopSkills = ({ topSkills }) => {
           </div>
           {topSkills.length > 0 && (
             <div className="MySkills__Controls">
-              <Button href="/skills" inverted>
+              <Button href="/skills/index.html" inverted>
                 Explore all my skills
               </Button>
             </div>
