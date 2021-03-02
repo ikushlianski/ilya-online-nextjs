@@ -12,9 +12,10 @@ export const Motivation = () => {
         <li className="Motivation__ListGroup">
           <ul>
             <li className="Motivation__ListItem">
-              I want to be behind{' '}
+              I want to build{' '}
               <span className="Motivation__Accent">
-                awesome and useful products
+                awesome applications based on cost-effective and flexible
+                architecture
               </span>
             </li>
             <li className="Motivation__ListItem">
@@ -28,11 +29,11 @@ export const Motivation = () => {
         <li className="Motivation__ListGroup">
           <ul>
             <li className="Motivation__ListItem">
-              In software development you are assessed{' '}
+              In programming, I value not only quality coding and challenging
+              tasks, but also{' '}
               <span className="Motivation__Accent">
-                by the real value you bring
-              </span>{' '}
-              to businesses
+                communication with the customer and end users{' '}
+              </span>
             </li>
             <li className="Motivation__ListItem">
               Coding is a Lego with endless pieces. This is where I get{' '}

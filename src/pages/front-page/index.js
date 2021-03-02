@@ -56,7 +56,7 @@ export const getStaticProps = async _ => {
     const { open: lookingForJob } = await jobStatus.json();
 
     return {
-      props: { lookingForJob: lookingForJob, topSkills },
+      props: { lookingForJob, topSkills },
     };
   } catch (error) {
     console.error(error);
