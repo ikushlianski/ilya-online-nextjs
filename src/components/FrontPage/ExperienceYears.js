@@ -3,24 +3,13 @@ import React from 'react';
 import './ExperienceYears.scss';
 
 export const ExperienceYears = () => {
-  const webDevStudiesStart = new Date('Jun 1, 2016');
-  const prodStart = new Date('Jun 4, 2018');
+  const webDevWorksStart = new Date('Jun 1, 2017');
   const msInYear = 3.154e10;
 
-  const overallYears = round((Date.now() - webDevStudiesStart) / msInYear);
-  const prodExperience = round((Date.now() - prodStart) / msInYear);
+  const overallYears = round((Date.now() - webDevWorksStart) / msInYear);
 
   return (
     <div className="Experience">
-      <div className="Experience__Block">
-        <div className="Experience__Years">
-          <span className="Experience__Number Experience__Number--big">
-            {prodExperience}
-          </span>{' '}
-          <span className="Experience__YearsWord">years</span>
-        </div>
-        <div className="Experience__Text">of production experience</div>
-      </div>
       <div className="Experience__Block">
         <div className="Experience__Years">
           <span className="Experience__Number Experience__Number--big">
