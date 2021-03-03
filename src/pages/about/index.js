@@ -9,53 +9,108 @@ import './AboutPage.scss';
 const AboutPage = () => (
   <Layout title="Ilya Kushlianski - About me">
     <div className="AboutMePage">
+      <Block id="WorkCareer">
+        <h1 className="AboutMePage__Heading">HR information</h1>
+        <div className="AboutMePage__QA">
+          {Date.now() < dayjs('2021-07-15') && (
+            <Card flat>
+              <h3 className="AboutMePage__Q">
+                Why I am considering changing my current company
+              </h3>
+              <p>
+                I am only considering options this time and might not leave
+                EPAM. Projects offered to me were not 100% suitable. I do not
+                like huge projects and very tight timelines that make you work
+                evenings and even nights (a couple of times that really
+                happened).
+              </p>
+              <p>
+                A good interesting project is the key for my decision to change
+                the company.
+              </p>
+            </Card>
+          )}
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Domains I am interested in</h3>
+            <p>
+              I would like to develop web applications in such areas as real
+              estate, e-commerce, tourism, media, lifestyle, sport, fintech,
+              education or entertainment, but these are just a few areas of
+              interest. My choice depends on many other project details as well.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">The project of my dream</h3>
+            <p>
+              Team: not very large, 5-10 people. A skilled and friendly team
+              lead, without self-pride, as well as ambitious devs who write
+              quality code and with whom you grow as a professional.
+            </p>
+            <p>
+              Product: a full-stack web application, where you can do both
+              frontend and backend development.
+            </p>
+            <p>
+              Processes: Scrum or alike. No minute-by-minute time tracking (do
+              you really trust your developers?). Estimations in story points,
+              which are not mapped to hours or days.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Overall career plans</h3>
+            <p>
+              In the coming years I&apos;m planning to keep coding and keep
+              improving my hard skills (both frontend and backend). Among plans
+              are AWS and possibly Node.js certifications. As my dev skills grow
+              I would like to build more complex apps, master best practices of
+              CI/CD and try different architectural approaches.
+            </p>
+            <p>
+              At the same time I am willing to assume more leadership
+              responsibilities like interviewing and mentoring other devs, take
+              part in pre-sales and estimation activities. Further, I would see
+              myself in a managerial position (team lead and then engineering
+              manager).
+            </p>
+          </Card>
+        </div>
+      </Block>
+
       <Block id="Coding">
         <h1 className="AboutMePage__Heading">Coding</h1>
         <div className="AboutMePage__QA">
           <Card flat>
             <h3 className="AboutMePage__Q">Sources I use to learn</h3>
             <p>
-              I did almost all learning on my own, without any courses or
-              bootcamps. I just told myself not to be afraid and try. At first I
-              used online courses offering both theory and practice. Then I
-              delved deeper into a couple of Javascript and PHP books. For CSS,
-              it was more practice and Stack Overflow Q&A.
+              For tech overviews: email listings with valuable articles, YouTube
+              videos from conferences and podcasts
             </p>
             <p>
-              After gaining some experience I switched to reading various
-              articles in blogs, on Medium, CSS Tricks, Dev.to and others about
-              best practices of what I already knew.
+              For learning new things: specs, documentation and video courses.
             </p>
             <p>
-              Currently I&apos;m subscribed to lots of newsletters which I read
-              a couple of times a week. I also understood the value of
-              documentation, which I now study for each new technology I pick.
-              In addition, I have a separate YouTube account, only for tech
-              videos, which I watch regularly.
+              For quick bites, Stack Overflow is the standard (I do not own a
+              Copy-Past button though).
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">How I learn code</h3>
             <p>
-              Can&apos;t tell you anything new here, since it&apos;s all about
-              practice in the end. I do my personal projects and in every new
-              project I try to learn and practise some new technologies.
+              It is all about practice in the end. I do my personal projects and
+              in every new project I try to learn and give a try to some new
+              technologies.
             </p>
             <Button inverted href="/works/index.html">
               See my projects
             </Button>
             <p>
               For theory, I use a technique called &lsquo;spaced
-              repetition&rsquo;. I have lots of Anki decks and cards with
-              questions about a particular technology or language. This allows
-              me to keep my knowledge fresh on any topic I&apos;m currently
-              working with.
-            </p>
-            <p>
-              Courses, articles, docs, newsletters, thematic videos and
-              exploring other people&apos;s code are also part of my learning
-              strategy.
+              repetition&rsquo;. This helps me keep my knowledge fresh on any
+              topic I&apos;m currently working with.
             </p>
           </Card>
 
@@ -63,64 +118,47 @@ const AboutPage = () => (
             <h3 className="AboutMePage__Q">Why I focus only on JS</h3>
             <p>
               I believe a good engineer can switch between languages without
-              much difficulty, but since it&apos;s impossible to focus on many
-              things at once I chose for now to thoroughly learn JS and its rich
-              ecosystem.
+              much difficulty, but since it&apos;s impossible to be good at many
+              languages at once. I bet on good knowledge of one thing.
             </p>
             <p>
-              Besides JS and React, I also learned PHP and databases, how to
-              configure servers and work with Linux, how to use some AWS
-              services and many other smaller things and concepts. I am not
-              ready to say I am confident with them but if needed, I can quickly
-              pick them up and bring to the desired level.
-            </p>
-            <p>
-              So my focus is on Javascript, React and Node, but other
-              technologies are not excluded. It&apos;s just about priorities.
+              Besides JS and React, I also spent some time learning PHP and
+              databases, which eventually deepened my backend knowledge and led
+              me to the server side of things.
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">Dealing with difficulties</h3>
             <p>
-              Sometimes it gets frustrating when you keep banging your head
-              against a problem and still cannot get things to work properly.
-              But I treat this normally and think the best way to learn is to
-              relax and keep making mistakes. The main thing is to not repeat
-              them. I have learned to ask right questions and not hesitate to
-              ask for help.
+              Banging your head against a problem is frustrating. But as I gain
+              more experience this is no more a big difficulty. Now the
+              challenge is to build well-maintained code bases with
+              forward-looking architecture.
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">What is quality code for me</h3>
             <p>
-              Developers know there is no ideal code. But let us try to describe
-              it. This is code that covers all or majority of use cases, code
-              that is understandable to any developer. It is testable and
-              desirably with well-written types. It takes into account app
-              architecture.
+              Developers are right in saying there is no ideal code. For me
+              quality means understandable, typed, testable and maintainable
+              code.
             </p>
-            <p>
-              And of course it is stylistically the same, thanks to linters and
-              things like Prettier. This is the code I aim for and, in many
-              aspects, already write.
-            </p>
+            <p>Linters like Prettier and ESLint are of great help too.</p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">Coding vs. business</h3>
             <p>
-              I saw developers diving into coding so much that they forgot for
-              whom their product is. They forgot about users! Thinking about
-              code quality is great but if we trade UX for &lsquo;more
-              readable&rsquo; code just because we want, this is bad.
+              I belong to the class of developers for whom coding is
+              inextricably linked with the business side of things. I understand
+              that our products do not exist in vacuum, there are users out
+              there who want their product in the market!
             </p>
             <p>
-              I am among those developers who constantly think about the
-              business value of the code we write. Tech debt management is
-              important but refactoring for the sake of refactoring is a waste
-              of client&apos;s money.
+              I strive to achieve a reasonable balance between quality code and
+              changing business requirements.
             </p>
           </Card>
         </div>
@@ -132,9 +170,9 @@ const AboutPage = () => (
           <Card flat>
             <h3 className="AboutMePage__Q">How I got into coding</h3>
             <p>
-              It all started with a tourism website for Minsk that I wanted to
-              make, but did not have either money or knowledge about how to do
-              that. I just wanted Belarus to be more famous in the world.
+              It all started with a Minsk tourism website I wanted to create,
+              but I did not have either money or knowledge required for that. I
+              just wanted Belarus to be more famous in the world.
             </p>
             <p>
               I started googling and stumbled into Joomla and Wordpress, but
@@ -142,83 +180,52 @@ const AboutPage = () => (
               idea.
             </p>
             <p>
-              Coding seemed something from another planet but I made myself try
-              HTML/CSS and Javascript. After getting the gist of frontend I
-              dived into PHP and databases, because I was using Wordpress, after
-              all! I needed to understand the whole process: from frontend to
-              backend and even some deployment.
+              Despite some self-doubts I decided to give HTML/CSS and Javascript
+              a try. I liked it so much that I then dived into PHP and
+              databases. Running a Wordpress website I needed to understand the
+              whole process, from frontend to backend and even some deployment.
             </p>
             <p>
-              This is how I started doing mini-projects trying the technologies
-              I learned. It was so exciting to create things on your own that
-              soon I understood that my knowledge could be enough to start
-              coding professionally.
-            </p>
-            <p>
-              I did an English version of a website for the news company I
-              worked for, the first time I was paid for coding. Then I wrote a
-              script that optimizes image sizes for our editors, then made a
-              personal website on Wordpress with a custom theme and there it
-              goes... I soon found my first programming job.
+              I started doing other mini-projects trying the technologies I
+              learned. I made an English version of a website for the news
+              company I worked for, the first time I was paid for coding. Then
+              came other small works and there it goes... I soon landed my first
+              programming job.
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">Preferred work conditions</h3>
             <p>
-              In the office, it is vary important for me to have a separate room
-              or space for my team. I don&apos;t like classic open spaces (who
-              does?)
+              COVID-19 changed everything in my life. Now I do not consider any
+              office jobs, even when the pandemic goes away.
             </p>
             <p>
-              I can tolerate some noise, especially when guys are discussing
-              some engineering stuff.
-            </p>
-            <p>
-              On the tech side, it would be cool to have 2 big monitors instead
-              of one. A comfortable chair and a powerful dev Linux machine is
-              actually all I need.
-            </p>
-            <p>
-              Otherwise, I do not really have any special requirements to a
-              workplace. Coffee, shower, all that stuff? Cool to have it, of
-              course, but not mission critical :)
+              My only tech requirement to any company is to provide their
+              employees with powerful enough machines (32GB RAM please!).
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">My weaknesses</h3>
             <p>
-              I need to learn to separate time at work and out of work.
-              Sometimes when I couldn&apos;t make something work all day, this
-              carries into my evening and I finish that day in bad mood.
+              I sometimes find it hard to maintain work-life balance. Sometimes
+              when I couldn&apos;t make something work by the end of the day,
+              this carries into my evening and I may finish that day in worse
+              mood than usual.
             </p>
             <p>
               I am also too cautious and instead of failure I prefer to spend
               more time to ensure I will not fail.
             </p>
             <p>
-              Sometimes I am too serious and too focused on work not allowing
-              myself to relax and do some tea talk with teammates.
+              Talking to lots of unfamiliar people is a stress for everyone,
+              myself included.
             </p>
             <p>
               Finally, I am not firm enough in some communications and if I face
-              aggression I cannot respond adequately, which hurts my morale. I
-              need to learn to handle this better.
-            </p>
-          </Card>
-
-          <Card flat>
-            <h3 className="AboutMePage__Q">Team buildings</h3>
-            <p>
-              Honestly, I do not like them. Being a team player during working
-              hours I value my personal time and privacy. Spending time with the
-              family is one of the greatest values I have in my life.
-            </p>
-            <p>
-              I appreciate it when companies understand that their employees are
-              all different people and not everyone is interested in public
-              gatherings. Hope you are among these companies, too!
+              (passive?) aggression I may not be able to respond adequately,
+              which hurts my morale. I need to learn to handle this better.
             </p>
           </Card>
 
@@ -240,91 +247,16 @@ const AboutPage = () => (
             <p>
               I love reading about the history of the 20th century, because I
               want to understand why things happened as they did, why Belarus is
-              where it is now, why the quality of life is on the present level
-              and what happened to other countries over the same time.
+              where it is now, why we lag behind many countries.
             </p>
             <p>
-              Space and universe is another topic I am attracted. We know so
-              little about the world we live in! Here also go fiction books,
-              especially about time travelling.
+              Good music to relax is the best remedy after a hard working day. I
+              am fond of fiction books, especially about time travelling.
             </p>
             <p>
-              Recently, I dived a bit into urbanism. It is fascinating how
-              people make their cities a much better place! Minsk can borrow a
-              lot of ideas from around the globe.
-            </p>
-          </Card>
-        </div>
-      </Block>
-
-      <Block id="WorkCareer">
-        <h1 className="AboutMePage__Heading">Work & Career</h1>
-        <div className="AboutMePage__QA">
-          {Date.now() < dayjs('2020-07-15') && (
-            <Card flat>
-              <h3 className="AboutMePage__Q">
-                Why I am leaving my current company
-              </h3>
-              <p>
-                Because of lack of pure web projects. When taking this job 2
-                years ago I did not yet pay that much attention to what a
-                company does. It was about matching my skills with
-                companies&apos; requirements. Klika Tech&apos;s main domain is
-                IoT and almost all projects the company could offer me were just
-                frontend for IoT devices, while I want a full-stack web project.
-              </p>
-              <p>
-                At the same time I&apos;m grateful to the company for letting me
-                gain valuable experience and assigning me to one of the few
-                projects without an IoT component.
-              </p>
-            </Card>
-          )}
-
-          <Card flat>
-            <h3 className="AboutMePage__Q">Domains I am interested in</h3>
-            <p>
-              I would like to develop web applications in such areas as real
-              estate, tourism, media, lifestyle, sport, fintech, education or
-              entertainment, but these are just a few areas of interest. My
-              choice depends on many other project details as well.
-            </p>
-          </Card>
-
-          <Card flat>
-            <h3 className="AboutMePage__Q">The project of my dream</h3>
-            <p>
-              Team: not very large, 3-10 people. A skilled and friendly team
-              lead and talented devs who write quality code and with whom you
-              grow as a professional.
-            </p>
-            <p>
-              Product: develop a full-stack web application, where both frontend
-              and backend is developed together, by our team. This product is
-              already in use or will shortly be in use by lots of people, so the
-              team will get feedback from real users instantly.
-            </p>
-            <p>
-              Processes: something at least resembling Scrum. No strict time
-              tracking (I am a reliable person and prove it everywhere I work).
-            </p>
-          </Card>
-
-          <Card flat>
-            <h3 className="AboutMePage__Q">Overall career plans</h3>
-            <p>
-              In the coming years I&apos;m planning to keep coding and improve
-              my skills a lot (both frontend and backend). Among plans are
-              certifications for AWS and Node.js. As my dev skills grow I would
-              like to build more complex apps, master best practices of
-              deployment and web security and try different architectural
-              approaches.
-            </p>
-            <p>
-              At the same time I am willing to assume more business-related
-              responsibilities like interviewing and mentoring of junior devs,
-              take part in pre-sales activities. Further, I see myself in a
-              management position (team lead).
+              Recently, I dived into urbanism. It is fascinating how people make
+              their cities a much better place! Minsk can borrow a lot of ideas
+              from around the globe.
             </p>
           </Card>
         </div>
