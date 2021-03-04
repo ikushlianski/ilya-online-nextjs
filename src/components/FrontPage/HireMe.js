@@ -22,6 +22,9 @@ export const HireMe = ({ lookingForJob }) => {
               Print or save CV
             </Button>
           </div>
+          <div className="HireMe__AvailableFrom">
+            Potentially available from June 8, 2021
+          </div>
         </>
       ) : (
         <div className="HireMe__Unavailable">

@@ -67,10 +67,16 @@
 }
 
 .HireMe__LiveText {
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-align: center;
   color: var(--accent);
   font-weight: bold;
+}
+
+.HireMe__AvailableFrom {
+  text-align: center;
+  color: var(--textColor);
+  font-size: 0.9rem;
 }
 
 .HireMe__Loading {
