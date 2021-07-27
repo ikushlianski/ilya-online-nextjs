@@ -28,16 +28,14 @@
     "not IE 11"
   ],
   "dependencies": {
-    "@zeit/next-sass": "1.0.1",
     "classnames": "2.2.6",
     "dayjs": "1.8.21",
     "dotenv": "8.2.0",
     "isomorphic-unfetch": "3.0.0",
-    "next": "9.5.4",
-    "node-sass": "6.0.1",
+    "next": "11.0.1",
     "postcss-css-variables": "0.14.0",
-    "react": "16.13.0",
-    "react-dom": "16.13.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "sass": "1.26.3"
   },
   "devDependencies": {

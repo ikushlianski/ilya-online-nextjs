@@ -6,7 +6,7 @@ import { Layout } from '../../components';
 import { keyBy } from '../../utils';
 import { WorksBox } from '../../components';
 
-import './WorksPage.scss';
+import './WorksPage.module.scss';
 
 const WorksPage = ({ works }) => {
   const { beginner, intermediate, advanced } = works;

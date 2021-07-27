@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from '../../ui-kit';
 
-import './Intro.scss';
+import './Intro.module.scss';
 
 export const Intro = () => (
   <div className="Intro">

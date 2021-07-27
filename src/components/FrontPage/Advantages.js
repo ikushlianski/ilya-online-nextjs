@@ -2,13 +2,13 @@ import React from 'react';
 
 import { Button } from '../../ui-kit/Button';
 
-import './Advantages.scss';
+import styles from './Advantages.module.scss';
 
 export const Advantages = () => {
   return (
-    <div className="Advantages">
+    <div className={styles.Advantages}>
       <h2 className="Advantages__Header">What project I am interested in</h2>
-      <div className="Advantages__Content">
+      <div className={styles.Advantages__Content}>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Team:</div>
           Small or medium-sized team

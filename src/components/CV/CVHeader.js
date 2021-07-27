@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CVContext } from '../../pages/cv';
 
-import './CVHeader.scss';
+import './CVHeader.module.scss';
 
 export const CVHeader = () => {
   const { extended } = React.useContext(CVContext);

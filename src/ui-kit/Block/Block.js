@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import './Block.scss';
+import './Block.module.scss';
 
 export const Block = ({ children, className, amazingBg, ...props }) => {
   const classes = cx('Block', className, {

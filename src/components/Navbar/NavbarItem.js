@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import cx from 'classnames';
 
-import './NavbarItem.scss';
+import './NavbarItem.module.scss';
 
 export const NavbarItem = ({ children, href, className, ...props }) => {
   const { pathname } = useRouter();

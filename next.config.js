@@ -1,12 +1,10 @@
 const path = require('path');
 
-const withSass = require('@zeit/next-sass');
-
 require('dotenv').config({
   path: path.resolve(__dirname, `.env.${process.env.NODE_ENV}`),
 });
 
-module.exports = withSass({
+module.exports = {
   webpack(config, options) {
     return config;
   },
@@ -25,4 +23,4 @@ module.exports = withSass({
       '/cv': { page: '/cv' },
     };
   },
-});
+};

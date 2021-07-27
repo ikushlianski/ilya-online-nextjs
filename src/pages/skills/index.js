@@ -6,7 +6,7 @@ import { Layout } from '../../components/Layout';
 import { SkillsBox } from '../../components/Skills';
 import { keyBy } from '../../utils';
 
-import './SkillsPage.scss';
+import './SkillsPage.module.scss';
 
 export const SkillsDisplayModeContext = React.createContext();
 

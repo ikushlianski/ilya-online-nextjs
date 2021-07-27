@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Toggle.scss';
+import './Toggle.module.scss';
 
 export const Toggle = ({
   onChange,

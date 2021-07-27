@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import './Section.scss';
+import './Section.module.scss';
 
 export const Section = ({
   id,

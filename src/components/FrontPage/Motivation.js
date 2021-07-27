@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from '../../ui-kit/Button';
 
-import './Motivation.scss';
+import './Motivation.module.scss';
 
 export const Motivation = () => {
   return (

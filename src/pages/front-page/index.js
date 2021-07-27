@@ -13,7 +13,7 @@ import { MyTopSkills } from '../../components';
 import { Block, Section } from '../../ui-kit';
 import { Layout } from '../../components';
 
-import '../../styles/styles.scss';
+import '../../styles/styles.module.scss';
 
 const FrontPage = ({ lookingForJob, topSkills }) => {
   return (

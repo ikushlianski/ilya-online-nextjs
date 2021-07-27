@@ -5,7 +5,7 @@ import cx from 'classnames';
 // but this is a small project, so let it be :)
 import Link from 'next/link';
 
-import './Button.scss';
+import './Button.module.scss';
 
 export const Button = ({
   inverted,

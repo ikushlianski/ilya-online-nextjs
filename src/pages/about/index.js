@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { Block, Button, Card } from '../../ui-kit';
 import { Layout } from '../../components/Layout';
 
-import './AboutPage.scss';
+import './AboutPage.module.scss';
 
 const AboutPage = () => (
   <Layout title="Ilya Kushlianski - About me">

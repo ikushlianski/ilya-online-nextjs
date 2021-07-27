@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from '../../ui-kit';
 
-import './HireMe.scss';
+import './HireMe.module.scss';
 
 export const HireMe = ({ lookingForJob }) => {
   return (

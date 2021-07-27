@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ExperienceYears.scss';
+import './ExperienceYears.module.scss';
 
 export const ExperienceYears = () => {
   const webDevWorksStart = new Date('Jun 1, 2016');

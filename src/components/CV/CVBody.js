@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import { CVContext } from '../../pages/cv';
 import { getTotalExperience } from '../../utils';
 
-import './CVBody.scss';
+import './CVBody.module.scss';
 
 export const CVBody = ({ jobs, education }) => {
   const { notes, extended } = React.useContext(CVContext);

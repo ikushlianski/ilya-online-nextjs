@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 
-import './Card.scss';
+import './Card.module.scss';
 
 export const Card = ({ children, flat }) => {
   const cls = cx('Card', {

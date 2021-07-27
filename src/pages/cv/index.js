@@ -5,7 +5,7 @@ import { Block } from '../../ui-kit';
 import { Layout, CVOptions, CVHeader, CVBody } from '../../components';
 import { sortChronologically } from '../../utils/sorting';
 
-import './CVPage.scss';
+import './CVPage.module.scss';
 
 export const CVContext = React.createContext(null);
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { Button, Toggle } from '../../ui-kit';
 import { CVContext } from '../../pages/cv';
 
-import './CVOptions.scss';
+import './CVOptions.module.scss';
 
 export const CVOptions = ({ setValue }) => {
   const value = React.useContext(CVContext);

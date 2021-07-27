@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Button } from '../../ui-kit/Button';
 
-import './MyTopSkills.scss';
+import './MyTopSkills.module.scss';
 
 export const MyTopSkills = ({ topSkills }) => {
   return (

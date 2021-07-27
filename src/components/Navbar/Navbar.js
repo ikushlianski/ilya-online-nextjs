@@ -3,7 +3,7 @@ import cx from 'classnames';
 
 import { MenuContext } from '../Layout';
 
-import './Navbar.scss';
+import './Navbar.module.scss';
 
 export const Navbar = ({ children }) => {
   const { open, setOpen } = React.useContext(MenuContext);

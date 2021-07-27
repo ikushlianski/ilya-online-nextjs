@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
-import './Layout.scss';
+import './Layout.module.scss';
 import { LinkedInCta } from '../common/LinkedInCta';
 
 export const Layout = ({

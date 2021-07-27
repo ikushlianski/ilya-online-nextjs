@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 
 import { Card, Button, List } from '../../ui-kit';
 
-import './WorksBox.scss';
+import './WorksBox.module.scss';
 
 export const WorksBox = ({ title, items = [] }) => {
   return (

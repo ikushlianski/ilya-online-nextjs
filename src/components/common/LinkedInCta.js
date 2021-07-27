@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './LinkedInCta.scss';
+import './LinkedInCta.module.scss';
 
 export const LinkedInCta = ({ open, setOpen }) => {
   return (

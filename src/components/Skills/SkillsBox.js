@@ -3,7 +3,7 @@ import React from 'react';
 import { SkillsDisplayModeContext } from '../../pages/skills';
 import { Card } from '../../ui-kit';
 
-import './SkillsBox.scss';
+import './SkillsBox.module.scss';
 
 export const SkillsBox = ({ title, items = [] }) => {
   const techMode = React.useContext(SkillsDisplayModeContext);
