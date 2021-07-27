@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from '../../ui-kit/Button';
+import { Button } from '../../ui-kit';
 
 import './HireMe.scss';
 
@@ -21,9 +21,6 @@ export const HireMe = ({ lookingForJob }) => {
             <Button href="/cv/index.html" cta>
               Print or save CV
             </Button>
-          </div>
-          <div className="HireMe__AvailableFrom">
-            Potentially available from June 8, 2021
           </div>
         </>
       ) : (

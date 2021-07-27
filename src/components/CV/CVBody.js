@@ -33,28 +33,28 @@ export const CVBody = ({ jobs, education }) => {
             <p>
               <b>Backend:</b> Node.js, Express, Postgres, Redis, TypeORM,
               Sequelize, basic Nest.js. Learned some AWS services (incl. Lambda,
-              S3, CloudFront, DynamoDB, ECS, CloudFormation) and Serverless
-              Framework. Prefer working on Linux; knowledge of web security and
-              web performance best practices;
+              S3, CloudFront, DynamoDB, ECS, CloudFormation, SNS/SQS) and
+              Serverless Framework. Prefer working on Linux; knowledge of web
+              security and web performance best practices;
             </p>
             <p>
-              <b>Tools & misc:</b> Jest unit testing, Git, Webpack, ESLint, npm;
-              Docker and docker-compose; basic CI/CD skills, Jenkins and Nginx;
-              worked with some AWS services. Know clean code and clean
-              architecture principles and best practices. Always think about
-              architectural implications of the features I implement.
+              <b>Tools & misc:</b> Jest, React Testing Library, GraphQL, Git,
+              Webpack, ESLint, npm, SonarQube; Docker and docker-compose;
+              understanding of CI/CD, Jenkins, Nginx and some k8s. Know clean
+              code and clean architecture principles and best practices. Always
+              think about the architectural implications of the features I
+              implement.
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work (Jira, Pivotal
-              Tracker), written and spoken English (C1+), leadership, mentoring.
-              Comfortable with Scrum processes. Would love to take part in
-              interviews, meetings with customers and continue developing
-              leadership skills.
+              Tracker), written and spoken English (C1+), leadership, mentoring,
+              basic interviewing skills. Comfortable with Scrum processes and
+              remote work environment.
             </p>
             {extended && (
               <p>
-                <b>Plans:</b> React SSR, PWAs, GraphQL, React Testing Library
-                and more...
+                <b>Plans:</b> React SSR, PWAs, application monitoring,
+                microservice architecture, system design and more...
               </p>
             )}
           </div>
