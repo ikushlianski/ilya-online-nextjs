@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+# todo: fail when .env.production does not exist
+
 DISTRIBUTION_ID=$(grep CF_DISTRIBUTION_ID .env.production | cut -d '=' -f2)
 
 npx next build
