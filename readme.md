@@ -8,8 +8,7 @@ Create `.env.development` and `.env.production` files, based on the `.env.dist` 
 
 - Make the deployment file executable if it isn't yet: `sudo chmod +x deploy.sh`
 - Install `aws` CLI
-- Ensure you AWS creds
-
-Launch `ilya-online-react-api` backend, should be running on `http//:localhost:3001`
-
-Run `npm run deploy`
+- Ensure your AWS creds are correct
+- __Ensure your node version is 14 or below__ 
+- Launch `ilya-online-react-api` backend, should be running on `http//:localhost:3001`
+- Run `npm run deploy`
