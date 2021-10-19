@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { Button } from '../../ui-kit/Button';
-
 import './Advantages.scss';
 
 export const Advantages = () => {
