@@ -8,24 +8,26 @@ export const Advantages = () => {
       <h2 className="Advantages__Header">What project I am interested in</h2>
       <div className="Advantages__Content">
         <p className="Advantages__Text">
-          <div className="Advantages__Accent">Team:</div>
-          Small or medium-sized team
+          <div className="Advantages__Accent">Team:</div>A team of 5-10
+          developers (backend, frontend, full-stack)
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Domain:</div>
-          Any end-user-oriented project, preferably a project from scratch
+          Any end-user-oriented project, preferably a project from scratch or
+          very little legacy code
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Tech stack:</div>
-          Preferably a full-stack React and Node project, or a backend project
+          Preferably a full-stack React/Node project, or a backend project
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Communication:</div>
-          Would be nice to communicate with customers on a daily basis
+          Communication with the customer / stakeholders / engineers on a daily
+          basis
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Outlook:</div>I continue growing
-          as a developer. Next step is Team Lead position
+          as a developer (esp. backend). Next step is Team Lead position
         </p>
       </div>
     </div>

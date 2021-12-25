@@ -31,9 +31,8 @@ const WorksPage = ({ works }) => {
         </div>
         <Block>
           <div className="WorksPage__Blocks">
-            <WorksBox title="Advanced code" items={advanced} />
-            <WorksBox title="Intermediate works" items={intermediate} />
-            <WorksBox title="Small examples" items={beginner} />
+            <WorksBox title="Advanced examples" items={advanced} />
+            <WorksBox title="Small/beginner examples" items={beginner} />
           </div>
         </Block>
       </div>
