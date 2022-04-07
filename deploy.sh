@@ -8,7 +8,7 @@ DISTRIBUTION_ID=$(grep CF_DISTRIBUTION_ID .env.production | cut -d '=' -f2)
 npx next build
 npx next export
 
-pages=("about" "cv" "skills" "works")
+pages=("about" "cv" "skills" "works" "experience")
 
 for i in "${pages[@]}"
 do

@@ -12,7 +12,7 @@ export const Layout = ({
   children,
   className,
   title = 'Ilya Kushlianski, Javascript Developer',
-  description = 'Full-stack Javascript developer from Minsk. My top skills are Javascript, React,Typescript and Node.js',
+  description = 'Full-stack Javascript developer from Minsk. My top skills are Javascript, React, Typescript and Node.js',
 }) => {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [ctaOpen, setCtaOpen] = React.useState(false);
@@ -30,10 +30,6 @@ export const Layout = ({
     } else {
       localStorage.setItem('viewCount', viewCount + 1);
     }
-
-    // if (viewCount % 10 === 0) {
-    //   setCtaOpen(true);
-    // }
   }, []);
 
   return (

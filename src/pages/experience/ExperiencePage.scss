@@ -1,0 +1,11 @@
+@import '../../styles/styles';
+
+.ExperiencePage__Block {
+  padding: 1rem;
+
+  @media (min-width: $screen-large) {
+    padding: 2rem 16rem;
+    width: 960px;
+    margin: auto;
+  }
+}
