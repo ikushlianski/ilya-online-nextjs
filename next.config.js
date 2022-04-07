@@ -12,6 +12,7 @@ module.exports = withSass({
   },
   env: {
     API_URL: process.env.API_URL,
+    IS_OFFLINE: process.env.IS_OFFLINE,
   },
   exportPathMap: async function(
     defaultPathMap,
@@ -22,6 +23,7 @@ module.exports = withSass({
       '/about': { page: '/about' },
       '/works': { page: '/works' },
       '/skills': { page: '/skills' },
+      '/experience': { page: '/experience' },
       '/cv': { page: '/cv' },
     };
   },
