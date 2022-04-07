@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '../../ui-kit';
 
 import './Intro.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const Intro = () => (
   <div className="Intro">
@@ -20,7 +21,7 @@ export const Intro = () => (
           Full-stack Javascript developer
         </p>
         <div className="Intro__Controls shown-md">
-          <Button inverted href="/cv/index.html">
+          <Button inverted href={getLinkByAlias('cv')}>
             See my CV
           </Button>
         </div>

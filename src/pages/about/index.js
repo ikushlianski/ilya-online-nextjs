@@ -5,6 +5,7 @@ import { Block, Button, Card } from '../../ui-kit';
 import { Layout } from '../../components/Layout';
 
 import './AboutPage.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 const AboutPage = () => (
   <Layout title="Ilya Kushlianski - About me">
@@ -104,8 +105,8 @@ const AboutPage = () => (
               in every new project I try to learn and give a try to some new
               technologies.
             </p>
-            <Button inverted href="/works/index.html">
-              See my projects
+            <Button inverted href={getLinkByAlias('works')}>
+              See my code examples
             </Button>
             <p>
               For theory, I use a technique called &lsquo;spaced

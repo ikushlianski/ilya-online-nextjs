@@ -14,6 +14,13 @@ export const Header = () => {
           </a>
         </Link>
       </NavbarItem>
+      <NavbarItem href={getLinkByAlias('about')}>
+        <Link href={getLinkByAlias('about')}>
+          <a className="NavbarItem__Link" href={getLinkByAlias('about')}>
+            Personality
+          </a>
+        </Link>
+      </NavbarItem>
       <NavbarItem href={getLinkByAlias('works')}>
         <Link href={getLinkByAlias('works')}>
           <a className="NavbarItem__Link" href={getLinkByAlias('works')}>
@@ -25,13 +32,6 @@ export const Header = () => {
         <Link href={getLinkByAlias('skills')}>
           <a className="NavbarItem__Link" href={getLinkByAlias('skills')}>
             Skills
-          </a>
-        </Link>
-      </NavbarItem>
-      <NavbarItem href={getLinkByAlias('about')}>
-        <Link href={getLinkByAlias('about')}>
-          <a className="NavbarItem__Link" href={getLinkByAlias('about')}>
-            Personality
           </a>
         </Link>
       </NavbarItem>

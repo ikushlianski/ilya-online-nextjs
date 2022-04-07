@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '../../ui-kit';
 
 import './HireMe.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const HireMe = ({ lookingForJob }) => {
   return (
@@ -18,7 +19,7 @@ export const HireMe = ({ lookingForJob }) => {
             </div>
           </div>
           <div className="HireMe__Controls">
-            <Button href="/cv/index.html" cta>
+            <Button href={getLinkByAlias('cv')} cta>
               Print or save CV
             </Button>
           </div>

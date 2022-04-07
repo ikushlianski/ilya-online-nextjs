@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '../../ui-kit/Button';
 
 import './Motivation.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const Motivation = () => {
   return (
@@ -46,8 +47,8 @@ export const Motivation = () => {
         </li>
       </ul>
       <div className="Motivation__Controls">
-        <Button inverted href="/about/index.html">
-          More about me
+        <Button inverted href={getLinkByAlias('experience')}>
+          My experience
         </Button>
       </div>
     </div>

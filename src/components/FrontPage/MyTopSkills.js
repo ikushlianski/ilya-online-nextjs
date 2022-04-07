@@ -3,6 +3,7 @@ import React from 'react';
 import { Button } from '../../ui-kit/Button';
 
 import './MyTopSkills.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const MyTopSkills = ({ topSkills }) => {
   return (
@@ -23,7 +24,7 @@ export const MyTopSkills = ({ topSkills }) => {
           </div>
           {topSkills.length > 0 && (
             <div className="MySkills__Controls">
-              <Button href="/skills/index.html" inverted>
+              <Button href={getLinkByAlias('skills')} inverted>
                 Explore all my skills
               </Button>
             </div>
