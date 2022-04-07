@@ -26,4 +26,4 @@ export const ExperienceYears = () => {
   );
 };
 
-const round = date => Math.round(date * 2) / 2;
+const round = date => Math.floor(date * 2) / 2;
