@@ -21,14 +21,15 @@ const FrontPage = ({ lookingForJob, topSkills }) => {
       <Block className="p0-md">
         <Intro />
       </Block>
-      <Section darker className="col-2-md">
-        <Block>
-          <Motivation />
-        </Block>
-        <Block>
-          <ExperienceYears />
-        </Block>
-      </Section>
+
+      <Block className="Block--darker">
+        {topSkills && <MyTopSkills topSkills={topSkills} />}
+      </Block>
+
+      <Block className="hidden-md">
+        <HireMe lookingForJob={lookingForJob} />
+      </Block>
+
       <Section id="motivation-advantages" className="col-2-md">
         <Block className="shown-md">
           <HireMe lookingForJob={lookingForJob} />
@@ -37,12 +38,15 @@ const FrontPage = ({ lookingForJob, topSkills }) => {
           <Advantages />
         </Block>
       </Section>
-      <Block className="Block--darker">
-        {topSkills && <MyTopSkills topSkills={topSkills} />}
-      </Block>
-      <Block className="hidden-md">
-        <HireMe lookingForJob={lookingForJob} />
-      </Block>
+
+      <Section darker className="col-2-md">
+        <Block>
+          <Motivation />
+        </Block>
+        <Block>
+          <ExperienceYears />
+        </Block>
+      </Section>
     </Layout>
   );
 };
