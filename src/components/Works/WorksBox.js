@@ -77,7 +77,9 @@ export const WorksBox = ({ title, items = [] }) => {
                         href={liveLink}
                         key={liveLink}
                       >
-                        See live
+                        {liveLink.endsWith('ilya.online')
+                          ? 'You are here :)'
+                          : 'See live'}
                       </Button>
                     </div>
                   )}

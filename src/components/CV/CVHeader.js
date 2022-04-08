@@ -25,7 +25,7 @@ export const CVHeader = () => {
             <a href="mailto:kushliansky@gmail.com">kushliansky@gmail.com</a>
           </div>
           <div className="CVPage__Phone">
-            <b>Telegram:</b> +375 (29) 608 8900
+            <b>Telegram:</b> @ilya_nice
           </div>
           <div className="CVPage__Age">
             <b>Age:</b> {new Date().getFullYear() - 1991}
@@ -40,7 +40,14 @@ export const CVHeader = () => {
           {extended && (
             <div className="CVPage__Github">
               <b>Github:</b>{' '}
-              <a href="https://github.com/ikushlianski">ikushlianski</a>
+              <a
+                href="https://github.com/ikushlianski"
+                /* eslint-disable-next-line react/jsx-no-target-blank */
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                ikushlianski
+              </a>
             </div>
           )}
           {extended && (
@@ -51,7 +58,12 @@ export const CVHeader = () => {
           {extended && (
             <div className="CVPage__Linkedin">
               <b>LinkedIn:</b>{' '}
-              <a href="https://www.linkedin.com/in/ilya-kushlianski/">
+              <a
+                /* eslint-disable-next-line react/jsx-no-target-blank */
+                target={'_blank'}
+                href="https://www.linkedin.com/in/ilya-kushlianski/"
+                rel="noreferrer"
+              >
                 https://www.linkedin.com/in/ilya-kushlianski
               </a>
             </div>

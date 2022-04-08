@@ -5,6 +5,8 @@ import { CVContext } from '../../pages/cv';
 import { getTotalExperience } from '../../utils';
 
 import './CVBody.scss';
+import { Button } from '../../ui-kit';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const CVBody = ({ jobs, education }) => {
   const { notes, extended } = React.useContext(CVContext);
@@ -27,35 +29,39 @@ export const CVBody = ({ jobs, education }) => {
             <h3>Skills</h3>
             <p>
               <b>Frontend:</b> Javascript, Typescript, React (Hooks, Redux,
-              Redux Saga), CSS (Flexbox, some Grid, Styled Components), HTML,
-              some Next.js;
+              Redux Toolkit, Redux Saga), CSS (Flexbox, Styled Components, some
+              Grid), HTML, some Next.js;
             </p>
             <p>
-              <b>Backend:</b> Node.js, Express, Postgres, Redis, TypeORM,
-              Sequelize, basic Nest.js. Learned some AWS services (incl. Lambda,
-              S3, CloudFront, DynamoDB, ECS, CloudFormation, SNS/SQS) and
-              Serverless Framework. Prefer working on Linux; knowledge of web
-              security and web performance best practices;
+              <b>Backend:</b> Node.js, Express, basic Nest.js. DBs and ORMs
+              (Postgres, MongoDB, Redis, TypeORM, Sequelize). AWS services
+              (Lambda, S3, IAM, CloudFront, DynamoDB, CloudFormation, SNS/SQS),
+              Serverless Framework. Worked with both REST and GraphQL. Know web
+              security and performance best practices;
             </p>
             <p>
-              <b>Tools & misc:</b> Jest, React Testing Library, GraphQL, Git,
-              Webpack, ESLint, npm, SonarQube; Docker and docker-compose;
-              understanding of CI/CD, Jenkins, Nginx and some k8s. Know clean
-              code and clean architecture principles and best practices. Always
-              think about the architectural implications of the features I
-              implement.
+              <b>Misc:</b> Jest, React Testing Library, Git, Webpack, ESLint,
+              npm, SonarQube; Docker and docker-compose; understanding of CI/CD,
+              Github Actions. Know clean code and clean architecture principles
+              and best practices. Always think about the architectural
+              implications of the features I implement.
             </p>
             <p>
-              <b>Soft skills:</b> Transparency in team work (Jira, Pivotal
-              Tracker), written and spoken English (C1+), leadership, mentoring,
-              basic interviewing skills. Comfortable with Scrum processes and
-              remote work environment.
+              <b>Soft skills:</b> Transparency in team work (Jira), advanced
+              backlog management, advanced written and spoken English,
+              leadership, mentoring, basic interviewing skills. Comfortable with
+              Scrum processes and remote work environment.
             </p>
             {extended && (
-              <p>
-                <b>Plans:</b> React SSR, PWAs, application monitoring,
-                microservice architecture, system design and more...
-              </p>
+              <div>
+                <p>
+                  <b>Plans:</b> Remix, PWAs, system design, application
+                  monitoring, more AWS services and more...
+                </p>
+                <p>
+                  <b>Preferred OS:</b> MacOS
+                </p>
+              </div>
             )}
           </div>
           {extended && (
@@ -74,11 +80,7 @@ export const CVBody = ({ jobs, education }) => {
           )}
         </div>
 
-        <div
-          className={`ExperienceEducationWrapper ${
-            notes || extended ? 'ExperienceEducationWrapper--oneColumn' : ''
-          }`}
-        >
+        <div className="ExperienceEducationWrapper">
           <div className="CVExperience">
             <h3>Engineering experience</h3>
             <div className="CVExperience__Places">
@@ -89,12 +91,17 @@ export const CVBody = ({ jobs, education }) => {
                   : 'present';
 
                 return (
-                  <React.Fragment key={job.name}>
+                  <div key={job.name} className="CVExperience__Place">
                     <div className="CVExperience__Years">
                       {`${startDate} - ${endDate}`}
                       <p className="CVExperience__MonthsTotal">
                         {getTotalExperience([job])}
                       </p>
+                      {job.location && (
+                        <p className={'CVExperience__Location'}>
+                          {job.location}
+                        </p>
+                      )}
                     </div>
                     <div className="CVExperience__Details">
                       <div className="CVExperience__Company">
@@ -110,9 +117,14 @@ export const CVBody = ({ jobs, education }) => {
                         </p>
                       )}
                     </div>
-                  </React.Fragment>
+                  </div>
                 );
               })}
+            </div>
+            <div className="CVPage__ExperienceLink">
+              <Button secondary href={getLinkByAlias('experience')}>
+                Detailed experience
+              </Button>
             </div>
           </div>
 
@@ -126,7 +138,10 @@ export const CVBody = ({ jobs, education }) => {
                   : 'present';
 
                 return (
-                  <React.Fragment key={`${edu.establishment} ${edu.specialty}`}>
+                  <div
+                    key={`${edu.establishment} ${edu.specialty}`}
+                    className="CVEducation__Place"
+                  >
                     <div className="CVEducation__Years">
                       {`${startDate} - ${endDate}`}
                     </div>
@@ -141,7 +156,7 @@ export const CVBody = ({ jobs, education }) => {
                         {edu.description}
                       </p>
                     </div>
-                  </React.Fragment>
+                  </div>
                 );
               })}
             </div>

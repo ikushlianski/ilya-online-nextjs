@@ -3,7 +3,7 @@ import React from 'react';
 import './ExperienceYears.scss';
 
 export const ExperienceYears = () => {
-  const webDevWorksStart = new Date('Jun 1, 2016');
+  const webDevWorksStart = new Date('Jun 1, 2017');
   const msInYear = 3.154e10;
 
   const overallYears = round((Date.now() - webDevWorksStart) / msInYear);
@@ -26,4 +26,4 @@ export const ExperienceYears = () => {
   );
 };
 
-const round = date => Math.floor(date * 2) / 2;
+const round = date => Math.round(date * 2) / 2;

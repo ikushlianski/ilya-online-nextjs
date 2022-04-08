@@ -25,10 +25,6 @@ export const Advantages = () => {
           Communication with the customer / stakeholders / engineers on a daily
           basis
         </p>
-        <p className="Advantages__Text">
-          <div className="Advantages__Accent">Outlook:</div>I continue growing
-          as a developer (esp. backend). Next step is Team Lead position
-        </p>
       </div>
     </div>
   );

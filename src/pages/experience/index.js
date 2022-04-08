@@ -2,16 +2,16 @@ import React from 'react';
 
 import { Block, Card } from '../../ui-kit';
 import { Layout } from '../../components';
+import { ExperienceCard } from '../../components/ExperienceCard/ExperienceCard';
 
 import './ExperiencePage.scss';
-import { ExperienceCard } from '../../components/ExperienceCard/ExperienceCard';
 
 const ExperiencePage = () => (
   <Layout title="Ilya Kushlianski - Experience">
     <div className="ExperiencePage">
       <Block className="ExperiencePage__Block">
         <Card>
-          <h1>Summary</h1>
+          <h1>My experience in detail</h1>
           <p>
             I started out as a freelancer back in 2017 and continued as a
             full-stack Javascript developer at major Belarusian and Ukrainian IT
@@ -21,10 +21,6 @@ const ExperiencePage = () => (
             A business-oriented web developer, I care about both user interface
             quality and backend efficiency. I focus on building clean
             architectures that are adaptable to new feature requests.{' '}
-          </p>
-          <p>
-            Interested in domains like real estate, e-commerce, tourism, media,
-            fintech, education, entertainment and more.
           </p>
           <p>
             Prefer backend or full-stack positions to continue growing as a web

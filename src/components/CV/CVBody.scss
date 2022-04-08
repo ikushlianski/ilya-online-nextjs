@@ -11,9 +11,6 @@
 }
 
 .ExperienceEducationWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
   &--oneColumn {
     display: block;
   }
@@ -22,6 +19,11 @@
 .CVExperience {
   &__MonthsTotal {
     font-style: italic;
+    margin: 0.5rem 0;
+    font-size: $font-small;
+  }
+
+  &__Location {
     margin: 0.5rem 0;
     font-size: $font-small;
   }
@@ -41,10 +43,15 @@
 
 
 .CVExperience, .CVEducation {
-  &__Places {
+  &__Place {
     display: grid;
     grid-gap: $padding-margin-small;
     grid-template-columns: 1fr 3fr;
+    page-break-inside: avoid;
+  }
+  &__Places {
+    display: block;
+
   }
 
   &__Years {

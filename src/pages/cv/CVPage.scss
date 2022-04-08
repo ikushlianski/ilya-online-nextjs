@@ -2,6 +2,11 @@
 
 .CVPage {
   display: grid;
+  padding: 1rem;
+
+  @media (min-width: $screen-large) {
+    padding: 0;
+  }
 }
 
 .CVPage__Shrug {
@@ -13,7 +18,7 @@
   @include noPrint;
   grid-row: 1/-1;
   margin: auto;
-  font-size: $font-large;
+  font-size: $font-larger;
   text-align: center;
   color: var(--secondaryLight);
   @media (min-width: $screen-medium + 1px) {
@@ -63,6 +68,13 @@
       grid-template-columns: 1fr 3fr;
       grid-gap: $padding-margin-small;
     }
+  }
+
+  &__ExperienceLink {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    @include noPrint
   }
 }
 

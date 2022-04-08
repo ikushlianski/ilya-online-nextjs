@@ -22,8 +22,10 @@ const CVPage = ({ jobs, education }) => {
     >
       <div className="CVPage">
         <Block className="CVPage__SmallScreensWarning">
-          Please open this CV on a larger device
-          <div className="CVPage__Shrug">¯\_(ツ)_/¯</div>
+          <p>Please open the desktop version of this CV</p>
+          <small>
+            You can choose <i>Desktop Site</i> option in Chrome
+          </small>
         </Block>
         <CVContext.Provider value={value}>
           <CVOptions setValue={setValue} />
