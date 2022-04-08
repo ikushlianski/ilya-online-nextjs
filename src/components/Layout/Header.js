@@ -7,9 +7,9 @@ import { getLinkByAlias } from '../../utils/getLinkByAlias';
 export const Header = () => {
   return (
     <Navbar>
-      <NavbarItem href="/">
-        <Link href="/">
-          <a className="NavbarItem__Link" href="/">
+      <NavbarItem href={getLinkByAlias('/')}>
+        <Link href={getLinkByAlias('/')}>
+          <a className="NavbarItem__Link" href={getLinkByAlias('/')}>
             Home
           </a>
         </Link>
