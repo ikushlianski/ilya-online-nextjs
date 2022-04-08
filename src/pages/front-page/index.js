@@ -15,7 +15,7 @@ import { Layout } from '../../components';
 
 import '../../styles/styles.scss';
 
-const FrontPage = ({ lookingForJob, topSkills }) => {
+const FrontPage = ({ topSkills }) => {
   return (
     <Layout className="HomePage">
       <Block className="p0-md">
@@ -27,12 +27,12 @@ const FrontPage = ({ lookingForJob, topSkills }) => {
       </Block>
 
       <Block className="hidden-md">
-        <HireMe lookingForJob={lookingForJob} />
+        <HireMe lookingForJob={process.env.LOOKING_FOR_JOB === 'true'} />
       </Block>
 
       <Section id="motivation-advantages" className="col-2-md">
         <Block className="shown-md">
-          <HireMe lookingForJob={lookingForJob} />
+          <HireMe lookingForJob={process.env.LOOKING_FOR_JOB === 'true'} />
         </Block>
         <Block>
           <Advantages />
@@ -56,11 +56,8 @@ export const getStaticProps = async _ => {
     const skills = await fetch(`${process.env.API_URL}/skills/top`);
     const topSkills = await skills.json();
 
-    const jobStatus = await fetch(`${process.env.API_URL}/job/status`);
-    const { open: lookingForJob } = await jobStatus.json();
-
     return {
-      props: { lookingForJob, topSkills },
+      props: { topSkills },
     };
   } catch (error) {
     console.error(error);

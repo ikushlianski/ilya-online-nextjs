@@ -12,19 +12,6 @@ module.exports = withSass({
   },
   env: {
     API_URL: process.env.API_URL,
-    IS_OFFLINE: process.env.IS_OFFLINE,
-  },
-  exportPathMap: async function(
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId },
-  ) {
-    return {
-      '/front-page': { page: '/front-page' },
-      '/about': { page: '/about' },
-      '/works': { page: '/works' },
-      '/skills': { page: '/skills' },
-      '/experience': { page: '/experience' },
-      '/cv': { page: '/cv' },
-    };
+    LOOKING_FOR_JOB: process.env.LOOKING_FOR_JOB,
   },
 });
