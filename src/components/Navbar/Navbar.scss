@@ -68,13 +68,17 @@
   visibility: hidden;
 }
 
-.Navbar__ukraineFlag {
+.Navbar__UkraineFlag {
   width: 64px;
   display: flex;
   align-self: center;
-  padding-left: 2.5rem;
+  padding-left: 1rem;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $screen-medium) {
+    padding-left: 2.5rem;
+  }
 
   &Img {
     max-width: 50%;

@@ -1,11 +1,12 @@
 import React from 'react';
 import fetch from 'isomorphic-unfetch';
 
-import { Block } from '../../ui-kit';
+import { Block, Button } from '../../ui-kit';
 import { Layout, CVOptions, CVHeader, CVBody } from '../../components';
 import { sortChronologically } from '../../utils/sorting';
 
 import './CVPage.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const CVContext = React.createContext(null);
 
@@ -22,10 +23,13 @@ const CVPage = ({ jobs, education }) => {
     >
       <div className="CVPage">
         <Block className="CVPage__SmallScreensWarning">
-          <p>Please open the desktop version of this CV</p>
-          <small>
-            You can choose <i>Desktop Site</i> option in Chrome
-          </small>
+          <p>Please open this CV on a desktop screen</p>
+          <p>
+            <small>Want a quick overview of my experience?</small>
+          </p>
+          <Button inverted href={getLinkByAlias('experience')}>
+            Details
+          </Button>
         </Block>
         <CVContext.Provider value={value}>
           <CVOptions setValue={setValue} />

@@ -4,6 +4,11 @@
   top: 64px;
   padding: $padding-margin-normal;
   background: linear-gradient(to bottom, rgba(115, 140, 170, 0.25), var(--primary));
+
+  @include noPrint;
+  @media (max-width: $screen-medium - 1) {
+    display: none;
+  }
 }
 
 .CVOptions__Container {

@@ -78,9 +78,4 @@
   }
 }
 
-.CVOptions {
-  @include noPrint;
-  @media (max-width: $screen-medium - 1) {
-    display: none;
-  }
-}
+
