@@ -22,6 +22,15 @@ export const Navbar = ({ children }) => {
 
   return (
     <div className={navbarClasses}>
+      <div className="Navbar__ukraineFlag">
+        <img
+          className="Navbar__ukraineFlagImg"
+          src="/ukraine-flag.svg"
+          alt="ukraine flag"
+        />
+        <span className="Navbar__ukraineFlagText">Peace!</span>
+      </div>
+
       <div className={openMenuButtonClasses} onClick={() => setOpen(!open)}>
         {Bars}
       </div>

@@ -3,6 +3,8 @@
 .Navbar {
   user-select: none;
   background: var(--primary-darker);
+  display: flex;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -64,4 +66,24 @@
 
 .Navbar__OpenMenuButton--open {
   visibility: hidden;
+}
+
+.Navbar__ukraineFlag {
+  width: 64px;
+  display: flex;
+  align-self: center;
+  padding-left: 2.5rem;
+  align-items: center;
+  justify-content: space-between;
+
+  &Img {
+    max-width: 50%;
+    padding-right: 0.5rem;
+  }
+
+  &Text {
+    line-height: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
 }

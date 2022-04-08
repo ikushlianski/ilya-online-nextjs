@@ -1,10 +1,11 @@
 import React from 'react';
 
-import { Block, Card } from '../../ui-kit';
+import { Block, Button, Card } from '../../ui-kit';
 import { Layout } from '../../components';
 import { ExperienceCard } from '../../components/ExperienceCard/ExperienceCard';
 
 import './ExperiencePage.scss';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 const ExperiencePage = () => (
   <Layout title="Ilya Kushlianski - Experience">
@@ -126,6 +127,12 @@ const ExperiencePage = () => (
             ]}
           />
         </Card>
+
+        <div className="ExperiencePage__CVLink">
+          <Button secondary href={getLinkByAlias('cv')}>
+            Go to my CV
+          </Button>
+        </div>
       </Block>
     </div>
   </Layout>
