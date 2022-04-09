@@ -55,6 +55,9 @@
     "lint-staged": "9.5.0",
     "prettier": "1.19.1"
   },
+  "resolutions": {
+    "**/ansi-regex": "4.1.1"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
