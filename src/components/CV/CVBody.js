@@ -58,9 +58,9 @@ export const CVBody = ({ jobs, education }) => {
             {extended && (
               <div>
                 <p>
-                  <b>Plans:</b> Remix, React Query, PWAs, system design, web
-                  scalability, Elastic stack, messaging services, AWS
-                  certification and more...
+                  <b>Plans:</b> Remix, React Query, Cypress, PWAs, system
+                  design, web scalability, Elastic stack, messaging services,
+                  AWS certification and more...
                 </p>
               </div>
             )}
