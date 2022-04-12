@@ -32,7 +32,7 @@ const ExperiencePage = () => (
         <Card>
           <ExperienceCard
             company={'Star Global / SourceTER'}
-            position={'Senior Software Engineer / Team Lead'}
+            position={'Senior Software Engineer/Team Lead'}
             dates={'2022'}
             projectDescription={
               'An existing portal allows providers to intake and process anonymized data from various sources and for consumers to build use cases on top of that data. Our goal is to extend the existing portal with tooling for data processing, analysis and exploration in an easy and user-friendly way'
@@ -44,8 +44,9 @@ const ExperiencePage = () => (
               'Led a team of three frontend developers, prioritized tasks and organized overall work',
               'Developed key business features for the QuickSight integration into Cloud Data Portal',
               'Clarified and managed customer requirements and expectations from the tech and business standpoint',
-              'Managed Jira backlog, in sync with BA, regarding the technical feasibility of various features',
+              'Managed Jira backlog, in sync with our BA, regarding the technical feasibility of various features',
               'Taught the team to stay focused on the priorities and be transparent in both code repository management and communication with the customer via all channels (email, Jira, Confluence, Bitbucket etc.)',
+              'Always called on the team to thoroughly analyze their estimations and underlined hidden complexities, thus reducing the risk of failing to deliver on sprint goals',
               'Organized and moderated dev discussions between the architect and backend, frontend and devops teams to stay in sync and comply with contracts, which helped speed up product integration',
             ]}
           />
@@ -63,10 +64,10 @@ const ExperiencePage = () => (
               'Typescript, Node.js, Express, GraphQL, REST, Jest, AWS (DynamoDB, Lambda, SNS/SQS)'
             }
             responsibilities={[
-              'Developed payment integrations, backend APIs and microservices',
+              'Developed payment integrations, backend APIs and microservices in AWS environment',
               'Managed Jira backlog, split tasks into granular and easily digestible sub-tasks',
               'Groomed business requirements to come up with realistic feature readiness timelines',
-              'Conducted developer interviews',
+              'Conducted a couple of full-stack developer interviews',
             ]}
           />
         </Card>
@@ -84,6 +85,7 @@ const ExperiencePage = () => (
             }
             responsibilities={[
               'Developed key parts of backend microservices, integrations with payment and other APIs',
+              'Ensured reasonable unit and integration test coverage',
               'Set up infrastructure as code using Serverless Framework, used basic CloudFormation',
               'Effectively communicated with devs, leads, architects and business analysts from other service teams',
               "Managed the technical side of the backlog, in sync with BAs, and taking into account the customer's business priorities",
@@ -104,10 +106,10 @@ const ExperiencePage = () => (
               'JavaScript, TypeScript, HTML, CSS, SCSS, React.js, Node.js, Express.js'
             }
             responsibilities={[
-              'Ensured the technical feasibility of UI/UX designs',
+              'Ensured the technical feasibility of UI/UX designs suggesting improvements and discussing various options given specific business timelines',
               'Implemented designs that work across all modern desktop and mobile browsers',
-              'Developed BFF for several frontend clients to improve client-side performance',
-              'Communicated with customers in English on a daily basis, clarifying requirements and suggesting improvements and multiple solutions',
+              'Developed an Express-based backend-for-frontend solution for several frontend clients to aggregate data for the UI layer and thus improve client-side performance',
+              'Communicated with customers in English on a daily basis, clarifying requirements, splitting tasks into more granular ones for the team to take into sprints',
               'Gathered requirements, did usability analysis and prototyping',
             ]}
           />
