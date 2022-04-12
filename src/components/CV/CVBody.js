@@ -3,10 +3,10 @@ import dayjs from 'dayjs';
 
 import { CVContext } from '../../pages/cv';
 import { getTotalExperience } from '../../utils';
-
-import './CVBody.scss';
 import { Button } from '../../ui-kit';
 import { getLinkByAlias } from '../../utils/getLinkByAlias';
+
+import './CVBody.scss';
 
 export const CVBody = ({ jobs, education }) => {
   const { notes, extended } = React.useContext(CVContext);
@@ -28,35 +28,39 @@ export const CVBody = ({ jobs, education }) => {
           <div className="TechStackInfo__SkillsList">
             <h3>Skills</h3>
             <p>
-              <b>Frontend:</b> Javascript, Typescript, React (Hooks, Redux,
-              Redux Toolkit, Redux Saga), CSS (Flexbox, Styled Components, some
-              Grid), HTML, some Next.js;
+              <b>Frontend:</b> Javascript, Typescript, React, Redux,
+              Thunks/Sagas, Redux Toolkit; GraphQL (Apollo), Next.js. CSS
+              (Flexbox, Styled Components, some Grid), preprocessors and UI
+              libs. Micro frontend experience;
             </p>
             <p>
-              <b>Backend:</b> Node.js, Express, basic Nest.js. DBs and ORMs
-              (Postgres, MongoDB, Redis, TypeORM, Sequelize). AWS services
-              (Lambda, S3, IAM, CloudFront, DynamoDB, CloudFormation, SNS/SQS),
-              Serverless Framework. Worked with both REST and GraphQL. Know web
-              security and performance best practices;
+              <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, MongoDB,
+              Redis, TypeORM, Sequelize. AWS services (Lambda, S3, IAM,
+              DynamoDB, CloudFront, SNS/SQS), Serverless Framework. Worked with
+              both REST and GraphQL APIs. Fair understanding of application
+              security and performance from FE/BE perspective;
             </p>
             <p>
-              <b>Misc:</b> Jest, React Testing Library, Git, Webpack, ESLint,
-              npm, SonarQube; Docker and docker-compose; understanding of CI/CD,
-              Github Actions. Know clean code and clean architecture principles
-              and best practices. Always think about the architectural
-              implications of the features I implement.
+              <b>Misc:</b> Jest, React Testing Library, Git (command line),
+              Webpack (incl. module federation), ESLint, Postman, npm,
+              SonarQube; Docker and docker-compose; understanding of CI/CD,
+              Github Actions, basic Terraform and CloudFormation. Know clean
+              code and clean architecture principles and best practices.
+              Interested in studying software architecture of web apps;
             </p>
             <p>
-              <b>Soft skills:</b> Transparency in team work (Jira), advanced
-              backlog management, advanced written and spoken English,
-              leadership, mentoring, basic interviewing skills. Comfortable with
-              Scrum processes and remote work environment.
+              <b>Soft skills:</b> Transparency in team work, advanced Jira
+              backlog management, attention to details, fluent English,
+              leadership skills. Comfortable with Scrum processes and remote
+              work environment. Interested in conducting technical interviews
+              for junior/mid-level engineers and mentoring activities;
             </p>
             {extended && (
               <div>
                 <p>
-                  <b>Plans:</b> Remix, PWAs, system design, application
-                  monitoring, more AWS services and more...
+                  <b>Plans:</b> Remix, React Query, PWAs, system design, web
+                  scalability, Elastic stack, messaging services, AWS
+                  certification and more...
                 </p>
                 <p>
                   <b>Preferred OS:</b> MacOS
@@ -68,13 +72,19 @@ export const CVBody = ({ jobs, education }) => {
             <div className="TechStackInfo__Languages">
               <h3>Languages</h3>
               <p>
-                <b>English:</b> advanced (written and spoken)
+                <b>English</b>
+                <br />
+                <small>advanced (written/spoken)</small>
               </p>
               <p>
-                <b>Swedish:</b> intermediate
+                <b>Swedish</b>
+                <br />
+                <small>intermediate</small>
               </p>
               <p>
-                <b>Russian/Belarusian:</b> native
+                <b>Belarusian/Russian</b>
+                <br />
+                <small>native</small>
               </p>
             </div>
           )}

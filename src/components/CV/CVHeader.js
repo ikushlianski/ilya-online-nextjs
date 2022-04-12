@@ -27,16 +27,23 @@ export const CVHeader = () => {
           <div className="CVPage__Phone">
             <b>Telegram:</b> @ilya_nice
           </div>
-          <div className="CVPage__Age">
-            <b>Age:</b> {new Date().getFullYear() - 1991}
-          </div>
+
           <div className="CVPage__Location">
             <b>Location:</b> Minsk, Belarus
           </div>
+
           <div className="CVPage__Website">
             <b>Website:</b>{' '}
             <a href="https://ilya.online">https://ilya.online</a>
           </div>
+          <div className="CVPage__Age">
+            <b>Age:</b> {new Date().getFullYear() - 1991}
+          </div>
+          {extended && (
+            <div className="CVPage__Skype">
+              <b>Skype:</b> <span>kushliansky</span>
+            </div>
+          )}
           {extended && (
             <div className="CVPage__Github">
               <b>Github:</b>{' '}
@@ -50,11 +57,7 @@ export const CVHeader = () => {
               </a>
             </div>
           )}
-          {extended && (
-            <div className="CVPage__Skype">
-              <b>Skype:</b> <span>kushliansky</span>
-            </div>
-          )}
+
           {extended && (
             <div className="CVPage__Linkedin">
               <b>LinkedIn:</b>{' '}

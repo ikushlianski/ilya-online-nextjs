@@ -41,7 +41,7 @@ const ExperiencePage = () => (
               'Typescript, React.js, GraphQL, Jest, React Testing Library, Storybook, AWS (QuickSight, Lambda, DynamoDB etc.), Serverless Framework, micro-frontend architecture with Webpack'
             }
             responsibilities={[
-              'Led the team of three frontend developers, prioritized tasks and organized overall work',
+              'Led a team of three frontend developers, prioritized tasks and organized overall work',
               'Developed key business features for the QuickSight integration into Cloud Data Portal',
               'Clarified and managed customer requirements and expectations from the tech and business standpoint',
               'Managed Jira backlog, in sync with BA, regarding the technical feasibility of various features',
