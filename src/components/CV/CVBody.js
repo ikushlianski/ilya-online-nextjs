@@ -62,9 +62,6 @@ export const CVBody = ({ jobs, education }) => {
                   scalability, Elastic stack, messaging services, AWS
                   certification and more...
                 </p>
-                <p>
-                  <b>Preferred OS:</b> MacOS
-                </p>
               </div>
             )}
           </div>
@@ -175,23 +172,16 @@ export const CVBody = ({ jobs, education }) => {
           {extended && (
             <div className="CVAbout">
               <div className="CVAbout__DescriptionCommon">
-                <h3>About me, actually</h3>
                 <p>
                   I am a self-demanding person striving for constant
-                  self-perfection. Working in teams of smart people gives me the
-                  enjoyable feeling of togetherness and allows sharing knowledge
-                  and gaining experience quicker.
-                </p>
-                <p>
-                  I have always felt my leadership potential, hence I am working
-                  towards becoming Lead Developer in the coming years.
+                  self-perfection. I have always felt my leadership potential,
+                  hence I am working towards becoming a Lead Developer in the
+                  coming years.
                 </p>
                 <p>
                   A polite and empathic person, I prefer compromise to conflict
-                  and value open and friendly people. I feel comfortable working
-                  according to Scrum practices, in a team with reasonable rules
-                  and balanced processes. If there are no such things in your
-                  team, let us build them together!
+                  and value open and friendly people. I value teams with
+                  well-built processes.
                 </p>
               </div>
             </div>

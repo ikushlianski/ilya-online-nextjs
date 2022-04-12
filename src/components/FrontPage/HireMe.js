@@ -20,7 +20,7 @@ export const HireMe = ({ lookingForJob }) => {
           </div>
           <div className="HireMe__Controls">
             <Button href={getLinkByAlias('cv')} cta>
-              Print or save CV
+              See my CV
             </Button>
           </div>
         </>
