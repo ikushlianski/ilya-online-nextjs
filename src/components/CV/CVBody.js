@@ -36,9 +36,9 @@ export const CVBody = ({ jobs, education }) => {
             <p>
               <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, MongoDB,
               Redis, TypeORM, Sequelize. AWS services (Lambda, S3, IAM,
-              DynamoDB, CloudFront, SNS/SQS), Serverless Framework. Worked with
-              both REST and GraphQL APIs. Fair understanding of application
-              security and performance from FE/BE perspective;
+              DynamoDB, CloudFront, SNS/SQS), Serverless Framework. Apache Kafka
+              basics. Worked with REST and GraphQL APIs. Fair understanding of
+              app security and performance from FE/BE perspective;
             </p>
             <p>
               <b>Misc:</b> Jest, React Testing Library, Git (command line),
