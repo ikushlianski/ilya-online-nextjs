@@ -6,3 +6,5 @@ out
 .env.development
 .env.production
 *.zip
+
+.DS_Store

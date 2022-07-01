@@ -33,15 +33,15 @@ export const Motivation = () => {
               In programming, I value not only quality coding and challenging
               tasks, but also{' '}
               <span className="Motivation__Accent">
-                communication with the customer and end users{' '}
+                communication with the customer, end users and my team{' '}
               </span>
             </li>
             <li className="Motivation__ListItem">
               Coding is a Lego with endless pieces. This is where I get{' '}
               <span className="Motivation__Accent">
                 the freedom of creation
-              </span>
-              .
+              </span>{' '}
+              and new knowledge sources
             </li>
           </ul>
         </li>

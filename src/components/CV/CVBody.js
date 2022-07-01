@@ -28,25 +28,26 @@ export const CVBody = ({ jobs, education }) => {
           <div className="TechStackInfo__SkillsList">
             <h3>Skills</h3>
             <p>
+              <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, MongoDB,
+              basic Redis, ORMs (TypeORM, Sequelize, Prisma). AWS services
+              (Lambda, S3, IAM, DynamoDB, CloudFront, SNS/SQS). Apache Kafka
+              basics. Worked with REST and GraphQL APIs. Fair understanding of
+              app security and performance from FE/BE perspective;
+            </p>
+            <p>
               <b>Frontend:</b> Javascript, Typescript, React, Redux,
               Thunks/Sagas, Redux Toolkit; GraphQL (Apollo), Next.js. CSS
               (Flexbox, Styled Components, some Grid), preprocessors and UI
               libs. Micro frontend experience;
             </p>
             <p>
-              <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, MongoDB,
-              Redis, TypeORM, Sequelize. AWS services (Lambda, S3, IAM,
-              DynamoDB, CloudFront, SNS/SQS), Serverless Framework. Apache Kafka
-              basics. Worked with REST and GraphQL APIs. Fair understanding of
-              app security and performance from FE/BE perspective;
-            </p>
-            <p>
               <b>Misc:</b> Jest, React Testing Library, Git (command line),
               Webpack (incl. module federation), ESLint, Postman, npm,
-              SonarQube; Docker and docker-compose; understanding of CI/CD,
-              Github Actions, basic Terraform and CloudFormation. Know clean
-              code and clean architecture principles and best practices.
-              Interested in studying software architecture of web apps;
+              SonarQube; Docker and docker-compose; understand CI/CD, worked
+              with Github Actions, Serverless Framework, Terraform, AWS CDK and
+              CloudFormation. Know clean code and clean architecture principles
+              and best practices. Interested in studying software architecture
+              of web apps;
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work, advanced Jira

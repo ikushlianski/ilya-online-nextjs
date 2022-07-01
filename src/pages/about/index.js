@@ -209,7 +209,7 @@ const AboutPage = () => (
             </p>
             <p>
               I prefer MacOS over Ubuntu or Windows for its developer
-              friendliness.
+              friendliness and the unique eco-system.
             </p>
           </Card>
 
