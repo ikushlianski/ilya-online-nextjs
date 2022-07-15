@@ -33,7 +33,7 @@ const ExperiencePage = () => (
           <ExperienceCard
             company={'Star Global / SourceTER'}
             position={'Senior Software Engineer/Team Lead'}
-            dates={'2022'}
+            dates={'2021-2022'}
             projectDescription={
               'An existing portal allows providers to intake and process anonymized data from various sources and for consumers to build use cases on top of that data. Our goal is to extend the existing portal with tooling for data processing, analysis and exploration in an easy and user-friendly way'
             }

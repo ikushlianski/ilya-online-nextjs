@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { Button } from '../../ui-kit/Button';
+import { Button } from '../../ui-kit';
+import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 import './Motivation.scss';
-import { getLinkByAlias } from '../../utils/getLinkByAlias';
 
 export const Motivation = () => {
   return (
@@ -20,10 +20,11 @@ export const Motivation = () => {
               </span>
             </li>
             <li className="Motivation__ListItem">
-              I am excited to help businesses{' '}
+              Coding is a Lego with endless pieces. This is where I get{' '}
               <span className="Motivation__Accent">
-                solve challenges of modern day and stay competitive
-              </span>
+                the freedom of creation
+              </span>{' '}
+              and new knowledge sources
             </li>
           </ul>
         </li>
@@ -33,15 +34,15 @@ export const Motivation = () => {
               In programming, I value not only quality coding and challenging
               tasks, but also{' '}
               <span className="Motivation__Accent">
-                communication with the customer, end users and my team{' '}
+                fruitful, professional and respectful communication with the
+                customer, end users and my team{' '}
               </span>
             </li>
             <li className="Motivation__ListItem">
-              Coding is a Lego with endless pieces. This is where I get{' '}
+              I am excited to help businesses{' '}
               <span className="Motivation__Accent">
-                the freedom of creation
-              </span>{' '}
-              and new knowledge sources
+                solve challenges of modern day and stay competitive
+              </span>
             </li>
           </ul>
         </li>

@@ -9,7 +9,7 @@ export const Advantages = () => {
       <div className="Advantages__Content">
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Team:</div>A team of 5-10
-          developers (backend, frontend, full-stack)
+          developers (backend, full-stack)
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Domain:</div>
@@ -17,13 +17,14 @@ export const Advantages = () => {
           very little legacy code
         </p>
         <p className="Advantages__Text">
-          <div className="Advantages__Accent">Tech stack:</div>
-          Preferably a full-stack React/Node project, or a backend project
+          <div className="Advantages__Accent">Tech stack:</div>A
+          full-stack/backend React/Node project, Typescript, Amazon Web
+          Services, Postgres/MongoDB, GraphQL, microservices
         </p>
         <p className="Advantages__Text">
-          <div className="Advantages__Accent">Communication:</div>
-          Communication with the customer / stakeholders / engineers on a daily
-          basis
+          <div className="Advantages__Accent">Processes:</div>
+          Well-established planning, grooming and estimation processes (or let
+          us set them up together)
         </p>
       </div>
     </div>
