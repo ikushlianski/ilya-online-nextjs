@@ -1,7 +1,13 @@
+@import '../../styles/styles';
+
 .WorksPage__Intro {
   display: grid;
   padding: 2rem 2rem 0;
   text-align: center;
+
+  @media (min-width: $screen-large) {
+    padding: 2rem 20rem 0;
+  }
 }
 
 .WorksPage__Blocks {

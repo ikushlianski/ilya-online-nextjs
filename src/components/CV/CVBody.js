@@ -30,14 +30,14 @@ export const CVBody = ({ jobs, education }) => {
             <p>
               <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, MongoDB,
               basic Redis, ORMs (TypeORM, Sequelize, Prisma). AWS services
-              (Lambda, S3, IAM, DynamoDB, CloudFront, SNS/SQS). Apache Kafka
-              basics. Worked with REST and GraphQL APIs. Fair understanding of
-              app security and performance from FE/BE perspective;
+              (Lambda, S3, IAM, DynamoDB, API Gateway, SNS/SQS, CDK). Worked
+              mostly with REST and a bit with GraphQL APIs. Fair understanding
+              of app security and performance from FE/BE perspective;
             </p>
             <p>
               <b>Frontend:</b> Javascript, Typescript, React, Redux,
               Thunks/Sagas, Redux Toolkit; GraphQL (Apollo), Next.js. CSS
-              (Flexbox, Styled Components, some Grid), preprocessors and UI
+              (Flexbox, Styled Components, some Grid, BEM), preprocessors and UI
               libs. Micro frontend experience;
             </p>
             <p>

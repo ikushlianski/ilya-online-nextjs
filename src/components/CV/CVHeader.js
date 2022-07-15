@@ -40,11 +40,6 @@ export const CVHeader = () => {
             <b>Age:</b> {new Date().getFullYear() - 1991}
           </div>
           {extended && (
-            <div className="CVPage__Skype">
-              <b>Skype:</b> <span>kushliansky</span>
-            </div>
-          )}
-          {extended && (
             <div className="CVPage__Github">
               <b>Github:</b>{' '}
               <a

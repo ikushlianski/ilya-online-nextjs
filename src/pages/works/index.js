@@ -25,6 +25,11 @@ const WorksPage = ({ works }) => {
             your pet projects.
           </p>
           <p>
+            Most of them are tiny and some are incomplete but they all serve one
+            purpose: try a particular new tech or approach I cannot try on
+            production projects
+          </p>
+          <p>
             Here they are: from the newest and bigger ones, to the first, naive
             projects that mark the beginning of my web dev journey.
           </p>
