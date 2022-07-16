@@ -41,13 +41,12 @@ export const CVBody = ({ jobs, education }) => {
               libs. Micro frontend experience;
             </p>
             <p>
-              <b>Misc:</b> Jest, React Testing Library, Git (command line),
-              Webpack (incl. module federation), ESLint, Postman, npm,
-              SonarQube; Docker and docker-compose; understand CI/CD, worked
-              with Github Actions, Serverless Framework, Terraform, AWS CDK and
-              CloudFormation. Know clean code and clean architecture principles
-              and best practices. Interested in studying software architecture
-              of web apps;
+              <b>Misc:</b> Jest, React Testing Library, Cypress; Git, Webpack
+              (incl. module federation), ESLint, Postman, npm, SonarQube; Docker
+              and docker-compose; understand CI/CD, worked with Github Actions,
+              Serverless Framework, Terraform, AWS CDK and CloudFormation. Know
+              clean code and clean architecture principles and best practices.
+              Interested in studying software architecture of web apps;
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work, advanced Jira
@@ -59,9 +58,9 @@ export const CVBody = ({ jobs, education }) => {
             {extended && (
               <div>
                 <p>
-                  <b>Plans:</b> Remix, React Query, Cypress, PWAs, system
-                  design, web scalability, Elastic stack, messaging services,
-                  AWS certification and more...
+                  <b>Plans:</b> Remix, React Query, Vitest, ESBuild, PWAs,
+                  system design, web scalability, Elastic stack, messaging
+                  services, AWS certification and more...
                 </p>
               </div>
             )}
