@@ -20,19 +20,21 @@ const WorksPage = ({ works }) => {
         <div className="WorksPage__Intro">
           <h1 className="WorksPage__PageTitle">Pet projects</h1>
           <p className="WorksPage__PageDescription">
-            It is hard sometimes to carve out time for coding apart from your
-            regular job. But that is how you grow as a developer - working on
-            your pet projects.
+            It is hard to carve out time for coding apart from your regular job.
+            But that is how you grow as a developer - working on your pet
+            projects.
           </p>
           <p>
-            Most of them are tiny and some are incomplete but they all serve one
-            purpose: try a particular new tech or approach I cannot try on
-            production projects
+            Most projects are tiny and might have incomplete UI, as I focus more
+            on data and logic, especially in my latest projects. All these pet
+            projects serve one purpose: try a particular new tech or approach I
+            could not try on my production projects
           </p>
           <p>
-            Here they are: from the newest and bigger ones, to the first, naive
-            projects that mark the beginning of my web dev journey.
+            Here they are: from the latest and more advanced ones to the first,
+            naive projects that marked the beginning of my web dev journey.
           </p>
+          <p>Most of them </p>
         </div>
         <Block>
           <div className="WorksPage__Blocks">
