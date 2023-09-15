@@ -24,22 +24,31 @@ export const CVHeader = () => {
             <b>Email:</b>{' '}
             <a href="mailto:kushliansky@gmail.com">kushliansky@gmail.com</a>
           </div>
-          <div className="CVPage__Phone">
-            <b>Telegram:</b> @ilya_nice
-          </div>
-
-          <div className="CVPage__Location">
-            <b>Location:</b> Relocating to Poland
-          </div>
 
           <div className="CVPage__Website">
             <b>Website:</b>{' '}
             <a href="https://ilya.online">https://ilya.online</a>
           </div>
-          <div className="CVPage__Age">
-            <b>Age:</b> {new Date().getFullYear() - 1991}
+          <div className="CVPage__Location">
+            <b>Location:</b> Warsaw, Poland
           </div>
-          {extended && (
+          <div className="CVPage__Phone">
+            <b>Telegram:</b> @ilya_nice
+          </div>
+          {
+            <div className="CVPage__Linkedin">
+              <b>LinkedIn:</b>{' '}
+              <a
+                /* eslint-disable-next-line react/jsx-no-target-blank */
+                target={'_blank'}
+                href="https://www.linkedin.com/in/ilya-kushlianski/"
+                rel="noreferrer"
+              >
+                linkedin.com/in/ilya-kushlianski
+              </a>
+            </div>
+          }
+          {
             <div className="CVPage__Github">
               <b>Github:</b>{' '}
               <a
@@ -51,19 +60,17 @@ export const CVHeader = () => {
                 ikushlianski
               </a>
             </div>
-          )}
+          }
 
           {extended && (
-            <div className="CVPage__Linkedin">
-              <b>LinkedIn:</b>{' '}
-              <a
-                /* eslint-disable-next-line react/jsx-no-target-blank */
-                target={'_blank'}
-                href="https://www.linkedin.com/in/ilya-kushlianski/"
-                rel="noreferrer"
-              >
-                https://www.linkedin.com/in/ilya-kushlianski
-              </a>
+            <div className="CVPage__Languages">
+              <b>Languages:</b> English (fluent), Polish (basic), Belarusian
+              (native)
+            </div>
+          )}
+          {extended && (
+            <div className="CVPage__Discord">
+              <b>Discord:</b> ikushlianski
             </div>
           )}
         </div>

@@ -1,9 +1,6 @@
 @import "../../styles/styles";
 
 .TechStackInfo {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-column-gap: $padding-margin-normal;
 
   &--oneColumn {
     display: block;

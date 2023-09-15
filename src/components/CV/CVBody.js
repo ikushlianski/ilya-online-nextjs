@@ -30,9 +30,10 @@ export const CVBody = ({ jobs, education }) => {
             <p>
               <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
               MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS services
-              (Lambda, S3, IAM, DynamoDB, API Gateway, SNS/SQS, CDK). Worked
-              mostly with REST and a bit with GraphQL APIs. Fair understanding
-              of app security and performance from FE/BE perspective;
+              (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway, SNS/SQS, CDK).
+              Worked mostly with REST and a bit with GraphQL APIs. Fair
+              understanding of app security and performance from FE/BE
+              perspective;
             </p>
             <p>
               <b>Frontend:</b> Javascript, Typescript, React, Redux,
@@ -41,12 +42,13 @@ export const CVBody = ({ jobs, education }) => {
               and UI libs. Micro frontend experience;
             </p>
             <p>
-              <b>Misc:</b> Jest, React Testing Library, Cypress; Git, Webpack
-              (incl. module federation), ESLint, Postman, npm, SonarQube; Docker
-              and docker-compose; understand CI/CD, worked with Github Actions,
-              Serverless Framework, Terraform, AWS CDK and CloudFormation. Know
-              clean code and clean architecture principles and best practices.
-              Interested in studying software architecture of web apps;
+              <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
+              Webpack (incl. module federation), ESLint, Postman, npm,
+              SonarQube; Docker and docker-compose; understand CI/CD, worked
+              with Github Actions, Serverless Framework, Terraform, AWS CDK and
+              CloudFormation. Know clean code and clean architecture principles
+              and best practices. Interested in studying software architecture
+              of web apps;
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work, advanced Jira
@@ -68,36 +70,42 @@ export const CVBody = ({ jobs, education }) => {
               </div>
             )}
           </div>
-          {extended && (
-            <div className="TechStackInfo__Languages">
-              <h3>Languages</h3>
-              <p>
-                <b>English</b>
-                <br />
-                <small>fluent (written/spoken)</small>
-              </p>
-              <p>
-                <b>Swedish</b>
-                <br />
-                <small>intermediate</small>
-              </p>
-              <p>
-                <b>Polish</b>
-                <br />
-                <small>basic</small>
-              </p>
-              <p>
-                <b>Belarusian/Russian</b>
-                <br />
-                <small>native</small>
-              </p>
-            </div>
-          )}
         </div>
+
+        {extended && (
+          <>
+            <h3 style={{ pageBreakAfter: 'avoid' }}>About me</h3>
+            <div className="CVAbout">
+              <div className="CVAbout__DescriptionCommon">
+                <p>
+                  I am a self-demanding person striving for constant
+                  self-perfection. I value teams with well-built processes and
+                  high engineering culture.
+                </p>
+                <p>
+                  My goal on every project is to help build transparent and
+                  flexible processes that help achieve business goals and make
+                  developer lives easier.
+                </p>
+                <p>
+                  I work hard to produce clean and maintainable code, while
+                  always keeping in mind about the architectural side of things
+                  and the application in its entirety (backend and front-end).
+                  Trying to stay on top of latest dev trends, I understand that
+                  knowing the fundamentals is always paramount.
+                </p>
+                <p>
+                  A polite and empathic person, I prefer compromise to conflict
+                  and value open and friendly people.
+                </p>
+              </div>
+            </div>
+          </>
+        )}
 
         <div className="ExperienceEducationWrapper">
           <div className="CVExperience">
-            <h3>Engineering experience</h3>
+            <h3 style={{ pageBreakAfter: 'avoid' }}>Engineering experience</h3>
             <div className="CVExperience__Places">
               {jobs.map(job => {
                 const startDate = dayjs(job.start).format('MMMM YYYY');
@@ -142,58 +150,6 @@ export const CVBody = ({ jobs, education }) => {
               </Button>
             </div>
           </div>
-
-          <div className="CVEducation">
-            <h3>Education</h3>
-            <div className="CVEducation__Places">
-              {education.map(edu => {
-                const startDate = dayjs(edu.start).format('MMMM YYYY');
-                const endDate = edu.end
-                  ? dayjs(edu.end).format('MMMM YYYY')
-                  : 'present';
-
-                return (
-                  <div
-                    key={`${edu.establishment} ${edu.specialty}`}
-                    className="CVEducation__Place"
-                  >
-                    <div className="CVEducation__Years">
-                      {`${startDate} - ${endDate}`}
-                    </div>
-                    <div className="CVEducation__Details">
-                      <div className="CVEducation__Establishment">
-                        <b>{edu.establishment}</b>
-                      </div>
-                      <div className="CVEducation__Specialty">
-                        {edu.specialty}
-                      </div>
-                      <p className="CVEducation__Description">
-                        {edu.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-
-          {extended && (
-            <div className="CVAbout">
-              <div className="CVAbout__DescriptionCommon">
-                <p>
-                  I am a self-demanding person striving for constant
-                  self-perfection. I have always felt my leadership potential,
-                  hence I am working towards becoming a Lead Developer in the
-                  coming years.
-                </p>
-                <p>
-                  A polite and empathic person, I prefer compromise to conflict
-                  and value open and friendly people. I value teams with
-                  well-built processes.
-                </p>
-              </div>
-            </div>
-          )}
         </div>
       </div>
     </div>
