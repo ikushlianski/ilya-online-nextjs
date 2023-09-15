@@ -1,3 +1,10 @@
+import dayjs from 'dayjs';
+import duration from 'dayjs/plugin/duration';
+import relativeTime from 'dayjs/plugin/relativeTime';
+
+dayjs.extend(duration);
+dayjs.extend(relativeTime);
+
 const MONTH = 2.628e9;
 
 export const getTotalExperience = (jobs = []) => {
@@ -8,22 +15,24 @@ export const getTotalExperience = (jobs = []) => {
   const totalMonths = jobs.reduce((acc, cur) => {
     const end = Date.parse(cur.end) || Date.now();
     const start = Date.parse(cur.start);
-    acc += Math.ceil((end - start) / MONTH);
+    acc += Math.floor((end - start) / MONTH);
 
     return acc;
-  }, 0);
-  const realMonths = totalMonths - 1;
+  }, 1);
 
-  const wholeYears = Math.floor(totalMonths / 12);
-  const months = wholeYears > 0 ? realMonths % 12 : totalMonths % 12;
+  if (totalMonths > 11) {
+    const finalYears = Math.round(
+      dayjs.duration(totalMonths, 'months').asYears(),
+    );
 
-  return `${
-    wholeYears ? wholeYears + ' year' + getTimeWordEnding(wholeYears) : ''
-  }${wholeYears && months && realMonths !== 11 ? ' ' : ''}${
-    months && realMonths !== 11
-      ? months + ' month' + getTimeWordEnding(months)
-      : ''
-  }`;
+    return `${finalYears} year${getTimeWordEnding(finalYears)}`;
+  } else {
+    const finalMonths = Math.round(
+      dayjs.duration(totalMonths, 'months').asMonths(),
+    );
+
+    return `${finalMonths} month${getTimeWordEnding(finalMonths)}`;
+  }
 };
 
 const getTimeWordEnding = unit => {

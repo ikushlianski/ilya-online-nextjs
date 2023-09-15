@@ -28,17 +28,17 @@ export const CVBody = ({ jobs, education }) => {
           <div className="TechStackInfo__SkillsList">
             <h3>Skills</h3>
             <p>
-              <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, MongoDB,
-              basic Redis, ORMs (TypeORM, Sequelize, Prisma). AWS services
+              <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
+              MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS services
               (Lambda, S3, IAM, DynamoDB, API Gateway, SNS/SQS, CDK). Worked
               mostly with REST and a bit with GraphQL APIs. Fair understanding
               of app security and performance from FE/BE perspective;
             </p>
             <p>
               <b>Frontend:</b> Javascript, Typescript, React, Redux,
-              Thunks/Sagas, Redux Toolkit; GraphQL (Apollo), Next.js. CSS
-              (Flexbox, Styled Components, some Grid, BEM), preprocessors and UI
-              libs. Micro frontend experience;
+              Thunks/Sagas, Redux Toolkit, RTK Query; GraphQL (Apollo), Next.js.
+              CSS (Flexbox, Styled Components, some Grid, BEM), preprocessors
+              and UI libs. Micro frontend experience;
             </p>
             <p>
               <b>Misc:</b> Jest, React Testing Library, Cypress; Git, Webpack
@@ -50,10 +50,13 @@ export const CVBody = ({ jobs, education }) => {
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work, advanced Jira
-              backlog management, attention to details, fluent English,
+              backlog management (requirements gathering, story linking,
+              acceptance criteria, comments, fostering transparency in dev
+              work), engineering hygiene (clean code, commit culture),
+              architectural mindset, attention to details, fluent English,
               leadership skills. Comfortable with Scrum processes and remote
               work environment. Interested in conducting technical interviews
-              for junior/mid-level engineers and mentoring activities;
+              and mentoring activities;
             </p>
             {extended && (
               <div>
@@ -71,12 +74,17 @@ export const CVBody = ({ jobs, education }) => {
               <p>
                 <b>English</b>
                 <br />
-                <small>advanced (written/spoken)</small>
+                <small>fluent (written/spoken)</small>
               </p>
               <p>
                 <b>Swedish</b>
                 <br />
                 <small>intermediate</small>
+              </p>
+              <p>
+                <b>Polish</b>
+                <br />
+                <small>basic</small>
               </p>
               <p>
                 <b>Belarusian/Russian</b>

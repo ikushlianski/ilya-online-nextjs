@@ -29,7 +29,7 @@ export const CVHeader = () => {
           </div>
 
           <div className="CVPage__Location">
-            <b>Location:</b> Minsk, Belarus
+            <b>Location:</b> Relocating to Poland
           </div>
 
           <div className="CVPage__Website">
