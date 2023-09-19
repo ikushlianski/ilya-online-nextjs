@@ -26,8 +26,8 @@ export const HireMe = ({ lookingForJob }) => {
         </>
       ) : (
         <div className="HireMe__Unavailable">
-          <p>I am not currently looking for new opportunities</p>
-          <p>But let us stay in touch!</p>
+          <p>I am not actively looking for new opportunities</p>
+          <p>But we could still stay in touch!</p>
         </div>
       )}
 

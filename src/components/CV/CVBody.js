@@ -39,7 +39,7 @@ export const CVBody = ({ jobs, education }) => {
               <b>Frontend:</b> Javascript, Typescript, React, Redux,
               Thunks/Sagas, Redux Toolkit, RTK Query; GraphQL (Apollo), Next.js.
               CSS (Flexbox, Styled Components, some Grid, BEM), preprocessors
-              and UI libs. Micro frontend experience;
+              and UI libs. Some micro frontend experience;
             </p>
             <p>
               <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
@@ -89,8 +89,8 @@ export const CVBody = ({ jobs, education }) => {
                 </p>
                 <p>
                   I work hard to produce clean and maintainable code, while
-                  always keeping in mind about the architectural side of things
-                  and the application in its entirety (backend and front-end).
+                  always keeping in mind the architectural side of things and
+                  the application in its entirety (backend and front-end).
                   Trying to stay on top of latest dev trends, I understand that
                   knowing the fundamentals is always paramount.
                 </p>
