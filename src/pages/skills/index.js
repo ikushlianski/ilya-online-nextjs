@@ -11,7 +11,7 @@ import './SkillsPage.scss';
 export const SkillsDisplayModeContext = React.createContext();
 
 const SkillsPage = ({ skills }) => {
-  const [techMode, setTechMode] = React.useState(false);
+  const [techMode, setTechMode] = React.useState(true);
 
   React.useEffect(() => {
     const techMode = Boolean(localStorage.getItem('techMode'));

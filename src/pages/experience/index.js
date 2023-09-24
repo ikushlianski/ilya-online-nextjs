@@ -15,17 +15,22 @@ const ExperiencePage = () => (
           <h1>My experience in detail</h1>
           <p>
             I started out as a freelancer back in 2017 and continued as a
-            full-stack Javascript developer at major Belarusian and Ukrainian IT
-            companies.
+            {process.env.MODE !== 'fe' && 'full-stack'} Javascript developer at
+            major Belarusian and Ukrainian IT companies. Moved to Poland in
+            2023.
           </p>
           <p>
-            A business-oriented web developer, I care about both user interface
-            quality and backend efficiency. I focus on building clean
-            architectures that are adaptable to new feature requests.{' '}
+            A business-oriented web developer, I care about
+            {process.env.MODE === 'fe'
+              ? ' UI quality and performance'
+              : ' both user interface quality and backend efficiency'}
+            . I focus on building clean architectures that are adaptable to
+            always-changing business requirements.{' '}
           </p>
           <p>
-            Prefer backend or full-stack positions to continue growing as a web
-            developer.
+            Prefer $
+            {process.env.MODE === 'fe' ? 'frontend' : 'backend or full-stack'}{' '}
+            positions to continue growing as a web developer.
           </p>
         </Card>
 

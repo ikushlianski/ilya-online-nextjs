@@ -34,7 +34,6 @@ const WorksPage = ({ works }) => {
             Here they are: from the latest and more advanced ones to the first,
             naive projects that marked the beginning of my web dev journey.
           </p>
-          <p>Most of them </p>
         </div>
         <Block>
           <div className="WorksPage__Blocks">

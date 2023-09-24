@@ -14,5 +14,6 @@ module.exports = withSass({
     API_URL: process.env.API_URL,
     IS_OFFLINE: process.env.IS_OFFLINE,
     LOOKING_FOR_JOB: process.env.LOOKING_FOR_JOB,
+    MODE: process.env.MODE,
   },
 });
