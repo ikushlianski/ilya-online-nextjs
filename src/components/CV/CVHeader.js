@@ -18,7 +18,9 @@ export const CVHeader = () => {
       </div>
       <div className="MainInfo__Right">
         <h1 className="MainInfo__Name">Ilya Kushlianski</h1>
-        <h2 className="MainInfo__Title">Full-stack Javascript Developer</h2>
+        <h2 className="MainInfo__Title">
+          {process.env.MODE === 'fs' ? 'Full-stack ' : ''}Javascript Developer
+        </h2>
         <div className="MainInfo__Contacts">
           <div className="MainInfo__Email">
             <b>Email:</b>{' '}

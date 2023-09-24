@@ -8,40 +8,60 @@ import './Motivation.scss';
 export const Motivation = () => {
   return (
     <div className="Motivation">
-      <h2 className="Motivation__Header">Why I enjoy what I do</h2>
+      <h2 className="Motivation__Header">Why me</h2>
       <ul className="Motivation__List">
         <li className="Motivation__ListGroup">
           <ul>
             <li className="Motivation__ListItem">
-              I want to build{' '}
+              Have extensive experience in{' '}
               <span className="Motivation__Accent">
-                awesome applications based on cost-effective and flexible
-                architecture
+                building web applications from scratch
               </span>
             </li>
+            {process.env.MODE !== 'fe' && (
+              <li className="Motivation__ListItem">
+                <span className="Motivation__Accent">Leadership skills</span>,
+                empathetic listener
+              </li>
+            )}
             <li className="Motivation__ListItem">
-              Coding is a Lego with endless pieces. This is where I get{' '}
+              Eager to{' '}
               <span className="Motivation__Accent">
-                the freedom of creation
-              </span>{' '}
-              and new knowledge sources
+                help build and document team processes
+              </span>
+              , including from the ground up
             </li>
           </ul>
         </li>
         <li className="Motivation__ListGroup">
           <ul>
             <li className="Motivation__ListItem">
-              In programming, I value not only quality coding and challenging
-              tasks, but also{' '}
+              Business-facing and{' '}
               <span className="Motivation__Accent">
-                fruitful, professional and respectful communication with the
-                customer, end users and my team{' '}
+                product-centric mentality
               </span>
+              , without sacrificing code quality and maintainability
+            </li>
+            {process.env.MODE !== 'fe' && (
+              <li className="Motivation__ListItem">
+                Promote infrastructure as code and{' '}
+                <span className="Motivation__Accent">
+                  software development automation
+                </span>{' '}
+                wherever possible
+              </li>
+            )}
+            <li className="Motivation__ListItem">
+              <span className="Motivation__Accent">
+                Advanced written and spoken English
+              </span>{' '}
+              helps me work efficiently with both tech and non-tech customers
             </li>
             <li className="Motivation__ListItem">
-              I am excited to help businesses{' '}
+              Encourage proper backlog management, love clean and transparent
+              Jira,{' '}
               <span className="Motivation__Accent">
-                solve challenges of modern day and stay competitive
+                value and encourage transparency in team work
               </span>
             </li>
           </ul>

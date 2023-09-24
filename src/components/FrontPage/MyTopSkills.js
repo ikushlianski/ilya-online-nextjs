@@ -12,15 +12,17 @@ export const MyTopSkills = ({ topSkills }) => {
         <>
           <h2 className="MySkills__Header">Major skills</h2>
           <div className="MySkills__SkillsList">
-            {topSkills.map(skill => (
-              <div className="MySkills__Box" key={skill._id}>
-                <img
-                  className="MySkills__Skill"
-                  src={`/${skill.image}`}
-                  alt={skill.name}
-                />
-              </div>
-            ))}
+            {topSkills
+              .sort((a, b) => a.order - b.order)
+              .map(skill => (
+                <div className="MySkills__Box" key={skill._id}>
+                  <img
+                    className="MySkills__Skill"
+                    src={`/${skill.image}`}
+                    alt={skill.name}
+                  />
+                </div>
+              ))}
           </div>
           {topSkills.length > 0 && (
             <div className="MySkills__Controls">

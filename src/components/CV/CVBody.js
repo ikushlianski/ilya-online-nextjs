@@ -27,20 +27,38 @@ export const CVBody = ({ jobs, education }) => {
         >
           <div className="TechStackInfo__SkillsList">
             <h3>Skills</h3>
-            <p>
-              <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
-              MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS services
-              (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway, SNS/SQS, CDK).
-              Worked mostly with REST and a bit with GraphQL APIs. Fair
-              understanding of app security and performance from FE/BE
-              perspective;
-            </p>
-            <p>
-              <b>Frontend:</b> Javascript, Typescript, React, Redux,
-              Thunks/Sagas, Redux Toolkit, RTK Query; GraphQL (Apollo), Next.js.
-              CSS (Flexbox, Styled Components, some Grid, BEM), preprocessors
-              and UI libs. Some micro frontend experience;
-            </p>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: `column${
+                  process.env.MODE === 'fe' ? '-reverse' : ''
+                }`,
+              }}
+            >
+              <p
+                style={{
+                  margin: process.env.MODE === 'fe' ? '0 0 0em 0' : '0 0 1em 0',
+                }}
+              >
+                <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
+                MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS
+                services (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway,
+                SNS/SQS, CDK). Worked mostly with REST and a bit with GraphQL
+                APIs. Fair understanding of app security and performance from
+                FE/BE perspective;
+              </p>
+              <p
+                style={{
+                  margin: process.env.MODE === 'fe' ? '0 0 1em 0' : '0 0 0em 0',
+                }}
+              >
+                <b>Frontend:</b> Javascript, Typescript, React, Redux,
+                Thunks/Sagas, Redux Toolkit, RTK Query; GraphQL (Apollo),
+                Next.js. CSS (Flexbox, Styled Components, some Grid, BEM),
+                preprocessors and UI libs. Some micro frontend experience;
+              </p>
+            </div>
+
             <p>
               <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
               Webpack (incl. module federation), ESLint, Postman, npm,
@@ -63,9 +81,12 @@ export const CVBody = ({ jobs, education }) => {
             {extended && (
               <div>
                 <p>
-                  <b>Plans:</b> Remix, React Query, Vite, ESBuild, PWAs, system
+                  <b>Plans:</b>
+                  {process.env.MODE === 'fs'
+                    ? ` Remix, React Query, Vite, ESBuild, PWAs, system
                   design, web scalability, Elastic stack, messaging services,
-                  AWS certification and more...
+                  AWS certification and more...`
+                    : ` React Native, Vue.js, Remix, React Query, Vite, ESBuild, PWAs`}
                 </p>
               </div>
             )}
