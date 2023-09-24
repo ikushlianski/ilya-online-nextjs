@@ -23,13 +23,13 @@
     background-image: url('/cover-photo-main3-optimized.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -75% 0%;
+    background-position: -150% 50%;
     // adjust the photo so it does not hide on any resolution
     @media (min-width: 1100px) {
-      background-position: -101% 0%;
+      background-position: -290% 20%;
     }
     @media (min-width: $screen-large) {
-      background-position: -500% 0%;
+      background-position: -540% 30%;
       background-size: 105%;
     }
   }
