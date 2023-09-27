@@ -36,23 +36,26 @@ const ExperiencePage = () => (
 
         <Card>
           <ExperienceCard
-            company={'Star Global / SourceTER'}
-            position={'Senior Software Engineer/Team Lead'}
+            company={'Star Global'}
+            position={'Senior Software Engineer'}
             dates={'2021-present'}
             projectDescription={
               'An existing portal allows providers to intake and process anonymized data from various sources and for consumers to build use cases on top of that data. Our goal is to extend the existing portal with tooling for data processing, analysis and exploration in an easy and user-friendly way'
             }
             techStack={
-              'Typescript, React.js, GraphQL, Jest, React Testing Library, Storybook, AWS (QuickSight, Lambda, DynamoDB etc.), Serverless Framework, micro-frontend architecture with Webpack'
+              'Typescript, React.js, GraphQL (Apollo), Jest, React Testing Library, Storybook, AWS, micro-frontend architecture with Webpack'
             }
             responsibilities={[
-              'Led a team of three frontend developers, prioritized tasks and organized overall work',
-              'Developed key business features for the QuickSight integration into Cloud Data Portal',
-              'Clarified and managed customer requirements and expectations from the tech and business standpoint',
-              'Managed Jira backlog, in sync with our BA, regarding the technical feasibility of various features',
-              'Taught the team to stay focused on the priorities and be transparent in both code repository management and communication with the customer via all channels (email, Jira, Confluence, Bitbucket etc.)',
-              'Always called on the team to thoroughly analyze their estimations and underlined hidden complexities, thus reducing the risk of failing to deliver on sprint goals',
-              'Organized and moderated dev discussions between the architect and backend, frontend and devops teams to stay in sync and comply with contracts, which helped speed up product integration',
+              'Feature development and support for an existing application using React.js, Redux, GraphQL, and Node.js/AWS',
+              'Research the best tool for drawing block diagrams for the electronic part manufacturer, integrated this tool into the existing code base',
+              'Took part in building a custom component library based on Material UI, so it can be reused on various micro-frontends',
+              'Was active proponent of proper task decomposition, requirements analysis and sprint planning',
+              'Set up code deployment pipelines by automating as much as possible',
+              'Ensure the application meets both security and performance best standards, proactively highlight issues and agree on additional time for fixing them',
+              'In line with the boyscout principle, gradually refactor existing code',
+              'Start using feature flags so the business/management can toggle features on and off',
+              'Lead project documentation efforts, so that onboarding of new engineers is streamlined and transition to other teams goes smoothly',
+              'Organized and moderated dev discussions between the architect and backend, frontend and devops teams to stay in sync and comply with contracts, which helped speed up part of the product',
             ]}
           />
         </Card>
@@ -63,16 +66,18 @@ const ExperiencePage = () => (
             position={'Senior Software Engineer'}
             dates={'2021'}
             projectDescription={
-              'An e-commerce microservice app, particularly developing checkout system and integrations with various payment systems'
+              'Build and support an e-commerce app, mostly frontend, particularly the checkout system and integrations with various payment systems'
             }
             techStack={
-              'Typescript, Node.js, Express, GraphQL, REST, Jest, AWS (DynamoDB, Lambda, SNS/SQS)'
+              'Javascript, Typescript, React, GraphQL, REST, Jest, AWS'
             }
             responsibilities={[
-              'Developed payment integrations, backend APIs and microservices in AWS environment',
-              'Managed Jira backlog, split tasks into granular and easily digestible sub-tasks',
-              'Groomed business requirements to come up with realistic feature readiness timelines',
-              'Conducted a couple of full-stack developer interviews',
+              'Worked on the frontend and some backend of an e-commerce app, particularly its checkout part and integrations with various payment systems',
+              'Led grooming efforts and task decomposition',
+              'Led efforts to increase test coverage for the critical functionality, thus reducing the number of issues detected by the QA team',
+              'Initiated a move to Typescript to increase type-safety on the new part of the project',
+              'Led efforts to increase test coverage for the critical functionality, thus reducing the number of issues detected by the QA team',
+              'Initiated a move to Typescript to increase type-safety on the new part of the project',
             ]}
           />
         </Card>
@@ -83,18 +88,16 @@ const ExperiencePage = () => (
             position={'Senior Software Engineer'}
             dates={'2020-2021'}
             projectDescription={
-              'Backend development of API and ETL process for an e-commerce company, everyday communication with customer discussing data, business logic and integrations, technical backlog management'
+              'Developed key parts of an e-commerce platform, with rich UI functionality like pricing, filtering, shopping cart etc. using Typescript, React and its ecosystem'
             }
             techStack={
-              'TypeScript, Node.js, Express.js, PostgreSQL, Docker, Redis, AWS, Google Cloud Platform, Jest'
+              'TypeScript, React.js, Jest, React Testing Library, Webpack, CSS3, Material UI, Node.js, Docker'
             }
             responsibilities={[
-              'Developed key parts of backend microservices, integrations with payment and other APIs',
-              'Ensured reasonable unit and integration test coverage',
-              'Set up infrastructure as code using Serverless Framework, used basic CloudFormation',
-              'Effectively communicated with devs, leads, architects and business analysts from other service teams',
+              'Set up some frontend-related CI/CD processes',
+              'Effectively communicated with devs, leads, architects and business analysts from other service teams, discussed contracts between service teams so we stay in sync',
+              'Proposed new validation and linting approaches on the project, which reduced code review efforts and simplified the codebase',
               "Managed the technical side of the backlog, in sync with BAs, and taking into account the customer's business priorities",
-              'Regularly discussed contracts with other service teams so our work is in sync',
             ]}
           />
         </Card>
