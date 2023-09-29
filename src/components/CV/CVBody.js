@@ -35,38 +35,41 @@ export const CVBody = ({ jobs, education }) => {
                 }`,
               }}
             >
+              {process.env.MODE !== 'fe' && (
+                <p
+                  style={{
+                    margin:
+                      process.env.MODE === 'fe' ? '0 0 0em 0' : '0 0 1em 0',
+                  }}
+                >
+                  <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
+                  MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS
+                  services (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway,
+                  SNS/SQS, CDK). Worked mostly with REST and a bit with GraphQL
+                  APIs.
+                </p>
+              )}
               <p
                 style={{
-                  margin: process.env.MODE === 'fe' ? '0 0 0em 0' : '0 0 1em 0',
+                  margin: '0 0 0em 0',
                 }}
               >
-                <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
-                MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS
-                services (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway,
-                SNS/SQS, CDK). Worked mostly with REST and a bit with GraphQL
-                APIs. Fair understanding of app security and performance from
-                FE/BE perspective;
-              </p>
-              <p
-                style={{
-                  margin: process.env.MODE === 'fe' ? '0 0 1em 0' : '0 0 0em 0',
-                }}
-              >
-                <b>Frontend:</b> Javascript, Typescript, React, Redux,
-                Thunks/Sagas, Redux Toolkit, RTK Query; GraphQL (Apollo),
-                Next.js. CSS (Flexbox, Styled Components, some Grid, BEM),
-                preprocessors and UI libs. Some micro frontend experience;
+                <b>Frontend:</b> Javascript, Typescript, React, Redux.js, Redux
+                Thunk, Redux Saga, RTK Query; GraphQL, Apollo Client, Next.js.
+                CSS3 (Flexbox, some Grid, BEM), HTML5, preprocessors and
+                libraries (SASS, CSS-in-JS, Styled Components etc.) and UI libs
+                like Material UI and Bootstrap. Some micro frontend experience.
+                Used Storybook for better communication with UX designers. Fair
+                understanding of app security and performance principles
               </p>
             </div>
 
             <p>
               <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
               Webpack (incl. module federation), ESLint, Postman, npm,
-              SonarQube; Docker and docker-compose; understand CI/CD, worked
-              with Github Actions, Serverless Framework, Terraform, AWS CDK and
-              CloudFormation. Know clean code and clean architecture principles
-              and best practices. Interested in studying software architecture
-              of web apps;
+              SonarQube; understand CI/CD concepts, worked with Github Actions.
+              Know clean code and clean architecture principles and best
+              practices.
             </p>
             <p>
               <b>Soft skills:</b> Transparency in team work, advanced Jira
@@ -100,13 +103,13 @@ export const CVBody = ({ jobs, education }) => {
               <div className="CVAbout__DescriptionCommon">
                 <p>
                   I am a self-demanding person striving for constant
-                  self-perfection. I value teams with well-built processes and
-                  high engineering culture.
+                  self-perfection. I value teams with well-built software
+                  development processes and high engineering culture.
                 </p>
                 <p>
                   My goal on every project is to help build transparent and
                   flexible processes that help achieve business goals and make
-                  developer lives easier.
+                  web development easier.
                 </p>
                 <p>
                   I work hard to produce clean and maintainable code, while
@@ -148,10 +151,13 @@ export const CVBody = ({ jobs, education }) => {
                       )}
                     </div>
                     <div className="CVExperience__Details">
-                      <div className="CVExperience__Company">
-                        <b>{job.name}</b>
+                      <div className={'CVExperience__CompanyTitle'}>
+                        <div className="CVExperience__Company">
+                          <b>{job.name}</b>
+                        </div>
+                        <div className="CVExperience__Title">{job.title}</div>
                       </div>
-                      <div className="CVExperience__Title">{job.title}</div>
+
                       <p className="CVExperience__Description">
                         {job.description}
                       </p>

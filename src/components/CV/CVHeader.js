@@ -19,7 +19,7 @@ export const CVHeader = () => {
       <div className="MainInfo__Right">
         <h1 className="MainInfo__Name">Ilya Kushlianski</h1>
         <h2 className="MainInfo__Title">
-          {process.env.MODE === 'fs' ? 'Full-stack ' : ''}Javascript Developer
+          {process.env.MODE === 'fs' ? 'Full-stack ' : ''}Front-end Developer
         </h2>
         <div className="MainInfo__Contacts">
           <div className="MainInfo__Email">
@@ -35,7 +35,7 @@ export const CVHeader = () => {
             <b>Location:</b> Warsaw, Poland
           </div>
           <div className="CVPage__Phone">
-            <b>Telegram:</b> @ilya_nice
+            <b>WhatsApp:</b> +48 573 055 500
           </div>
           {
             <div className="CVPage__Linkedin">
