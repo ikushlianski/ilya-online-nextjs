@@ -9,11 +9,11 @@ export const Intro = () => (
   <div className="Intro">
     <div className="Intro__Mobile hidden-md">
       <img src="/ilya.jpeg" alt="Ilya Kushlianski" className="Intro__Image" />
-      <p className="Intro__Primary">Ilya Kushlianski</p>
-      <p className="Intro__Secondary">
+      <h1 className="Intro__Primary">Ilya Kushlianski</h1>
+      <h2 className="Intro__Secondary">
         {process.env.MODE === 'fs' ? 'Full-stack Javascript' : 'Front-End'}{' '}
         Developer
-      </p>
+      </h2>
     </div>
     <div className="Intro__Desktop shown-md">
       {/*<img src="/cover-photo-main2-optimized.jpeg" alt="Ilya Kushlianski" className="Intro__ImageDesktop" />*/}

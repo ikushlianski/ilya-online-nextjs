@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+
+    <loc>https://ilya.online/</loc>
+
+    <lastmod>2023-10-04</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.7</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://ilya.online/cv/index.html</loc>
+
+    <lastmod>2023-10-04</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.5</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://ilya.online/about/index.html</loc>
+
+    <lastmod>2023-10-04</lastmod>
+
+    <changefreq>daily</changefreq>
+
+    <priority>0.3</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://ilya.online/works/index.html</loc>
+
+    <lastmod>2023-10-04</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.3</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://ilya.online/skills/index.html</loc>
+
+    <lastmod>2023-10-04</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.3</priority>
+
+  </url>
+
+  <url>
+
+    <loc>https://ilya.online/experience/index.html</loc>
+
+    <lastmod>2023-10-04</lastmod>
+
+    <changefreq>monthly</changefreq>
+
+    <priority>0.3</priority>
+
+  </url>
+</urlset>
