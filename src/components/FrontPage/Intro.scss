@@ -72,6 +72,10 @@
     color: var(--secondaryLight);
     margin: $padding-margin-normal;
 
+    &_thin {
+      font-weight: 100;
+    }
+
     &Desktop {
       font-size: 2rem;
       color: var(--accent2);

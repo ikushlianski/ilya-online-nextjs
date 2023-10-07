@@ -14,9 +14,7 @@ export const Intro = () => (
         {process.env.MODE === 'fs' ? 'Full-stack Javascript' : 'Front-End'}{' '}
         Developer
       </h2>
-      <h2>
-        <i>More than just a coder...</i>
-      </h2>
+      <h2 className={'Intro__Secondary_thin'}>More than just a coder...</h2>
     </div>
     <div className="Intro__Desktop shown-md">
       {/*<img src="/cover-photo-main2-optimized.jpeg" alt="Ilya Kushlianski" className="Intro__ImageDesktop" />*/}
@@ -27,9 +25,7 @@ export const Intro = () => (
           {process.env.MODE === 'fs' ? 'Full-stack Javascript' : 'Front-End'}{' '}
           Developer
         </h2>
-        <h2>
-          <i>More than just a coder...</i>
-        </h2>
+        <h2 className={'Intro__Secondary_thin'}>More than just a coder...</h2>
         <div className="Intro__Controls shown-md">
           <Button inverted href={getLinkByAlias('cv')}>
             See my CV

@@ -53,16 +53,6 @@ export const SkillsBox = ({ title, items = [] }) => {
                         </ul>
                       </div>
                     )}
-                    {yetToLearn.length > 0 && (
-                      <div className="SkillsBox__YetToLearn">
-                        <b>Yet to learn:</b>
-                        <ul>
-                          {yetToLearn.map(aspect => (
-                            <li key={aspect}>{aspect}</li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
                   </div>
                 )}
               </Card>
