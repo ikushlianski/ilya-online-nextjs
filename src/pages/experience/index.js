@@ -15,9 +15,8 @@ const ExperiencePage = () => (
           <h1>My experience in detail</h1>
           <p>
             I started out as a freelancer back in 2017 and continued as a
-            {process.env.MODE !== 'fe' && 'full-stack'} Javascript developer at
-            major Belarusian and Ukrainian IT companies. Moved to Poland in
-            2023.
+            {process.env.MODE !== 'fe' && ' full-stack'} Javascript developer at
+            major Eastern European IT companies. Moved to Poland in 2023.
           </p>
           <p>
             A business-oriented web developer, I care about
@@ -28,16 +27,16 @@ const ExperiencePage = () => (
             always-changing business requirements.{' '}
           </p>
           <p>
-            Prefer $
-            {process.env.MODE === 'fe' ? 'frontend' : 'backend or full-stack'}{' '}
-            positions to continue growing as a web developer.
+            Prefer
+            {process.env.MODE === 'fe' ? ' frontend' : ' full-stack'} positions
+            to continue growing as a web developer.
           </p>
         </Card>
 
         <Card>
           <ExperienceCard
             company={'Star Global'}
-            position={'Senior Software Engineer'}
+            position={'Senior Software Engineer/Team Lead'}
             dates={'2021-present'}
             projectDescription={
               'An existing portal allows providers to intake and process anonymized data from various sources and for consumers to build use cases on top of that data. Our goal is to extend the existing portal with tooling for data processing, analysis and exploration in an easy and user-friendly way'
