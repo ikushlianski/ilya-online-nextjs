@@ -86,9 +86,7 @@ export const CVBody = ({ jobs, education }) => {
                 <p>
                   <b>Plans:</b>
                   {process.env.MODE === 'fs'
-                    ? ` Remix, React Query, Vite, ESBuild, PWAs, system
-                  design, web scalability, Elastic stack, messaging services,
-                  AWS certification and more...`
+                    ? ` Remix, PWAs, Prisma, Pulumi, Astro, advanced and new web standards, edge computing, system design, web scalability and more;`
                     : ` React Native, Vue.js, Remix, React Query, Vite, ESBuild, PWAs`}
                 </p>
               </div>
@@ -107,11 +105,6 @@ export const CVBody = ({ jobs, education }) => {
                   development processes and high engineering culture.
                 </p>
                 <p>
-                  My goal on every project is to help build transparent and
-                  flexible processes that help achieve business goals and make
-                  web development easier.
-                </p>
-                <p>
                   I work hard to produce clean and maintainable code, while
                   always keeping in mind the architectural side of things and
                   the application in its entirety (backend and front-end).
@@ -119,9 +112,11 @@ export const CVBody = ({ jobs, education }) => {
                   knowing the fundamentals is always paramount.
                 </p>
                 <p>
-                  A polite and empathic person, I prefer compromise to conflict
-                  and value open and friendly people.
+                  My goal on every project is to help build transparent and
+                  flexible processes that help achieve business goals and make
+                  web development easier.
                 </p>
+                <p>I am more than yet another coder.</p>
               </div>
             </div>
           </>
