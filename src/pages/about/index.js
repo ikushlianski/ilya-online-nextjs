@@ -42,8 +42,8 @@ const AboutPage = () => (
           <Card flat>
             <h3 className="AboutMePage__Q">The project of my dream</h3>
             <p>
-              Team: not very large, 10-20 people. Ambitious devs who write
-              quality software and with whom you grow as a professional.
+              Team: ambitious devs who produce quality software, value testing
+              (not for the sake of test coverage) and do real CI/CD.
             </p>
             <p>
               Product: a full-stack web application, where you can do both
@@ -51,8 +51,11 @@ const AboutPage = () => (
             </p>
             <p>
               Processes: Scrum or alike. No minute-by-minute time tracking (do
-              you really trust your developers?). Estimations in story points,
-              which are not mapped to hours or days.
+              you really trust your developers?). Estimations in story points
+              not mapped to hours or days. I have seen a number of projects
+              failing to meet the timelines and they all made the same mistake:
+              estimate software development work in hours/days without properly
+              breaking it up into clear subtasks
             </p>
           </Card>
 
@@ -61,16 +64,15 @@ const AboutPage = () => (
             <p>
               In the coming years I&apos;m planning to keep coding and keep
               improving my hard skills (both frontend and backend). Among plans
-              is AWS certification and diving deeper into the architecture
-              aspects of software engineering. I am passionate about new
-              frameworks like Next.js and Remix that make frontend and backend
-              much closer and urge you to act on both sides of web development.
+              is diving into other front-end frameworks like Angular and Vue as
+              well as developing software architecture skills. I am passionate
+              about new frameworks like Next.js and Remix that make frontend and
+              backend much closer and urge you to be on both sides of web
+              development.
             </p>
             <p>
               I am gradually assuming more leadership responsibilities like
-              interviewing and mentoring other devs. Other activities I’d like
-              to try is pre-sales activities. Further, I see myself in a
-              managerial position.
+              leading other developers, interviewing and mentoring.
             </p>
           </Card>
         </div>
@@ -82,10 +84,10 @@ const AboutPage = () => (
           <Card flat>
             <h3 className="AboutMePage__Q">Sources I use to learn</h3>
             <p>
-              For tech overviews: email listings with valuable articles, YouTube
-              videos from conferences and podcasts
+              For tech overviews: email listings like Node Weekly, subscribing
+              to dev blogs, YouTube channels and podcasts.
             </p>
-            <p>For learning new things: specs, documentation and books.</p>
+            <p>For learning new things: documentation, specs and books.</p>
             <p>
               For quick bites, Stack Overflow is the standard (I do not own a
               Copy-Past button though).
@@ -95,10 +97,13 @@ const AboutPage = () => (
           <Card flat>
             <h3 className="AboutMePage__Q">How I learn code</h3>
             <p>
-              It is all about practice in the end. I do my personal projects and
-              in every new project I try to give a try to some new technologies,
-              though I do understand that it is web fundamentals, not new shiny
-              frameworks, that drive you to success.
+              It is all about practice in the end. I start with guided tours of
+              the new technology and try implementing some tiny project as I go
+              to get more comfortable with what I have just learned. However, I
+              do understand that it is web fundamentals, not new shiny
+              frameworks, that should be the foundation of my programming
+              knowledge. Knowing these fundamentals helps you de-mystify the new
+              stuff you learn.
             </p>
             <Button inverted href={getLinkByAlias('works')}>
               See my code examples
@@ -114,14 +119,10 @@ const AboutPage = () => (
             <h3 className="AboutMePage__Q">Why I focus only on Javascript</h3>
             <p>
               I believe a good engineer can switch between languages without
-              much difficulty, but since it&apos;s impossible to be good at many
-              languages at once. I bet on good knowledge of one thing.
-            </p>
-            <p>
-              Besides JS and React, I also spent some time learning Node.js,
-              databases, the Cloud and microservice basics, which eventually
-              deepened my backend knowledge and led me to working on the backend
-              after spending several years doing frontend work.
+              much difficulty, but I believe it&apos;s just impossible to be
+              good at many languages at once. I bet on good knowledge of one
+              thing rather than boasting about knowing a dozen languages I
+              hardly worked with.
             </p>
           </Card>
 
@@ -129,19 +130,32 @@ const AboutPage = () => (
             <h3 className="AboutMePage__Q">Dealing with difficulties</h3>
             <p>
               Banging your head against a problem is frustrating. But as I
-              gained more experience this was no more a big difficulty. Now I
-              also teach others not to give up, read what the actual errors say,
+              gained more experience this was no more a big roadblock. Now I
+              teach my mentees not to give up, read what the actual errors say,
               not be scared of red color, and google things properly.
+            </p>
+          </Card>
+
+          <Card flat>
+            <h3 className="AboutMePage__Q">Using AI at work</h3>
+            <p>
+              I am not sure that stuff like Github co-pilot is really helpful if
+              you weigh all pros and cons. I think using some kind of AI at work
+              for simple stuff like very basic unit tests saves you some time,
+              but we should not fully rely on AI for true coding. So I would say
+              it is good for boilerplate tasks but nothing beyond that.
             </p>
           </Card>
 
           <Card flat>
             <h3 className="AboutMePage__Q">What is quality code for me</h3>
             <p>
-              Developers are right in saying there is no ideal code. For me
-              quality means understandable, typed, testable and maintainable
-              code that can adapt to changes in requirements and has
-              forward-looking architecture.
+              Everybody thinks they write clean code, so the notion of ideal
+              clean code is hard to determine. Yet I believe quality means
+              understandable, easily testable, typed and maintainable code that
+              can be adapted to changes in business requirements and has
+              forward-looking architecture. With such code, time to add new
+              features does not grow exponentially.
             </p>
             <p>
               Linters, pre-commit hooks, Github Actions and similar checks are
@@ -205,7 +219,7 @@ const AboutPage = () => (
             <h3 className="AboutMePage__Q">Preferred work conditions</h3>
             <p>
               COVID-19 changed everything in our life. Now I do not consider any
-              office jobs, even when the pandemic goes away.
+              office jobs, even after the pandemic seems to have gone away.
             </p>
             <p>
               I prefer MacOS over Ubuntu or Windows for its developer

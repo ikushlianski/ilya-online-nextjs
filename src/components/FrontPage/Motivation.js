@@ -15,7 +15,7 @@ export const Motivation = () => {
             <li className="Motivation__ListItem">
               Have extensive experience in{' '}
               <span className="Motivation__Accent">
-                building web applications from scratch
+                building full-stack web applications from scratch
               </span>
             </li>
             {process.env.MODE !== 'fe' && (
@@ -48,7 +48,6 @@ export const Motivation = () => {
                 <span className="Motivation__Accent">
                   software development automation
                 </span>{' '}
-                wherever possible
               </li>
             )}
             <li className="Motivation__ListItem">

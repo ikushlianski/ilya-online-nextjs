@@ -11,7 +11,7 @@ import { LinkedInCta } from '../common/LinkedInCta';
 export const Layout = ({
   children,
   className,
-  title = 'Ilya Kushlianski, Javascript Developer',
+  title = 'Ilya Kushlianski, full-stack Javascript Developer. More than a coder',
   description = 'Full-stack Javascript developer, based in Poland. My top skills are Javascript, React, Typescript and Node.js',
 }) => {
   const [menuOpen, setMenuOpen] = React.useState(false);

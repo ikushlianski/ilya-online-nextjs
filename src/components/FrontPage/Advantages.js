@@ -16,7 +16,7 @@ export const Advantages = () => {
           <div className="Advantages__Accent">Tech stack:</div>
           {process.env.MODE === 'fe'
             ? 'A front-end Javascript/Typescript React project, possibly GraphQL, Next.js etc. with more accent on logic rather than purely CSS work. Some backend Node.js work could be also possible'
-            : 'A full-stack/backend React/Node.js project, Typescript, Amazon Web Services, Postgres/MongoDB, GraphQL, microservices'}
+            : 'A full-stack React/Node.js project, Typescript, Amazon Web Services, Postgres/MongoDB, GraphQL, microservices'}
         </p>
         <p className="Advantages__Text">
           <div className="Advantages__Accent">Processes:</div>

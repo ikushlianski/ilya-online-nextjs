@@ -21,7 +21,7 @@ const CVPage = ({ jobs, education }) => {
       title="Ilya Kushlianski - CV"
       description={`CV of Ilya Kushlianski, ${
         process.env.MODE === 'fe' ? '' : 'full-stack'
-      } Javascript developer."`}
+      } Javascript developer. More than just a coder"`}
     >
       <div className="CVPage">
         <Block className="CVPage__SmallScreensWarning">
