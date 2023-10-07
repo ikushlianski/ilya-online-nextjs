@@ -28,11 +28,11 @@
 
 .SkillsBox__ItemDescription {
   margin-top: $padding-margin-normal;
-  color: var(--accent2);
   font-weight: normal;
 }
 
 .SkillsBox__ItemName {
+  color: var(--accent2);
   font-size: $font-large;
   display: inline-block;
   margin: $padding-margin-normal 0;

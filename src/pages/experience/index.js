@@ -43,11 +43,12 @@ const ExperiencePage = () => (
               'An existing portal allows providers to intake and process anonymized data from various sources and for consumers to build use cases on top of that data. Our goal is to extend the existing portal with tooling for data processing, analysis and exploration in an easy and user-friendly way'
             }
             techStack={
-              'Typescript, React.js, GraphQL (Apollo), Jest, React Testing Library, Storybook, AWS, micro-frontend architecture with Webpack'
+              'Javascript, Typescript, React.js, GraphQL (Apollo), Node.js, Neo4j, Jest, React Testing Library, Storybook, AWS, micro-frontend architecture with Webpack'
             }
             responsibilities={[
               'Feature development and support for an existing application using React.js, Redux, GraphQL, and Node.js/AWS',
-              'Research the best tool for drawing block diagrams for the electronic part manufacturer, integrated this tool into the existing code base',
+              'ETL process development using AWS Glue and Lambdas',
+              'Improve data quality in the production application without impact on the user base',
               'Took part in building a custom component library based on Material UI, so it can be reused on various micro-frontends',
               'Was active proponent of proper task decomposition, requirements analysis and sprint planning',
               'Set up code deployment pipelines by automating as much as possible',
@@ -69,10 +70,10 @@ const ExperiencePage = () => (
               'Build and support an e-commerce app, mostly frontend, particularly the checkout system and integrations with various payment systems'
             }
             techStack={
-              'Javascript, Typescript, React, GraphQL, REST, Jest, AWS'
+              'Javascript, Typescript, React, DynamoDB, AWS IAM, Serverless Framework, Jest'
             }
             responsibilities={[
-              'Worked on the frontend and some backend of an e-commerce app, particularly its checkout part and integrations with various payment systems',
+              'Worked on an e-commerce microservice app, particularly developing the checkout system and integrations with various payment systems',
               'Led grooming efforts and task decomposition',
               'Led efforts to increase test coverage for the critical functionality, thus reducing the number of issues detected by the QA team',
               'Initiated a move to Typescript to increase type-safety on the new part of the project',
@@ -91,10 +92,12 @@ const ExperiencePage = () => (
               'Developed key parts of an e-commerce platform, with rich UI functionality like pricing, filtering, shopping cart etc. using Typescript, React and its ecosystem'
             }
             techStack={
-              'TypeScript, React.js, Jest, React Testing Library, Webpack, CSS3, Material UI, Node.js, Docker'
+              'TypeScript, React.js, Node.js, Express.js, SQL, Postgres, Google Cloud Platform, Jest, React Testing Library, Webpack, CSS3, Material UI, Node.js, Docker'
             }
             responsibilities={[
-              'Set up some frontend-related CI/CD processes',
+              'Developed parts of microservices, integrations with payment and other kinds of APIs',
+              'Set up infrastructure as code using Serverless Framework',
+              'Built an ETL process to deliver data from S3 to the application database',
               'Effectively communicated with devs, leads, architects and business analysts from other service teams, discussed contracts between service teams so we stay in sync',
               'Proposed new validation and linting approaches on the project, which reduced code review efforts and simplified the codebase',
               "Managed the technical side of the backlog, in sync with BAs, and taking into account the customer's business priorities",
