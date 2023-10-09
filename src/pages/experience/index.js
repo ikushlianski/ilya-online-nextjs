@@ -39,10 +39,10 @@ const ExperiencePage = () => (
             position={'Senior Software Engineer/Team Lead'}
             dates={'2021-present'}
             projectDescription={
-              'An existing portal allows providers to intake and process anonymized data from various sources and for consumers to build use cases on top of that data. Our goal is to extend the existing portal with tooling for data processing, analysis and exploration in an easy and user-friendly way'
+              "A block diagram drawing tool (frontend and backend). Block diagrams are created by electrical engineers to outline typical solutions and what electric parts can be used for each use case. These diagrams are parsed with ML algorithms. This recommendation engine is used in the second tool by sales assistants working with end customers. The solution is intended to boost sales of the company's own parts versus competitor parts."
             }
             techStack={
-              'Javascript, Typescript, React.js, GraphQL (Apollo), Node.js, Neo4j, Jest, React Testing Library, Storybook, AWS, micro-frontend architecture with Webpack'
+              'Javascript, Typescript, React.js, GraphQL (Apollo), micro-frontend architecture, Jest, React Testing Library, Storybook; Node.js, Neo4j, AWS'
             }
             responsibilities={[
               'Feature development and support for an existing application using React.js, Redux, GraphQL, and Node.js/AWS',

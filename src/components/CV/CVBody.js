@@ -76,10 +76,10 @@ export const CVBody = ({ jobs, education }) => {
               backlog management (requirements gathering, story linking,
               acceptance criteria, comments, fostering transparency in dev
               work), engineering hygiene (clean code, commit culture),
-              architectural mindset, attention to details, fluent English,
-              leadership skills. Comfortable with Scrum processes and remote
-              work environment. Interested in conducting technical interviews
-              and mentoring activities;
+              architectural and product-centric mindset, attention to details,
+              fluent English, leadership skills. Comfortable with Scrum
+              processes and remote work environment. Interested in conducting
+              technical interviews and mentoring activities;
             </p>
             {extended && (
               <div>
