@@ -27,75 +27,60 @@ export const CVBody = ({ jobs, education }) => {
         >
           <div className="TechStackInfo__SkillsList">
             <h3>Skills</h3>
-            <div
-              style={{
-                display: 'flex',
-                flexDirection: `column${
-                  process.env.MODE === 'fe' ? '-reverse' : ''
-                }`,
-              }}
-            >
-              {process.env.MODE !== 'fe' && (
-                <p
-                  style={{
-                    margin:
-                      process.env.MODE === 'fe' ? '0 0 0em 0' : '0 0 1em 0',
-                  }}
-                >
-                  <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
-                  MongoDB and Redis; ORMs (TypeORM, Sequelize, Prisma). AWS
-                  services (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway,
-                  SNS/SQS, CDK). Worked mostly with REST and a bit with GraphQL
-                  APIs.
-                </p>
-              )}
-              <p
-                style={{
-                  margin: '0 0 0em 0',
-                }}
-              >
+            <div className={'TechStackInfo__SkillsGrid'}>
+              <p>
                 <b>Frontend:</b> Javascript, Typescript, React, Redux.js, Redux
                 Thunk, Redux Saga, RTK Query; GraphQL, Apollo Client, Next.js.
                 CSS3 (Flexbox, some Grid, BEM), HTML5, preprocessors and
                 libraries (SASS, CSS-in-JS, Styled Components etc.) and UI libs
-                like Material UI and Bootstrap. Some micro frontend experience.
-                Used Storybook for better communication with UX designers. Fair
-                understanding of app security and performance principles
+                like Material UI and Bootstrap. Used Storybook for better
+                communication with UX designers.
               </p>
-            </div>
+              {process.env.MODE !== 'fe' && (
+                <p>
+                  <b>Backend:</b> Node.js, Express, Nest.js. SQL, Postgres, some
+                  MongoDB and Redis; ORMs (TypeORM, Sequelize). AWS services
+                  (Lambda, S3, IAM, DynamoDB, AppSync, API Gateway, SNS/SQS,
+                  CDK). Built mostly REST and a bit GraphQL APIs. Have fair
+                  understanding of app security and performance principles
+                </p>
+              )}
 
-            <p>
-              <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
-              Webpack (incl. module federation), ESLint, Postman, npm,
-              SonarQube; understand CI/CD concepts, worked with Github Actions.
-              Know clean code and clean architecture principles and best
-              practices.
-            </p>
-            <p>
-              <b>Soft skills:</b> Transparency in team work, advanced Jira
-              backlog management (requirements gathering, story linking,
-              acceptance criteria, comments, fostering transparency in dev
-              work), engineering hygiene (clean code, commit culture),
-              architectural and product-centric mindset, attention to details,
-              fluent English, leadership skills. Comfortable with Scrum
-              processes and remote work environment. Interested in conducting
-              technical interviews and mentoring activities;
-            </p>
-            {extended && (
               <div>
                 <p>
-                  <b>Plans:</b>
-                  {process.env.MODE === 'fs'
-                    ? ` Remix, PWAs, Prisma, Pulumi, Astro, advanced and new web standards, edge computing, system design, web scalability and more;`
-                    : ` React Native, Vue.js, Remix, React Query, Vite, ESBuild, PWAs`}
+                  <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
+                  Webpack (incl. module federation), ESLint, Postman, npm,
+                  SonarQube; understand CI/CD concepts, worked with Github
+                  Actions. Know clean code and clean architecture principles and
+                  best practices.
                 </p>
+                {extended && (
+                  <div>
+                    <p>
+                      <b>Plans:</b>
+                      {process.env.MODE === 'fs'
+                        ? ` Remix, PWAs, Prisma, Pulumi, Astro, advanced and new web standards, edge computing, system design, web scalability and more;`
+                        : ` React Native, Vue.js, Remix, React Query, Vite, ESBuild, PWAs`}
+                    </p>
+                  </div>
+                )}
               </div>
-            )}
+              <p>
+                <b>Soft skills:</b> Transparency in team work, advanced Jira
+                backlog management (requirements gathering, story linking,
+                acceptance criteria, comments, fostering transparency in dev
+                work), engineering hygiene (clean code, commit culture),
+                architectural and product-centric mindset, attention to details,
+                fluent English, leadership skills. Comfortable with Scrum
+                processes and remote work environment. Interested in conducting
+                technical interviews and mentoring activities;
+              </p>
+            </div>
           </div>
         </div>
 
         {extended && (
-          <>
+          <div className={'CVPage__AboutMeSection'}>
             <h3 style={{ pageBreakAfter: 'avoid' }}>About me</h3>
             <div className="CVAbout">
               <div className="CVAbout__DescriptionCommon">
@@ -109,17 +94,18 @@ export const CVBody = ({ jobs, education }) => {
                   always keeping in mind the architectural side of things and
                   the application in its entirety (backend and front-end).
                   Trying to stay on top of latest dev trends, I understand that
-                  knowing the fundamentals is always paramount.
+                  knowing the web fundamentals and standards is always
+                  paramount.
                 </p>
                 <p>
-                  My goal on every project is to help build transparent and
-                  flexible processes that help achieve business goals and make
-                  web development easier.
+                  My goal on every project, apart from producing quality code,
+                  is to help build transparent and flexible processes that help
+                  achieve business goals and make web development easier.
                 </p>
-                <p>I am more than yet another coder.</p>
+                <p>I am more than yet another coder on your team!</p>
               </div>
             </div>
-          </>
+          </div>
         )}
 
         <div className="ExperienceEducationWrapper">

@@ -3,37 +3,38 @@ import React from 'react';
 import { CVContext } from '../../pages/cv';
 
 import './CVHeader.scss';
+import { getOverallExperienceInYears } from '../../services/experience.service';
 
 export const CVHeader = () => {
   const { extended } = React.useContext(CVContext);
+  const overallExperience = getOverallExperienceInYears();
 
   return (
     <div className="MainInfo">
-      <div className="MainInfo__Left">
-        <img
-          src="/ilya.jpeg"
-          alt="Ilya Kushlianski"
-          className="MainInfo__Photo"
-        />
-      </div>
       <div className="MainInfo__Right">
         <h1 className="MainInfo__Name">Ilya Kushlianski</h1>
         <h2 className="MainInfo__Title">
-          Senior {process.env.MODE === 'fs' ? 'Full-stack ' : 'Front-end'}
-          Developer
+          Senior{' '}
+          {process.env.MODE === 'fs' ? 'full-stack Javascript ' : 'front-end'}
+          developer, {Math.floor(overallExperience)} years of experience
         </h2>
         <div className="MainInfo__Contacts">
+          <div className="CVPage__Location">
+            <b>Location:</b> Warsaw, Poland (GMT+1)
+          </div>
           <div className="MainInfo__Email">
             <b>Email:</b>{' '}
             <a href="mailto:kushliansky@gmail.com">kushliansky@gmail.com</a>
           </div>
-
+          <div className="CVPage__CooperationFormat">
+            <b>Type of contract:</b> B2B
+          </div>
           <div className="CVPage__Website">
             <b>Website:</b>{' '}
             <a href="https://ilya.online">https://ilya.online</a>
           </div>
-          <div className="CVPage__Location">
-            <b>Location:</b> Warsaw, Poland
+          <div className="CVPage__IsRemote">
+            <b>Work mode:</b> Remote
           </div>
           <div className="CVPage__Phone">
             <b>WhatsApp:</b> +48 573 055 500

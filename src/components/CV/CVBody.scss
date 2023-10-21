@@ -5,6 +5,12 @@
   &--oneColumn {
     display: block;
   }
+
+  &__SkillsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 $padding-margin-normal;
+  }
 }
 
 .ExperienceEducationWrapper {
@@ -64,4 +70,8 @@
     align-items: center;
     justify-content: space-between;
   }
+}
+
+.CVPage__BodyContent {
+  margin-top: $padding-margin-normal
 }

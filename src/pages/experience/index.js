@@ -66,7 +66,7 @@ const ExperiencePage = () => (
             position={'Senior Software Engineer'}
             dates={'2021'}
             projectDescription={
-              'Build and support an e-commerce app, mostly frontend, particularly the checkout system and integrations with various payment systems'
+              'Build and support an e-commerce app, mostly frontend, particularly the checkout system and integration with Paypal'
             }
             techStack={
               'Javascript, Typescript, React, DynamoDB, AWS IAM, Serverless Framework, Jest'
@@ -74,8 +74,6 @@ const ExperiencePage = () => (
             responsibilities={[
               'Worked on an e-commerce microservice app, particularly developing the checkout system and integrations with various payment systems',
               'Led grooming efforts and task decomposition',
-              'Led efforts to increase test coverage for the critical functionality, thus reducing the number of issues detected by the QA team',
-              'Initiated a move to Typescript to increase type-safety on the new part of the project',
               'Led efforts to increase test coverage for the critical functionality, thus reducing the number of issues detected by the QA team',
               'Initiated a move to Typescript to increase type-safety on the new part of the project',
             ]}

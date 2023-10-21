@@ -56,6 +56,10 @@
 }
 
 .CVPage {
+  &__AboutMeSection {
+    padding: $padding-margin-normal 0
+  }
+
   &__Gutter {
     color: gray;
   }
