@@ -1,9 +1,14 @@
 @import "../../styles/styles";
 
 .WorksBox {
-  padding: $padding-margin-huge;
+  padding: $padding-margin-huge 10rem;
   background: rgba(0, 0, 0, 0.3);
   display: grid;
+
+  @media (max-width: $screen-medium) {
+    padding: $padding-margin-huge;
+  }
+
 }
 
 .WorksBox__Item {
