@@ -20,14 +20,14 @@ export const CVHeader = () => {
         </h2>
         <div className="MainInfo__Contacts">
           <div className="CVPage__Location">
-            <b>Location:</b> Warsaw, Poland (GMT+1)
+            <b>Location:</b> Belarus (GMT+3) / Poland (GMT+1)
           </div>
           <div className="MainInfo__Email">
             <b>Email:</b>{' '}
             <a href="mailto:kushliansky@gmail.com">kushliansky@gmail.com</a>
           </div>
           <div className="CVPage__CooperationFormat">
-            <b>Type of contract:</b> B2B
+            <b>Type of contract:</b> with me as private person or B2B
           </div>
           <div className="CVPage__Website">
             <b>Website:</b>{' '}
@@ -37,7 +37,7 @@ export const CVHeader = () => {
             <b>Work mode:</b> Remote
           </div>
           <div className="CVPage__Phone">
-            <b>WhatsApp:</b> +48 573 055 500
+            <b>WhatsApp:</b> +375 29 608 89 00
           </div>
           {
             <div className="CVPage__Linkedin">

@@ -16,28 +16,38 @@ const ExperiencePage = () => (
           <p>
             I started out as a freelancer back in 2017 and continued as a
             {process.env.MODE !== 'fe' && ' full-stack'} Javascript developer at
-            major Eastern European IT companies. Moved to Poland in 2023.
+            major Eastern European IT companies.
           </p>
           <p>
-            A business-oriented web developer, I care about
-            {process.env.MODE === 'fe'
-              ? ' UI quality and performance'
-              : ' both user interface quality and backend efficiency'}
-            . I focus on building clean architectures that are adaptable to
-            always-changing business requirements.{' '}
+            I am dedicated to staying updated with the latest trends and news in
+            my tech stack. Advocate for infrastructure as code and software
+            development automation.
           </p>
           <p>
-            Prefer
-            {process.env.MODE === 'fe' ? ' frontend' : ' full-stack'} positions
-            to continue growing as a web developer.
+            Fluency in written and spoken English enables me to work seamlessly
+            with both technical and non-technical stakeholders. I possess a
+            business-facing and product-centric mentality, without compromising
+            code quality and maintainability.
           </p>
+          <p>
+            I promote proper backlog management and am passionate about
+            maintaining a clean and transparent task tracking workflow, so the
+            business and management can safely manage their expectations.
+          </p>
+          <p>
+            With a solid background in remote work, I am comfortable with remote
+            collaboration. My leadership skills, combined with empathetic
+            listening abilities, make me an effective team player and
+            communicator.
+          </p>
+          <p>Prefer front-end or full-stack positions.</p>
         </Card>
 
         <Card>
           <ExperienceCard
             company={'Star Global'}
-            position={'Senior Software Engineer/Team Lead'}
-            dates={'2021-present'}
+            position={'Senior Software Engineer/informal team lead'}
+            dates={'2021-2023'}
             projectDescription={
               "A block diagram drawing tool (frontend and backend). Block diagrams are created by electrical engineers to outline typical solutions and what electric parts can be used for each use case. These diagrams are parsed with ML algorithms. This recommendation engine is used in the second tool by sales assistants working with end customers. The solution is intended to boost sales of the company's own parts versus competitor parts."
             }
@@ -49,12 +59,12 @@ const ExperiencePage = () => (
               'ETL process development using AWS Glue and Lambdas',
               'Improve data quality in the production application without impact on the user base',
               'Took part in building a custom component library based on Material UI, so it can be reused on various micro-frontends',
-              'Was active proponent of proper task decomposition, requirements analysis and sprint planning',
+              'Actively promoted proper task decomposition, requirements analysis and sprint planning',
               'Set up code deployment pipelines by automating as much as possible',
-              'Ensure the application meets both security and performance best standards, proactively highlight issues and agree on additional time for fixing them',
-              'In line with the boyscout principle, gradually refactor existing code',
-              'Start using feature flags so the business/management can toggle features on and off',
-              'Lead project documentation efforts, so that onboarding of new engineers is streamlined and transition to other teams goes smoothly',
+              'Ensured the application met both security and performance best standards, proactively highlight issues and agree on additional time for fixing them',
+              'In line with the boyscout principle, gradually refactored existing code',
+              'Started using feature flags',
+              'Led project documentation efforts, so that onboarding of new engineers is streamlined and transition to other teams goes smoothly',
               'Organized and moderated dev discussions between the architect and backend, frontend and devops teams to stay in sync and comply with contracts, which helped speed up part of the product',
             ]}
           />
@@ -89,7 +99,7 @@ const ExperiencePage = () => (
               'Developed key parts of an e-commerce platform, with rich UI functionality like pricing, filtering, shopping cart etc. using Typescript, React and its ecosystem'
             }
             techStack={
-              'TypeScript, React.js, Node.js, Express.js, SQL, Postgres, Google Cloud Platform, Jest, React Testing Library, Webpack, CSS3, Material UI, Node.js, Docker'
+              'TypeScript, React.js, Node.js, Express.js, Next.js, SQL, Postgres, Google Cloud Platform, Jest, React Testing Library, Webpack, CSS3, Material UI, Node.js, Docker'
             }
             responsibilities={[
               'Developed parts of microservices, integrations with payment and other kinds of APIs',
