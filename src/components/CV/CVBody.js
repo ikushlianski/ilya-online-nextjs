@@ -51,15 +51,15 @@ export const CVBody = ({ jobs, education }) => {
                   <b>Dev Tools:</b> Jest, React Testing Library, Cypress; Git,
                   Webpack (incl. module federation), ESLint, Postman, npm,
                   SonarQube; understand CI/CD concepts, worked with Github
-                  Actions. Know clean code and clean architecture principles and
-                  best practices.
+                  Actions and Docker. Know clean code and clean architecture
+                  principles and best practices.
                 </p>
                 {extended && (
                   <div>
                     <p>
                       <b>Plans:</b>
                       {process.env.MODE === 'fs'
-                        ? ` Remix, PWAs, Prisma, Pulumi, Astro, advanced and new web standards, edge computing, system design, web scalability and more;`
+                        ? ` Remix, PWAs, Prisma, Pulumi, Astro, Kubernetes & in-depth microservice architecture, advanced and new web standards, edge computing, system design, web scalability and more;`
                         : ` React Native, Vue.js, Remix, React Query, Vite, ESBuild, PWAs`}
                     </p>
                   </div>
