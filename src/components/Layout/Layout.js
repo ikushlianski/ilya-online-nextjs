@@ -12,7 +12,7 @@ export const Layout = ({
   children,
   className,
   title = 'Ilya Kushlianski, full-stack Javascript Developer. More than a coder',
-  description = 'Full-stack Javascript developer, based in Poland. My top skills are Javascript, React, Typescript and Node.js',
+  description = 'Full-stack Javascript developer. My top skills are Javascript, React, Typescript and Node.js',
 }) => {
   const [menuOpen, setMenuOpen] = React.useState(false);
   const [ctaOpen, setCtaOpen] = React.useState(false);

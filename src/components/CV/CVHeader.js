@@ -20,7 +20,7 @@ export const CVHeader = () => {
         </h2>
         <div className="MainInfo__Contacts">
           <div className="CVPage__Location">
-            <b>Location:</b> Belarus (GMT+3) / Poland (GMT+1)
+            <b>Location:</b> Belarus (GMT+3)
           </div>
           <div className="MainInfo__Email">
             <b>Email:</b>{' '}
